@@ -1,0 +1,72 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.14, pytest-9.1.1, pluggy-1.6.0
+rootdir: /workspace/scratch/5a9a87151cba/api-sentinel
+configfile: pyproject.toml
+testpaths: tests
+plugins: anyio-4.15.1, cov-7.1.0
+collected 86 items
+
+tests/test_contracts.py .............................                    [ 33%]
+tests/test_demo.py ..                                                    [ 36%]
+tests/test_executor.py ................                                  [ 54%]
+tests/test_orchestration.py ...................                          [ 76%]
+tests/test_queue.py ....................                                 [100%]
+
+=============================== warnings summary ===============================
+.venv/lib/python3.12/site-packages/fastapi/testclient.py:1
+  /workspace/scratch/5a9a87151cba/api-sentinel/.venv/lib/python3.12/site-packages/fastapi/testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+    from starlette.testclient import TestClient as TestClient  # noqa
+
+.venv/lib/python3.12/site-packages/starlette/testclient.py:53
+  /workspace/scratch/5a9a87151cba/api-sentinel/.venv/lib/python3.12/site-packages/starlette/testclient.py:53: DeprecationWarning: The anyio.abc.BlockingPortal alias is deprecated, use anyio.from_thread.BlockingPortal instead.
+    _PortalFactoryType = Callable[[], AbstractContextManager[anyio.abc.BlockingPortal]]
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+- generated xml file: /workspace/scratch/5a9a87151cba/api-sentinel/reports/unit-tests.xml -
+================================ tests coverage ================================
+_______________ coverage: platform linux, python 3.12.14-final-0 _______________
+
+Name                              Stmts   Miss Branch BrPart  Cover   Missing
+-----------------------------------------------------------------------------
+src/api_sentinel/__init__.py          1      0      0      0   100%
+src/api_sentinel/cli.py              96     18     22      4    78%   25, 30-33, 70->78, 81-99, 139-140, 152
+src/api_sentinel/config.py           45      2     20      2    94%   20, 63
+src/api_sentinel/contracts.py       181     18    112     13    89%   65, 68, 70, 100-104, 135, 148->140, 161, 180, 182-184, 210, 217, 221->218, 223->218, 232-233
+src/api_sentinel/coordinator.py      29      2      8      0    95%   45-46
+src/api_sentinel/executor.py         96      4     30      4    94%   110, 118, 142, 144
+src/api_sentinel/logging.py           5      0      0      0   100%
+src/api_sentinel/models.py           64      0      6      0   100%
+src/api_sentinel/queue.py            70      2     12      2    95%   159, 174
+src/api_sentinel/reporting.py        37      1      8      1    96%   24
+src/api_sentinel/worker.py          101     19     24      4    82%   29, 50-55, 96-105, 112, 115
+-----------------------------------------------------------------------------
+TOTAL                               725     66    242     30    89%
+Coverage JSON written to file reports/coverage.json
+Required test coverage of 80.0% reached. Total coverage: 89.45%
+======================== 86 passed, 2 warnings in 6.92s ========================
+{
+  "python": "3.12.14",
+  "platform": "Linux-6.18.35-x86_64-with-glibc2.39",
+  "cases": 240,
+  "workers": 2,
+  "threads_per_worker": 4,
+  "warmup_rounds_excluded": 1,
+  "measured_rounds": 3,
+  "measurements_ms": {
+    "serial": [
+      9046.35,
+      9127.503,
+      8823.721
+    ],
+    "distributed": [
+      3724.867,
+      3179.663,
+      4484.376
+    ]
+  },
+  "serial_median_ms": 9046.35,
+  "distributed_median_ms": 3724.867,
+  "time_reduction_percent": 58.82,
+  "speedup": 2.429,
+  "scope": "This environment only; includes process startup and fixture overhead."
+}

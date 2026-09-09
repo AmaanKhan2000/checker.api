@@ -1,0 +1,82 @@
+name: api-sentinel
+x-runner: &runner
+  build: .
+  image: api-sentinel:local
+  init: true
+  read_only: true
+  tmpfs:
+    - /tmp:size=64m,mode=1777
+  cap_drop: [ALL]
+  security_opt: [no-new-privileges:true]
+  networks: [testnet]
+  environment: &runner-env
+    SENTINEL_REDIS_URL: redis://redis:6379/0
+    SENTINEL_BASE_URL: http://demo-api:8000
+    TEST_SUPPORT_TOKEN: ${TEST_SUPPORT_TOKEN:-local-demo-token}
+  depends_on:
+    redis:
+      condition: service_healthy
+    demo-api:
+      condition: service_healthy
+
+services:
+  redis:
+    image: redis:7.4-alpine
+    command: [redis-server, --appendonly, 'yes', --appendfsync, everysec, --maxmemory, 256mb, --maxmemory-policy, noeviction]
+    volumes: [redis-data:/data]
+    networks: [testnet]
+    healthcheck:
+      test: [CMD, redis-cli, ping]
+      interval: 2s
+      timeout: 2s
+      retries: 20
+    mem_limit: 384m
+    cpus: 1
+
+  demo-api:
+    build: .
+    image: api-sentinel:local
+    init: true
+    entrypoint: [uvicorn, examples.demo_api.app:app, --host, 0.0.0.0, --port, '8000']
+    environment:
+      DEMO_DB_PATH: /data/demo.sqlite3
+      DEMO_ENABLE_TEST_SUPPORT: 'true'
+      TEST_SUPPORT_TOKEN: ${TEST_SUPPORT_TOKEN:-local-demo-token}
+      DEMO_DELAY_SECONDS: ${DEMO_DELAY_SECONDS:-0.02}
+      DEMO_BREAK_CONTRACT: ${DEMO_BREAK_CONTRACT:-false}
+    volumes: [demo-data:/data]
+    read_only: true
+    tmpfs: ["/tmp:size=64m,mode=1777"]
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    networks: [testnet]
+    healthcheck:
+      test: [CMD, python, -c, "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/health', timeout=2)"]
+      interval: 2s
+      timeout: 3s
+      retries: 30
+    mem_limit: 512m
+    cpus: 2
+
+  worker:
+    <<: *runner
+    command: [worker, --run-id, '${SENTINEL_RUN_ID:-demo}', --concurrency, '${WORKER_THREADS:-4}', --lease-seconds, '15', --wait-seconds, '120']
+    stop_grace_period: 90s
+    mem_limit: 384m
+    cpus: 1
+
+  coordinator:
+    <<: *runner
+    profiles: [run]
+    command: [run, --distributed, --suite, '${SENTINEL_SUITE:-examples/suites/smoke.json}', --contract, examples/contract.json, --run-id, '${SENTINEL_RUN_ID:-demo}', --report-dir, /app/reports, --run-timeout, '180']
+    volumes: [reports:/app/reports]
+    mem_limit: 384m
+    cpus: 1
+
+networks:
+  testnet:
+    internal: true
+volumes:
+  redis-data:
+  demo-data:
+  reports:

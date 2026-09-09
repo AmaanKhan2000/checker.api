@@ -1,0 +1,26 @@
+{
+  "python": "3.12.14",
+  "platform": "Linux-6.18.35-x86_64-with-glibc2.39",
+  "cases": 240,
+  "workers": 2,
+  "threads_per_worker": 4,
+  "warmup_rounds_excluded": 1,
+  "measured_rounds": 3,
+  "measurements_ms": {
+    "serial": [
+      9046.35,
+      9127.503,
+      8823.721
+    ],
+    "distributed": [
+      3724.867,
+      3179.663,
+      4484.376
+    ]
+  },
+  "serial_median_ms": 9046.35,
+  "distributed_median_ms": 3724.867,
+  "time_reduction_percent": 58.82,
+  "speedup": 2.429,
+  "scope": "This environment only; includes process startup and fixture overhead."
+}

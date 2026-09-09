@@ -1,0 +1,1477 @@
+INFO:     Started server process [165]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:42155 (Press CTRL+C to quit)
+INFO:     127.0.0.1:57098 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57110 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57110 - "PUT /test-support/namespaces/968e0248f65c1f64dbf873e5 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57130 - "PUT /test-support/namespaces/08632b55cdaf0cf0a0eeae10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57122 - "PUT /test-support/namespaces/d92562411b973616ad052d35 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57142 - "PUT /test-support/namespaces/ca9876a6f41f6c7a94d8f2a2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57110 - "GET /catalog/968e0248f65c1f64dbf873e5/products?limit=2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57130 - "GET /catalog/08632b55cdaf0cf0a0eeae10/products/product-1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57110 - "DELETE /test-support/namespaces/968e0248f65c1f64dbf873e5 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:57130 - "DELETE /test-support/namespaces/08632b55cdaf0cf0a0eeae10 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:57122 - "GET /catalog/d92562411b973616ad052d35/products/missing HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57142 - "POST /orders/ca9876a6f41f6c7a94d8f2a2 HTTP/1.1" 201 Created
+INFO:     127.0.0.1:57156 - "PUT /test-support/namespaces/7b6cfce5fa8ee7726dc871f4 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57186 - "PUT /test-support/namespaces/77141555b971dd1afbdb5b8c HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57170 - "PUT /test-support/namespaces/d144d353851d24f9e0546cb5 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57156 - "GET /catalog/7b6cfce5fa8ee7726dc871f4/products?limit=0 HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:57110 - "DELETE /test-support/namespaces/d92562411b973616ad052d35 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:57170 - "POST /orders/d144d353851d24f9e0546cb5 HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:57156 - "DELETE /test-support/namespaces/7b6cfce5fa8ee7726dc871f4 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:57130 - "POST /orders/ca9876a6f41f6c7a94d8f2a2 HTTP/1.1" 201 Created
+INFO:     127.0.0.1:57170 - "DELETE /test-support/namespaces/d144d353851d24f9e0546cb5 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:57186 - "POST /orders/77141555b971dd1afbdb5b8c HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57170 - "DELETE /test-support/namespaces/77141555b971dd1afbdb5b8c HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:57110 - "POST /orders/ca9876a6f41f6c7a94d8f2a2 HTTP/1.1" 409 Conflict
+INFO:     127.0.0.1:57110 - "DELETE /test-support/namespaces/ca9876a6f41f6c7a94d8f2a2 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:57188 - "PUT /test-support/namespaces/0a8f90e518b8efb3fee1ab20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57194 - "PUT /test-support/namespaces/093996b84dd2e739d93f955e HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57194 - "GET /catalog/093996b84dd2e739d93f955e/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57194 - "DELETE /test-support/namespaces/093996b84dd2e739d93f955e HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:57206 - "PUT /test-support/namespaces/9d7d9ad2966be342a3d68956 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "GET /catalog/9d7d9ad2966be342a3d68956/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "DELETE /test-support/namespaces/9d7d9ad2966be342a3d68956 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:57206 - "PUT /test-support/namespaces/ff1240d6ed6b76b561fef094 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "GET /catalog/ff1240d6ed6b76b561fef094/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "DELETE /test-support/namespaces/ff1240d6ed6b76b561fef094 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:57206 - "PUT /test-support/namespaces/9bb0e2aac2f321a912f9937b HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "GET /catalog/9bb0e2aac2f321a912f9937b/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "DELETE /test-support/namespaces/9bb0e2aac2f321a912f9937b HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:57206 - "PUT /test-support/namespaces/3f5341e80f0eb7b5a53c4350 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "GET /catalog/3f5341e80f0eb7b5a53c4350/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "DELETE /test-support/namespaces/3f5341e80f0eb7b5a53c4350 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:57206 - "PUT /test-support/namespaces/d57303d28c811f0fa9cac730 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "GET /catalog/d57303d28c811f0fa9cac730/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "DELETE /test-support/namespaces/d57303d28c811f0fa9cac730 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:57206 - "PUT /test-support/namespaces/aba2ca820ba0235e796bed2e HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "GET /catalog/aba2ca820ba0235e796bed2e/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "DELETE /test-support/namespaces/aba2ca820ba0235e796bed2e HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:57206 - "PUT /test-support/namespaces/cf93c37ed1fb6b8290633145 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "GET /catalog/cf93c37ed1fb6b8290633145/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "DELETE /test-support/namespaces/cf93c37ed1fb6b8290633145 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:57206 - "PUT /test-support/namespaces/099afcd378873d51b782037a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "GET /catalog/099afcd378873d51b782037a/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "DELETE /test-support/namespaces/099afcd378873d51b782037a HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:57206 - "PUT /test-support/namespaces/7467e7c2fb04ddf5e739f09a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "GET /catalog/7467e7c2fb04ddf5e739f09a/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "DELETE /test-support/namespaces/7467e7c2fb04ddf5e739f09a HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:57206 - "PUT /test-support/namespaces/8d88df582c3a947e8c0183ce HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "GET /catalog/8d88df582c3a947e8c0183ce/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "DELETE /test-support/namespaces/8d88df582c3a947e8c0183ce HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:57206 - "PUT /test-support/namespaces/f6aa6d78f15b2026c0e251a3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "GET /catalog/f6aa6d78f15b2026c0e251a3/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "DELETE /test-support/namespaces/f6aa6d78f15b2026c0e251a3 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:57206 - "PUT /test-support/namespaces/14367b1ffe406ed755f74f33 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "GET /catalog/14367b1ffe406ed755f74f33/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "DELETE /test-support/namespaces/14367b1ffe406ed755f74f33 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:57206 - "PUT /test-support/namespaces/62f5137bda16250a6b1437d8 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "GET /catalog/62f5137bda16250a6b1437d8/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "DELETE /test-support/namespaces/62f5137bda16250a6b1437d8 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:57206 - "PUT /test-support/namespaces/a49e69982f60ea7355778410 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "GET /catalog/a49e69982f60ea7355778410/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "DELETE /test-support/namespaces/a49e69982f60ea7355778410 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:57206 - "PUT /test-support/namespaces/4439bc0590a0cc11e8f1eccc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "GET /catalog/4439bc0590a0cc11e8f1eccc/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "DELETE /test-support/namespaces/4439bc0590a0cc11e8f1eccc HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:57206 - "PUT /test-support/namespaces/03e92c4358a72f8311319775 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "GET /catalog/03e92c4358a72f8311319775/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "DELETE /test-support/namespaces/03e92c4358a72f8311319775 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:57206 - "PUT /test-support/namespaces/7c1d38a4180f7ec5b445b6c5 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "GET /catalog/7c1d38a4180f7ec5b445b6c5/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "DELETE /test-support/namespaces/7c1d38a4180f7ec5b445b6c5 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:57206 - "PUT /test-support/namespaces/8bbc3714cd6fcff5fd2d735d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "GET /catalog/8bbc3714cd6fcff5fd2d735d/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "DELETE /test-support/namespaces/8bbc3714cd6fcff5fd2d735d HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:57206 - "PUT /test-support/namespaces/0c1319b6d203a1c776c6b803 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "GET /catalog/0c1319b6d203a1c776c6b803/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "DELETE /test-support/namespaces/0c1319b6d203a1c776c6b803 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:57206 - "PUT /test-support/namespaces/6e00c5a36ee3a1503038e6bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "GET /catalog/6e00c5a36ee3a1503038e6bc/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "DELETE /test-support/namespaces/6e00c5a36ee3a1503038e6bc HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:57206 - "PUT /test-support/namespaces/fd1a833e9c3428db3bfde998 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "GET /catalog/fd1a833e9c3428db3bfde998/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "DELETE /test-support/namespaces/fd1a833e9c3428db3bfde998 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:57206 - "PUT /test-support/namespaces/66aa83cbd3cc678955c1a396 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "GET /catalog/66aa83cbd3cc678955c1a396/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "DELETE /test-support/namespaces/66aa83cbd3cc678955c1a396 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:57206 - "PUT /test-support/namespaces/2effd73e8b611149621a118f HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "GET /catalog/2effd73e8b611149621a118f/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "DELETE /test-support/namespaces/2effd73e8b611149621a118f HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:57206 - "PUT /test-support/namespaces/14f8d21e6ab560d2eac0b13b HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "GET /catalog/14f8d21e6ab560d2eac0b13b/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "DELETE /test-support/namespaces/14f8d21e6ab560d2eac0b13b HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:57206 - "PUT /test-support/namespaces/c6c6cdff540edf67c0c6f4bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "GET /catalog/c6c6cdff540edf67c0c6f4bc/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "DELETE /test-support/namespaces/c6c6cdff540edf67c0c6f4bc HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:57206 - "PUT /test-support/namespaces/d1fbe44ab7ccf5b14d63d0e7 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "GET /catalog/d1fbe44ab7ccf5b14d63d0e7/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "DELETE /test-support/namespaces/d1fbe44ab7ccf5b14d63d0e7 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:57206 - "PUT /test-support/namespaces/1ddcaff3978721d0907e11e3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "GET /catalog/1ddcaff3978721d0907e11e3/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "DELETE /test-support/namespaces/1ddcaff3978721d0907e11e3 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:57206 - "PUT /test-support/namespaces/a08846a7110870e5b5739d33 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "GET /catalog/a08846a7110870e5b5739d33/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "DELETE /test-support/namespaces/a08846a7110870e5b5739d33 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:57206 - "PUT /test-support/namespaces/f4f569e20e10083c4803684a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "GET /catalog/f4f569e20e10083c4803684a/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "DELETE /test-support/namespaces/f4f569e20e10083c4803684a HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:57206 - "PUT /test-support/namespaces/9b32678064e0e550b7198f32 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "GET /catalog/9b32678064e0e550b7198f32/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "DELETE /test-support/namespaces/9b32678064e0e550b7198f32 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:57206 - "PUT /test-support/namespaces/a0fd75fa24d9b237188ce991 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "GET /catalog/a0fd75fa24d9b237188ce991/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "DELETE /test-support/namespaces/a0fd75fa24d9b237188ce991 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:57206 - "PUT /test-support/namespaces/c7d1b1c91e76b5a57afa455d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "GET /catalog/c7d1b1c91e76b5a57afa455d/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "DELETE /test-support/namespaces/c7d1b1c91e76b5a57afa455d HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:57206 - "PUT /test-support/namespaces/58589916e7ccbe1d69bf45fb HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "GET /catalog/58589916e7ccbe1d69bf45fb/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "DELETE /test-support/namespaces/58589916e7ccbe1d69bf45fb HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:57206 - "PUT /test-support/namespaces/036d4a49931b91d9cb01d472 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "GET /catalog/036d4a49931b91d9cb01d472/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "DELETE /test-support/namespaces/036d4a49931b91d9cb01d472 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:57206 - "PUT /test-support/namespaces/924650cfe9c0d796341138d2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "GET /catalog/924650cfe9c0d796341138d2/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "DELETE /test-support/namespaces/924650cfe9c0d796341138d2 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:57206 - "PUT /test-support/namespaces/61664b1a8663eebf7efe867c HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "GET /catalog/61664b1a8663eebf7efe867c/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "DELETE /test-support/namespaces/61664b1a8663eebf7efe867c HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:57206 - "PUT /test-support/namespaces/9441e5604f92e90e1f8a2784 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "GET /catalog/9441e5604f92e90e1f8a2784/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "DELETE /test-support/namespaces/9441e5604f92e90e1f8a2784 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:57206 - "PUT /test-support/namespaces/f7f0de0efc4a1b5a64e8cfea HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "GET /catalog/f7f0de0efc4a1b5a64e8cfea/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "DELETE /test-support/namespaces/f7f0de0efc4a1b5a64e8cfea HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:57206 - "PUT /test-support/namespaces/1f42745ecc6b22f5f104c64f HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "GET /catalog/1f42745ecc6b22f5f104c64f/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "DELETE /test-support/namespaces/1f42745ecc6b22f5f104c64f HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:57206 - "PUT /test-support/namespaces/0c9b98b887767f58a41b6542 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "GET /catalog/0c9b98b887767f58a41b6542/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "DELETE /test-support/namespaces/0c9b98b887767f58a41b6542 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:57206 - "PUT /test-support/namespaces/efe8deea0086ce244049c07b HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "GET /catalog/efe8deea0086ce244049c07b/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "DELETE /test-support/namespaces/efe8deea0086ce244049c07b HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:57206 - "PUT /test-support/namespaces/dc363ecf6c230540544c1f61 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "GET /catalog/dc363ecf6c230540544c1f61/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "DELETE /test-support/namespaces/dc363ecf6c230540544c1f61 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:57206 - "PUT /test-support/namespaces/b464b804db773d634058cbcb HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "GET /catalog/b464b804db773d634058cbcb/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "DELETE /test-support/namespaces/b464b804db773d634058cbcb HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:57206 - "PUT /test-support/namespaces/829ea3f6c21737d9bbcc354d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "GET /catalog/829ea3f6c21737d9bbcc354d/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "DELETE /test-support/namespaces/829ea3f6c21737d9bbcc354d HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:57206 - "PUT /test-support/namespaces/54942877d3edb52e48ead2f1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "GET /catalog/54942877d3edb52e48ead2f1/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "DELETE /test-support/namespaces/54942877d3edb52e48ead2f1 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:57206 - "PUT /test-support/namespaces/b80bae087678dbe4288a149c HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "GET /catalog/b80bae087678dbe4288a149c/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "DELETE /test-support/namespaces/b80bae087678dbe4288a149c HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:57206 - "PUT /test-support/namespaces/2a5d36a3ed805bd439152f50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "GET /catalog/2a5d36a3ed805bd439152f50/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "DELETE /test-support/namespaces/2a5d36a3ed805bd439152f50 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:57206 - "PUT /test-support/namespaces/86a67848adc652936bacee07 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "GET /catalog/86a67848adc652936bacee07/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "DELETE /test-support/namespaces/86a67848adc652936bacee07 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:57206 - "PUT /test-support/namespaces/7f552370d70026bf62892ba3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "GET /catalog/7f552370d70026bf62892ba3/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "DELETE /test-support/namespaces/7f552370d70026bf62892ba3 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:57206 - "PUT /test-support/namespaces/82a4ef9da26746976f431602 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "GET /catalog/82a4ef9da26746976f431602/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "DELETE /test-support/namespaces/82a4ef9da26746976f431602 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:57206 - "PUT /test-support/namespaces/8bd08b09f101f4929d785c65 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "GET /catalog/8bd08b09f101f4929d785c65/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "DELETE /test-support/namespaces/8bd08b09f101f4929d785c65 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:57206 - "PUT /test-support/namespaces/a5b9809922447b8b7d0ef9b3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "GET /catalog/a5b9809922447b8b7d0ef9b3/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "DELETE /test-support/namespaces/a5b9809922447b8b7d0ef9b3 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:57206 - "PUT /test-support/namespaces/25d8aab232b319c1c4aaf8b3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "GET /catalog/25d8aab232b319c1c4aaf8b3/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "DELETE /test-support/namespaces/25d8aab232b319c1c4aaf8b3 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:57206 - "PUT /test-support/namespaces/d4583cce9dfd222c7fc39cc0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "GET /catalog/d4583cce9dfd222c7fc39cc0/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "DELETE /test-support/namespaces/d4583cce9dfd222c7fc39cc0 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:57206 - "PUT /test-support/namespaces/58a7d233c4e6db64309f6fc8 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "GET /catalog/58a7d233c4e6db64309f6fc8/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "DELETE /test-support/namespaces/58a7d233c4e6db64309f6fc8 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:57206 - "PUT /test-support/namespaces/bf9982f99b0bc0b5048258d6 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "GET /catalog/bf9982f99b0bc0b5048258d6/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "DELETE /test-support/namespaces/bf9982f99b0bc0b5048258d6 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:57206 - "PUT /test-support/namespaces/06561bde2e2ef252559c50cd HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "GET /catalog/06561bde2e2ef252559c50cd/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "DELETE /test-support/namespaces/06561bde2e2ef252559c50cd HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:57206 - "PUT /test-support/namespaces/2111f62ddde88a0ffa70130d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "GET /catalog/2111f62ddde88a0ffa70130d/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "DELETE /test-support/namespaces/2111f62ddde88a0ffa70130d HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:57206 - "PUT /test-support/namespaces/7c58f03acc02a491618343b4 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "GET /catalog/7c58f03acc02a491618343b4/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "DELETE /test-support/namespaces/7c58f03acc02a491618343b4 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:57206 - "PUT /test-support/namespaces/1957c26d07bcc44eca26861b HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "GET /catalog/1957c26d07bcc44eca26861b/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57206 - "DELETE /test-support/namespaces/1957c26d07bcc44eca26861b HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44214 - "PUT /test-support/namespaces/c5818a67396f869cd3998645 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44228 - "PUT /test-support/namespaces/7234ca67a2cb19d05ff548e3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44246 - "PUT /test-support/namespaces/568653e33824b081772de755 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44242 - "PUT /test-support/namespaces/84d862494034f5b457ba66b6 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44214 - "GET /catalog/c5818a67396f869cd3998645/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44228 - "GET /catalog/7234ca67a2cb19d05ff548e3/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44214 - "DELETE /test-support/namespaces/c5818a67396f869cd3998645 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44228 - "DELETE /test-support/namespaces/7234ca67a2cb19d05ff548e3 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44242 - "GET /catalog/84d862494034f5b457ba66b6/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44246 - "GET /catalog/568653e33824b081772de755/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44258 - "PUT /test-support/namespaces/6d6b7e7ae912c0bd0a446ea5 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44228 - "DELETE /test-support/namespaces/568653e33824b081772de755 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44242 - "DELETE /test-support/namespaces/84d862494034f5b457ba66b6 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44214 - "PUT /test-support/namespaces/93ccf26ef3e653bdc0176009 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44246 - "PUT /test-support/namespaces/223ea57a7d3be03f198bd47a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44246 - "PUT /test-support/namespaces/19a6f242944f5942d09ee0e2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44282 - "PUT /test-support/namespaces/111dcb28a824140b30962932 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44270 - "PUT /test-support/namespaces/56541ce828d7be4fea673e8e HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44294 - "PUT /test-support/namespaces/699e47f2fb15487356d28734 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44242 - "PUT /test-support/namespaces/9f3475bdc4aeedbd7fd8bc95 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44214 - "GET /catalog/93ccf26ef3e653bdc0176009/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44228 - "GET /catalog/223ea57a7d3be03f198bd47a/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44258 - "GET /catalog/6d6b7e7ae912c0bd0a446ea5/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44214 - "DELETE /test-support/namespaces/93ccf26ef3e653bdc0176009 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44228 - "DELETE /test-support/namespaces/223ea57a7d3be03f198bd47a HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44258 - "DELETE /test-support/namespaces/6d6b7e7ae912c0bd0a446ea5 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44214 - "PUT /test-support/namespaces/4b02583e66cfee8b75ee8df5 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44282 - "GET /catalog/111dcb28a824140b30962932/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44246 - "GET /catalog/19a6f242944f5942d09ee0e2/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44270 - "GET /catalog/56541ce828d7be4fea673e8e/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44294 - "GET /catalog/699e47f2fb15487356d28734/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44228 - "PUT /test-support/namespaces/0a75d591831a979eee7443a1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44282 - "DELETE /test-support/namespaces/111dcb28a824140b30962932 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44242 - "GET /catalog/9f3475bdc4aeedbd7fd8bc95/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44270 - "DELETE /test-support/namespaces/56541ce828d7be4fea673e8e HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44246 - "DELETE /test-support/namespaces/19a6f242944f5942d09ee0e2 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44258 - "PUT /test-support/namespaces/1a80f34cb98ef6ff15d46b57 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44242 - "DELETE /test-support/namespaces/9f3475bdc4aeedbd7fd8bc95 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44282 - "DELETE /test-support/namespaces/699e47f2fb15487356d28734 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44270 - "PUT /test-support/namespaces/4fb86bd3e7fb18e6c438983c HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44294 - "PUT /test-support/namespaces/2e37727425535e30c0615025 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44242 - "PUT /test-support/namespaces/f7aff34960db55c7fdc2e723 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44246 - "PUT /test-support/namespaces/f9d980ecf94fc3671675954c HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44282 - "PUT /test-support/namespaces/8127bd379cc029c3aa9d8299 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44214 - "GET /catalog/4b02583e66cfee8b75ee8df5/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44214 - "DELETE /test-support/namespaces/4b02583e66cfee8b75ee8df5 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44228 - "GET /catalog/0a75d591831a979eee7443a1/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44214 - "DELETE /test-support/namespaces/0a75d591831a979eee7443a1 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44258 - "GET /catalog/1a80f34cb98ef6ff15d46b57/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44270 - "GET /catalog/4fb86bd3e7fb18e6c438983c/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44294 - "GET /catalog/2e37727425535e30c0615025/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44242 - "GET /catalog/f7aff34960db55c7fdc2e723/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44282 - "GET /catalog/8127bd379cc029c3aa9d8299/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44258 - "DELETE /test-support/namespaces/1a80f34cb98ef6ff15d46b57 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44246 - "GET /catalog/f9d980ecf94fc3671675954c/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44214 - "PUT /test-support/namespaces/92261df3716ed3292e4a3a71 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44246 - "DELETE /test-support/namespaces/f9d980ecf94fc3671675954c HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44242 - "DELETE /test-support/namespaces/f7aff34960db55c7fdc2e723 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44270 - "DELETE /test-support/namespaces/4fb86bd3e7fb18e6c438983c HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44294 - "DELETE /test-support/namespaces/2e37727425535e30c0615025 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44282 - "DELETE /test-support/namespaces/8127bd379cc029c3aa9d8299 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44258 - "PUT /test-support/namespaces/ba27c29d0cb818e15d8fcd8a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44246 - "PUT /test-support/namespaces/7f8f5cf82b6b6a7429701bba HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44242 - "PUT /test-support/namespaces/dca9b28d82e6f17fb4f16e89 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44282 - "PUT /test-support/namespaces/964356f5337dd7ceb29777eb HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44270 - "PUT /test-support/namespaces/a0b94d6decc5caf170fd30a0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44214 - "GET /catalog/92261df3716ed3292e4a3a71/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44294 - "PUT /test-support/namespaces/9fc537c2df4b4eb07e99b851 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44214 - "DELETE /test-support/namespaces/92261df3716ed3292e4a3a71 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44228 - "PUT /test-support/namespaces/9d38710f9f51caa2acb84bb9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44228 - "PUT /test-support/namespaces/2990debdbe2b3a2958183ee2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44246 - "GET /catalog/7f8f5cf82b6b6a7429701bba/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44242 - "GET /catalog/dca9b28d82e6f17fb4f16e89/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44258 - "GET /catalog/ba27c29d0cb818e15d8fcd8a/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44282 - "GET /catalog/964356f5337dd7ceb29777eb/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44270 - "GET /catalog/a0b94d6decc5caf170fd30a0/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44258 - "DELETE /test-support/namespaces/ba27c29d0cb818e15d8fcd8a HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44282 - "DELETE /test-support/namespaces/964356f5337dd7ceb29777eb HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44294 - "GET /catalog/9fc537c2df4b4eb07e99b851/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44242 - "DELETE /test-support/namespaces/dca9b28d82e6f17fb4f16e89 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44270 - "DELETE /test-support/namespaces/a0b94d6decc5caf170fd30a0 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44246 - "DELETE /test-support/namespaces/7f8f5cf82b6b6a7429701bba HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44228 - "GET /catalog/2990debdbe2b3a2958183ee2/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44214 - "GET /catalog/9d38710f9f51caa2acb84bb9/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44246 - "PUT /test-support/namespaces/655c7cea878d76f6fe5558ae HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44228 - "DELETE /test-support/namespaces/2990debdbe2b3a2958183ee2 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44214 - "DELETE /test-support/namespaces/9d38710f9f51caa2acb84bb9 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44242 - "PUT /test-support/namespaces/e602b25e59ed54906feee616 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44258 - "PUT /test-support/namespaces/0d4718453760917f707e0f94 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44270 - "DELETE /test-support/namespaces/9fc537c2df4b4eb07e99b851 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44270 - "PUT /test-support/namespaces/4074464ec2358b336138aa04 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44228 - "PUT /test-support/namespaces/9e7c8b1ea20a147f10717b55 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44214 - "PUT /test-support/namespaces/2c7ada0ec5d5800f216a22d7 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44282 - "PUT /test-support/namespaces/c1969fb7b370533cc6ba721e HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44246 - "GET /catalog/655c7cea878d76f6fe5558ae/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44246 - "DELETE /test-support/namespaces/655c7cea878d76f6fe5558ae HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44246 - "PUT /test-support/namespaces/cd3268b70a8c01c15666986e HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44242 - "GET /catalog/e602b25e59ed54906feee616/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44258 - "GET /catalog/0d4718453760917f707e0f94/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44214 - "GET /catalog/2c7ada0ec5d5800f216a22d7/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44270 - "GET /catalog/4074464ec2358b336138aa04/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44294 - "PUT /test-support/namespaces/210c5b3b393977702c488ed6 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44228 - "GET /catalog/9e7c8b1ea20a147f10717b55/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44242 - "DELETE /test-support/namespaces/e602b25e59ed54906feee616 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44282 - "GET /catalog/c1969fb7b370533cc6ba721e/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44258 - "DELETE /test-support/namespaces/0d4718453760917f707e0f94 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44246 - "GET /catalog/cd3268b70a8c01c15666986e/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44270 - "DELETE /test-support/namespaces/4074464ec2358b336138aa04 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44214 - "DELETE /test-support/namespaces/2c7ada0ec5d5800f216a22d7 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44258 - "PUT /test-support/namespaces/40a34dd5467fb7ce2669b753 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44282 - "DELETE /test-support/namespaces/c1969fb7b370533cc6ba721e HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44228 - "DELETE /test-support/namespaces/9e7c8b1ea20a147f10717b55 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44246 - "DELETE /test-support/namespaces/cd3268b70a8c01c15666986e HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44242 - "PUT /test-support/namespaces/67fa45ce21b7ce3bab96f3e0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44270 - "PUT /test-support/namespaces/2e307ad75a91e8a757f2c75c HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44214 - "PUT /test-support/namespaces/69b098917eb7009a04e3fc0e HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44294 - "GET /catalog/210c5b3b393977702c488ed6/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44282 - "PUT /test-support/namespaces/590d3bfd98cf5af776b64a94 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44294 - "DELETE /test-support/namespaces/210c5b3b393977702c488ed6 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44242 - "PUT /test-support/namespaces/83c7b3ef0733131d237ade6c HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44246 - "PUT /test-support/namespaces/46f092220bb4d9af66d56cc4 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44294 - "PUT /test-support/namespaces/4fc415e6715f48dc6f8022fa HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44258 - "GET /catalog/40a34dd5467fb7ce2669b753/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44270 - "GET /catalog/2e307ad75a91e8a757f2c75c/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44282 - "GET /catalog/590d3bfd98cf5af776b64a94/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44270 - "DELETE /test-support/namespaces/2e307ad75a91e8a757f2c75c HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44228 - "GET /catalog/67fa45ce21b7ce3bab96f3e0/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44258 - "DELETE /test-support/namespaces/40a34dd5467fb7ce2669b753 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44282 - "DELETE /test-support/namespaces/590d3bfd98cf5af776b64a94 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44228 - "DELETE /test-support/namespaces/67fa45ce21b7ce3bab96f3e0 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44214 - "GET /catalog/69b098917eb7009a04e3fc0e/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44282 - "PUT /test-support/namespaces/2517c46963599913fd085c03 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44270 - "PUT /test-support/namespaces/4075759068249d3cabf182e9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44258 - "PUT /test-support/namespaces/d16ef8255cfa032893d9b402 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44228 - "PUT /test-support/namespaces/baca98f30fadc3efa494d4d5 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44214 - "DELETE /test-support/namespaces/69b098917eb7009a04e3fc0e HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44294 - "GET /catalog/4fc415e6715f48dc6f8022fa/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44246 - "GET /catalog/46f092220bb4d9af66d56cc4/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44242 - "GET /catalog/83c7b3ef0733131d237ade6c/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44214 - "PUT /test-support/namespaces/295ae431ac1546496ba4364f HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44246 - "DELETE /test-support/namespaces/46f092220bb4d9af66d56cc4 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44294 - "DELETE /test-support/namespaces/4fc415e6715f48dc6f8022fa HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44294 - "PUT /test-support/namespaces/68918d6dfa90b78677dc925e HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44242 - "DELETE /test-support/namespaces/83c7b3ef0733131d237ade6c HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44270 - "GET /catalog/4075759068249d3cabf182e9/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44242 - "PUT /test-support/namespaces/b59ccc7918da03c7c1761667 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44282 - "GET /catalog/2517c46963599913fd085c03/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44228 - "GET /catalog/baca98f30fadc3efa494d4d5/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44258 - "GET /catalog/d16ef8255cfa032893d9b402/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44246 - "PUT /test-support/namespaces/54619172477aed9b3915be2b HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44228 - "DELETE /test-support/namespaces/baca98f30fadc3efa494d4d5 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44258 - "DELETE /test-support/namespaces/d16ef8255cfa032893d9b402 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44282 - "DELETE /test-support/namespaces/2517c46963599913fd085c03 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44270 - "DELETE /test-support/namespaces/4075759068249d3cabf182e9 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44228 - "PUT /test-support/namespaces/9dee14b4c7318eb4f107bb06 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44214 - "GET /catalog/295ae431ac1546496ba4364f/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44258 - "PUT /test-support/namespaces/dc5394a075f8d2bf99064b36 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44294 - "GET /catalog/68918d6dfa90b78677dc925e/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44214 - "DELETE /test-support/namespaces/295ae431ac1546496ba4364f HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44282 - "PUT /test-support/namespaces/4c2d077fa4d2a0b6d5a0892c HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44242 - "GET /catalog/b59ccc7918da03c7c1761667/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44270 - "PUT /test-support/namespaces/10b5fbb079f39fbe1c04e8e7 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44214 - "PUT /test-support/namespaces/142998b2c6a843ef3a6bf928 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44294 - "DELETE /test-support/namespaces/68918d6dfa90b78677dc925e HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44242 - "DELETE /test-support/namespaces/b59ccc7918da03c7c1761667 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44246 - "GET /catalog/54619172477aed9b3915be2b/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44294 - "PUT /test-support/namespaces/f7340860b2a91405f07ef7c8 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44228 - "GET /catalog/9dee14b4c7318eb4f107bb06/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44242 - "DELETE /test-support/namespaces/54619172477aed9b3915be2b HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44228 - "DELETE /test-support/namespaces/9dee14b4c7318eb4f107bb06 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44258 - "GET /catalog/dc5394a075f8d2bf99064b36/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44282 - "GET /catalog/4c2d077fa4d2a0b6d5a0892c/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44270 - "GET /catalog/10b5fbb079f39fbe1c04e8e7/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44258 - "DELETE /test-support/namespaces/dc5394a075f8d2bf99064b36 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44214 - "GET /catalog/142998b2c6a843ef3a6bf928/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44282 - "DELETE /test-support/namespaces/4c2d077fa4d2a0b6d5a0892c HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44270 - "DELETE /test-support/namespaces/10b5fbb079f39fbe1c04e8e7 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44214 - "DELETE /test-support/namespaces/142998b2c6a843ef3a6bf928 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44294 - "GET /catalog/f7340860b2a91405f07ef7c8/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44258 - "DELETE /test-support/namespaces/f7340860b2a91405f07ef7c8 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44300 - "PUT /test-support/namespaces/a117a825d57432a8a7bb014d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44336 - "PUT /test-support/namespaces/5012d1927a5b798105c2e0eb HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44348 - "PUT /test-support/namespaces/a685ca0ae6aceb681be0978a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44354 - "PUT /test-support/namespaces/c737690873da115552e18463 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44322 - "PUT /test-support/namespaces/c949d4af3a8e0fbd111e28bf HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44300 - "GET /catalog/a117a825d57432a8a7bb014d/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44336 - "GET /catalog/5012d1927a5b798105c2e0eb/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44310 - "PUT /test-support/namespaces/2a118c0d44e3d140800afa17 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44376 - "PUT /test-support/namespaces/1358a11da2f77426f88722b2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44368 - "PUT /test-support/namespaces/b89fdecff0bba8cd769ab582 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44300 - "DELETE /test-support/namespaces/a117a825d57432a8a7bb014d HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44336 - "DELETE /test-support/namespaces/5012d1927a5b798105c2e0eb HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44348 - "GET /catalog/a685ca0ae6aceb681be0978a/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44354 - "GET /catalog/c737690873da115552e18463/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44300 - "PUT /test-support/namespaces/3337554086578c0e369ab965 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44336 - "DELETE /test-support/namespaces/a685ca0ae6aceb681be0978a HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44322 - "GET /catalog/c949d4af3a8e0fbd111e28bf/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44310 - "GET /catalog/2a118c0d44e3d140800afa17/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44376 - "GET /catalog/1358a11da2f77426f88722b2/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44348 - "PUT /test-support/namespaces/9ca39fc770f2154c1332ae78 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44368 - "GET /catalog/b89fdecff0bba8cd769ab582/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44354 - "DELETE /test-support/namespaces/c737690873da115552e18463 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44336 - "PUT /test-support/namespaces/f93ae0e3fb419abd7df79067 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44300 - "GET /catalog/3337554086578c0e369ab965/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44322 - "DELETE /test-support/namespaces/c949d4af3a8e0fbd111e28bf HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44376 - "DELETE /test-support/namespaces/1358a11da2f77426f88722b2 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44368 - "DELETE /test-support/namespaces/b89fdecff0bba8cd769ab582 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44310 - "DELETE /test-support/namespaces/2a118c0d44e3d140800afa17 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44354 - "PUT /test-support/namespaces/ffc98329ecc4d5207d9edc1a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44300 - "DELETE /test-support/namespaces/3337554086578c0e369ab965 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44348 - "GET /catalog/9ca39fc770f2154c1332ae78/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44376 - "PUT /test-support/namespaces/df7bc53d701bd99b40d59ecc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44322 - "PUT /test-support/namespaces/3412ff8cdfad08c831a748ea HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44348 - "DELETE /test-support/namespaces/9ca39fc770f2154c1332ae78 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44336 - "GET /catalog/f93ae0e3fb419abd7df79067/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44300 - "PUT /test-support/namespaces/821572df12cef80f40ffe564 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44354 - "PUT /test-support/namespaces/e7058a67e40d38cb71a36d24 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44376 - "GET /catalog/df7bc53d701bd99b40d59ecc/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44310 - "GET /catalog/ffc98329ecc4d5207d9edc1a/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44348 - "PUT /test-support/namespaces/7980fae3cc777baaeccae622 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44336 - "DELETE /test-support/namespaces/f93ae0e3fb419abd7df79067 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44368 - "PUT /test-support/namespaces/2b4f8ba3b0ea9f851a3f30f9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44300 - "GET /catalog/821572df12cef80f40ffe564/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44322 - "GET /catalog/3412ff8cdfad08c831a748ea/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44376 - "DELETE /test-support/namespaces/df7bc53d701bd99b40d59ecc HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44354 - "GET /catalog/e7058a67e40d38cb71a36d24/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44310 - "DELETE /test-support/namespaces/ffc98329ecc4d5207d9edc1a HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44348 - "GET /catalog/7980fae3cc777baaeccae622/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44336 - "PUT /test-support/namespaces/5fb2960c8d4d525393ce9dc7 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44354 - "DELETE /test-support/namespaces/e7058a67e40d38cb71a36d24 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44322 - "DELETE /test-support/namespaces/3412ff8cdfad08c831a748ea HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44300 - "DELETE /test-support/namespaces/821572df12cef80f40ffe564 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44310 - "PUT /test-support/namespaces/08cf1f1fa9b77d3ff3b5adf1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44368 - "GET /catalog/2b4f8ba3b0ea9f851a3f30f9/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44336 - "DELETE /test-support/namespaces/7980fae3cc777baaeccae622 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44310 - "PUT /test-support/namespaces/3857f92a07753c066fe1b3d0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44354 - "PUT /test-support/namespaces/315361f9f265fd7130b9890b HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44322 - "GET /catalog/5fb2960c8d4d525393ce9dc7/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44368 - "DELETE /test-support/namespaces/2b4f8ba3b0ea9f851a3f30f9 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44300 - "GET /catalog/08cf1f1fa9b77d3ff3b5adf1/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44336 - "PUT /test-support/namespaces/05652724645f3afed31f2e74 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44348 - "PUT /test-support/namespaces/f3087181e783e55e1046f013 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44376 - "PUT /test-support/namespaces/292fd7510f396cb2a874a3fd HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44300 - "DELETE /test-support/namespaces/08cf1f1fa9b77d3ff3b5adf1 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44368 - "PUT /test-support/namespaces/dc52e45942d732775f06ded9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44322 - "DELETE /test-support/namespaces/5fb2960c8d4d525393ce9dc7 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44310 - "GET /catalog/3857f92a07753c066fe1b3d0/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44336 - "GET /catalog/05652724645f3afed31f2e74/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44354 - "GET /catalog/315361f9f265fd7130b9890b/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44300 - "PUT /test-support/namespaces/45e7111ea24ee94c8c41c274 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44348 - "GET /catalog/f3087181e783e55e1046f013/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44376 - "GET /catalog/292fd7510f396cb2a874a3fd/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44322 - "PUT /test-support/namespaces/8779faddcf71b63a5a51fd28 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44310 - "DELETE /test-support/namespaces/3857f92a07753c066fe1b3d0 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44336 - "DELETE /test-support/namespaces/05652724645f3afed31f2e74 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44368 - "GET /catalog/dc52e45942d732775f06ded9/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44348 - "DELETE /test-support/namespaces/f3087181e783e55e1046f013 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44300 - "GET /catalog/45e7111ea24ee94c8c41c274/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44354 - "DELETE /test-support/namespaces/315361f9f265fd7130b9890b HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44368 - "DELETE /test-support/namespaces/dc52e45942d732775f06ded9 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44336 - "PUT /test-support/namespaces/30817dc588849899b4c3e704 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44322 - "GET /catalog/8779faddcf71b63a5a51fd28/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44310 - "PUT /test-support/namespaces/0d37a9f1e33107b0838bc79c HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44376 - "DELETE /test-support/namespaces/292fd7510f396cb2a874a3fd HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44300 - "DELETE /test-support/namespaces/45e7111ea24ee94c8c41c274 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44354 - "PUT /test-support/namespaces/a9ffb7e68819884541e75a8e HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44348 - "PUT /test-support/namespaces/2692051294c82b59317ce8b6 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44368 - "PUT /test-support/namespaces/571327ad0e48522707168168 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44368 - "PUT /test-support/namespaces/e8e9acfd8b96ee07fcc4ec93 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44310 - "GET /catalog/0d37a9f1e33107b0838bc79c/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44354 - "GET /catalog/a9ffb7e68819884541e75a8e/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44376 - "PUT /test-support/namespaces/c7463bbaeb7ca7658b96c85e HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44336 - "GET /catalog/30817dc588849899b4c3e704/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44300 - "GET /catalog/571327ad0e48522707168168/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44322 - "DELETE /test-support/namespaces/8779faddcf71b63a5a51fd28 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44300 - "DELETE /test-support/namespaces/571327ad0e48522707168168 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44310 - "DELETE /test-support/namespaces/0d37a9f1e33107b0838bc79c HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44322 - "DELETE /test-support/namespaces/30817dc588849899b4c3e704 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44348 - "GET /catalog/2692051294c82b59317ce8b6/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44310 - "PUT /test-support/namespaces/72ed00d054be9d079abc2367 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44354 - "DELETE /test-support/namespaces/a9ffb7e68819884541e75a8e HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44336 - "PUT /test-support/namespaces/0c77158329399d1e4a20c13c HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44300 - "PUT /test-support/namespaces/09eaecbb1c4d635bbe2b22cd HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44376 - "GET /catalog/c7463bbaeb7ca7658b96c85e/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44322 - "PUT /test-support/namespaces/9f711dab90948b46ecf185f2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44368 - "GET /catalog/e8e9acfd8b96ee07fcc4ec93/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44354 - "PUT /test-support/namespaces/5ab807bfcfc071975c0b3f0f HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44348 - "DELETE /test-support/namespaces/2692051294c82b59317ce8b6 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44368 - "DELETE /test-support/namespaces/e8e9acfd8b96ee07fcc4ec93 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44376 - "DELETE /test-support/namespaces/c7463bbaeb7ca7658b96c85e HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44310 - "GET /catalog/72ed00d054be9d079abc2367/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44368 - "PUT /test-support/namespaces/c1b298b0d0b5bf65331b315b HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44348 - "PUT /test-support/namespaces/776b76e83085674df91fffdf HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44336 - "GET /catalog/0c77158329399d1e4a20c13c/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44300 - "GET /catalog/09eaecbb1c4d635bbe2b22cd/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44310 - "DELETE /test-support/namespaces/72ed00d054be9d079abc2367 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44354 - "GET /catalog/5ab807bfcfc071975c0b3f0f/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44322 - "GET /catalog/9f711dab90948b46ecf185f2/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44376 - "PUT /test-support/namespaces/a0db3bba33eec70b167928e3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44336 - "DELETE /test-support/namespaces/0c77158329399d1e4a20c13c HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44300 - "DELETE /test-support/namespaces/09eaecbb1c4d635bbe2b22cd HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44354 - "PUT /test-support/namespaces/e75928f31bd68b37dd6236d8 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44336 - "PUT /test-support/namespaces/ddc1b4492eaffe92504d4b10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44310 - "DELETE /test-support/namespaces/5ab807bfcfc071975c0b3f0f HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44348 - "GET /catalog/776b76e83085674df91fffdf/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44368 - "GET /catalog/c1b298b0d0b5bf65331b315b/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44300 - "PUT /test-support/namespaces/8f30c335adf55842f297d18b HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44310 - "PUT /test-support/namespaces/e67621323cd1fd425e818dce HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44336 - "GET /catalog/ddc1b4492eaffe92504d4b10/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44322 - "DELETE /test-support/namespaces/9f711dab90948b46ecf185f2 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44354 - "GET /catalog/e75928f31bd68b37dd6236d8/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44348 - "DELETE /test-support/namespaces/776b76e83085674df91fffdf HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44368 - "DELETE /test-support/namespaces/c1b298b0d0b5bf65331b315b HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44376 - "GET /catalog/a0db3bba33eec70b167928e3/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44336 - "DELETE /test-support/namespaces/ddc1b4492eaffe92504d4b10 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44300 - "GET /catalog/8f30c335adf55842f297d18b/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44310 - "GET /catalog/e67621323cd1fd425e818dce/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44322 - "PUT /test-support/namespaces/4644ff94f614b5cfab6361c4 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44336 - "PUT /test-support/namespaces/20ee8939d31e9fa7d87792eb HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44376 - "DELETE /test-support/namespaces/a0db3bba33eec70b167928e3 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44348 - "PUT /test-support/namespaces/b0a11aa2d579d7d2afca0ea6 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44368 - "PUT /test-support/namespaces/70caec8d0b3b705277ecda97 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44310 - "DELETE /test-support/namespaces/e67621323cd1fd425e818dce HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44300 - "DELETE /test-support/namespaces/8f30c335adf55842f297d18b HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44354 - "DELETE /test-support/namespaces/e75928f31bd68b37dd6236d8 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44376 - "PUT /test-support/namespaces/d0a9366710d32f8aa3c092c0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44300 - "PUT /test-support/namespaces/77fc02798f6b173ba8424269 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44310 - "PUT /test-support/namespaces/47a8cfd7c6160b88ebd87009 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44354 - "PUT /test-support/namespaces/1887a4224c86cb92a20f07e3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44368 - "GET /catalog/70caec8d0b3b705277ecda97/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44322 - "GET /catalog/4644ff94f614b5cfab6361c4/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44368 - "DELETE /test-support/namespaces/70caec8d0b3b705277ecda97 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44348 - "GET /catalog/b0a11aa2d579d7d2afca0ea6/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44336 - "GET /catalog/20ee8939d31e9fa7d87792eb/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44376 - "GET /catalog/d0a9366710d32f8aa3c092c0/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44322 - "DELETE /test-support/namespaces/4644ff94f614b5cfab6361c4 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44300 - "GET /catalog/77fc02798f6b173ba8424269/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44368 - "PUT /test-support/namespaces/53ffda242dbacd4a4943ea11 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44336 - "DELETE /test-support/namespaces/20ee8939d31e9fa7d87792eb HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44348 - "DELETE /test-support/namespaces/b0a11aa2d579d7d2afca0ea6 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44376 - "DELETE /test-support/namespaces/d0a9366710d32f8aa3c092c0 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44300 - "DELETE /test-support/namespaces/77fc02798f6b173ba8424269 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44310 - "GET /catalog/47a8cfd7c6160b88ebd87009/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44354 - "GET /catalog/1887a4224c86cb92a20f07e3/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44300 - "PUT /test-support/namespaces/23f589b421b922448f828655 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44336 - "PUT /test-support/namespaces/d3a0031c393388f7c7bf4120 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44322 - "PUT /test-support/namespaces/3b77966b1c9e64d3a43bcd72 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44354 - "DELETE /test-support/namespaces/1887a4224c86cb92a20f07e3 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44348 - "PUT /test-support/namespaces/094a5ff66b22e7436207ff4f HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44368 - "GET /catalog/53ffda242dbacd4a4943ea11/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44354 - "DELETE /test-support/namespaces/53ffda242dbacd4a4943ea11 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44310 - "DELETE /test-support/namespaces/47a8cfd7c6160b88ebd87009 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44300 - "GET /catalog/23f589b421b922448f828655/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44336 - "GET /catalog/d3a0031c393388f7c7bf4120/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44300 - "DELETE /test-support/namespaces/23f589b421b922448f828655 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44322 - "GET /catalog/3b77966b1c9e64d3a43bcd72/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44336 - "DELETE /test-support/namespaces/d3a0031c393388f7c7bf4120 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44348 - "GET /catalog/094a5ff66b22e7436207ff4f/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44322 - "DELETE /test-support/namespaces/3b77966b1c9e64d3a43bcd72 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44336 - "DELETE /test-support/namespaces/094a5ff66b22e7436207ff4f HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44378 - "PUT /test-support/namespaces/4f3fc772b57713ab53151808 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "GET /catalog/4f3fc772b57713ab53151808/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "DELETE /test-support/namespaces/4f3fc772b57713ab53151808 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44378 - "PUT /test-support/namespaces/b56719a294fd58d7020cb3e2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "GET /catalog/b56719a294fd58d7020cb3e2/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "DELETE /test-support/namespaces/b56719a294fd58d7020cb3e2 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44378 - "PUT /test-support/namespaces/2aa30ecb616ce5dce5381e27 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "GET /catalog/2aa30ecb616ce5dce5381e27/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "DELETE /test-support/namespaces/2aa30ecb616ce5dce5381e27 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44378 - "PUT /test-support/namespaces/1be57fe22f56342e05a3236e HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "GET /catalog/1be57fe22f56342e05a3236e/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "DELETE /test-support/namespaces/1be57fe22f56342e05a3236e HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44378 - "PUT /test-support/namespaces/6206de7b385debb343b58692 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "GET /catalog/6206de7b385debb343b58692/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "DELETE /test-support/namespaces/6206de7b385debb343b58692 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44378 - "PUT /test-support/namespaces/88b6b44ee9e9aa607b5770ed HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "GET /catalog/88b6b44ee9e9aa607b5770ed/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "DELETE /test-support/namespaces/88b6b44ee9e9aa607b5770ed HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44378 - "PUT /test-support/namespaces/414f4fb032a6e6a02edc405e HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "GET /catalog/414f4fb032a6e6a02edc405e/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "DELETE /test-support/namespaces/414f4fb032a6e6a02edc405e HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44378 - "PUT /test-support/namespaces/8fdf438f4fd52fa9f13b8e23 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "GET /catalog/8fdf438f4fd52fa9f13b8e23/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "DELETE /test-support/namespaces/8fdf438f4fd52fa9f13b8e23 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44378 - "PUT /test-support/namespaces/c91218c98e876c933e0d4d4c HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "GET /catalog/c91218c98e876c933e0d4d4c/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "DELETE /test-support/namespaces/c91218c98e876c933e0d4d4c HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44378 - "PUT /test-support/namespaces/97d4f110406b4cadacca5683 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "GET /catalog/97d4f110406b4cadacca5683/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "DELETE /test-support/namespaces/97d4f110406b4cadacca5683 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44378 - "PUT /test-support/namespaces/681d0a91fba31dc790e505f1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "GET /catalog/681d0a91fba31dc790e505f1/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "DELETE /test-support/namespaces/681d0a91fba31dc790e505f1 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44378 - "PUT /test-support/namespaces/3af38980150d64f89bcae343 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "GET /catalog/3af38980150d64f89bcae343/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "DELETE /test-support/namespaces/3af38980150d64f89bcae343 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44378 - "PUT /test-support/namespaces/789547a3edf4e88a88315048 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "GET /catalog/789547a3edf4e88a88315048/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "DELETE /test-support/namespaces/789547a3edf4e88a88315048 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44378 - "PUT /test-support/namespaces/0b26669870760ee10e9817c6 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "GET /catalog/0b26669870760ee10e9817c6/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "DELETE /test-support/namespaces/0b26669870760ee10e9817c6 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44378 - "PUT /test-support/namespaces/66682182e50691584fde87f3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "GET /catalog/66682182e50691584fde87f3/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "DELETE /test-support/namespaces/66682182e50691584fde87f3 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44378 - "PUT /test-support/namespaces/6e1a5eab12b632f256f6b2af HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "GET /catalog/6e1a5eab12b632f256f6b2af/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "DELETE /test-support/namespaces/6e1a5eab12b632f256f6b2af HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44378 - "PUT /test-support/namespaces/12310fbfb779eb6ab50330a2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "GET /catalog/12310fbfb779eb6ab50330a2/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "DELETE /test-support/namespaces/12310fbfb779eb6ab50330a2 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44378 - "PUT /test-support/namespaces/767c24e2619175b976cb2d48 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "GET /catalog/767c24e2619175b976cb2d48/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "DELETE /test-support/namespaces/767c24e2619175b976cb2d48 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44378 - "PUT /test-support/namespaces/8c8d8c913449d6f222a0e6e4 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "GET /catalog/8c8d8c913449d6f222a0e6e4/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "DELETE /test-support/namespaces/8c8d8c913449d6f222a0e6e4 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44378 - "PUT /test-support/namespaces/f9ed2e39e790e2649246f1b3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "GET /catalog/f9ed2e39e790e2649246f1b3/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "DELETE /test-support/namespaces/f9ed2e39e790e2649246f1b3 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44378 - "PUT /test-support/namespaces/4fcf138cef39a8ece74c9ef4 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "GET /catalog/4fcf138cef39a8ece74c9ef4/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "DELETE /test-support/namespaces/4fcf138cef39a8ece74c9ef4 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44378 - "PUT /test-support/namespaces/5407186d657349706e8469b4 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "GET /catalog/5407186d657349706e8469b4/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "DELETE /test-support/namespaces/5407186d657349706e8469b4 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44378 - "PUT /test-support/namespaces/a9d485764c2b8d45aac35ced HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "GET /catalog/a9d485764c2b8d45aac35ced/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "DELETE /test-support/namespaces/a9d485764c2b8d45aac35ced HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44378 - "PUT /test-support/namespaces/e4bc48bcf23412b49020918b HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "GET /catalog/e4bc48bcf23412b49020918b/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "DELETE /test-support/namespaces/e4bc48bcf23412b49020918b HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44378 - "PUT /test-support/namespaces/0ed97790b162251065ff1470 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "GET /catalog/0ed97790b162251065ff1470/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "DELETE /test-support/namespaces/0ed97790b162251065ff1470 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44378 - "PUT /test-support/namespaces/a49dcf2634e10ae99f42a597 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "GET /catalog/a49dcf2634e10ae99f42a597/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "DELETE /test-support/namespaces/a49dcf2634e10ae99f42a597 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44378 - "PUT /test-support/namespaces/542512104083783fb9e1ad56 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "GET /catalog/542512104083783fb9e1ad56/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "DELETE /test-support/namespaces/542512104083783fb9e1ad56 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44378 - "PUT /test-support/namespaces/26130950571f1e0ff61b4a6d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "GET /catalog/26130950571f1e0ff61b4a6d/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "DELETE /test-support/namespaces/26130950571f1e0ff61b4a6d HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44378 - "PUT /test-support/namespaces/3bd87b4c61f8b4e0d8a5eb20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "GET /catalog/3bd87b4c61f8b4e0d8a5eb20/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "DELETE /test-support/namespaces/3bd87b4c61f8b4e0d8a5eb20 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44378 - "PUT /test-support/namespaces/455afb4593551a4662af179c HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "GET /catalog/455afb4593551a4662af179c/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "DELETE /test-support/namespaces/455afb4593551a4662af179c HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44378 - "PUT /test-support/namespaces/d4fb833146360e51029fde46 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "GET /catalog/d4fb833146360e51029fde46/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "DELETE /test-support/namespaces/d4fb833146360e51029fde46 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44378 - "PUT /test-support/namespaces/74cbbbcb47471addc855ef6b HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "GET /catalog/74cbbbcb47471addc855ef6b/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "DELETE /test-support/namespaces/74cbbbcb47471addc855ef6b HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44378 - "PUT /test-support/namespaces/4d05ab9ec6d23ecd1ec9fd9a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "GET /catalog/4d05ab9ec6d23ecd1ec9fd9a/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "DELETE /test-support/namespaces/4d05ab9ec6d23ecd1ec9fd9a HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44378 - "PUT /test-support/namespaces/998c7e1202752593aaf63b7a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "GET /catalog/998c7e1202752593aaf63b7a/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "DELETE /test-support/namespaces/998c7e1202752593aaf63b7a HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44378 - "PUT /test-support/namespaces/97b88eb8f3ce616fdd19c770 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "GET /catalog/97b88eb8f3ce616fdd19c770/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "DELETE /test-support/namespaces/97b88eb8f3ce616fdd19c770 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44378 - "PUT /test-support/namespaces/001eb3f23fc4688cb5d45eb5 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "GET /catalog/001eb3f23fc4688cb5d45eb5/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "DELETE /test-support/namespaces/001eb3f23fc4688cb5d45eb5 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44378 - "PUT /test-support/namespaces/845b0ffd622d4814ef06e04a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "GET /catalog/845b0ffd622d4814ef06e04a/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "DELETE /test-support/namespaces/845b0ffd622d4814ef06e04a HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44378 - "PUT /test-support/namespaces/01ba2557e486da2d5a1b200e HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "GET /catalog/01ba2557e486da2d5a1b200e/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "DELETE /test-support/namespaces/01ba2557e486da2d5a1b200e HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44378 - "PUT /test-support/namespaces/2fccc6ff72073ac05f6c8c33 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "GET /catalog/2fccc6ff72073ac05f6c8c33/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "DELETE /test-support/namespaces/2fccc6ff72073ac05f6c8c33 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44378 - "PUT /test-support/namespaces/11271de4e2d81acc65ea7305 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "GET /catalog/11271de4e2d81acc65ea7305/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "DELETE /test-support/namespaces/11271de4e2d81acc65ea7305 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44378 - "PUT /test-support/namespaces/dced41dc81eae14c6ab47345 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "GET /catalog/dced41dc81eae14c6ab47345/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "DELETE /test-support/namespaces/dced41dc81eae14c6ab47345 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44378 - "PUT /test-support/namespaces/cb1516f3452e358474a44787 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "GET /catalog/cb1516f3452e358474a44787/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "DELETE /test-support/namespaces/cb1516f3452e358474a44787 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44378 - "PUT /test-support/namespaces/b6bb6b2d425eb67a0808a2f9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "GET /catalog/b6bb6b2d425eb67a0808a2f9/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "DELETE /test-support/namespaces/b6bb6b2d425eb67a0808a2f9 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44378 - "PUT /test-support/namespaces/12e34a2060ed12682cf46b25 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "GET /catalog/12e34a2060ed12682cf46b25/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "DELETE /test-support/namespaces/12e34a2060ed12682cf46b25 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44378 - "PUT /test-support/namespaces/7af9dba5dc9d997dfc329e21 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "GET /catalog/7af9dba5dc9d997dfc329e21/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "DELETE /test-support/namespaces/7af9dba5dc9d997dfc329e21 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44378 - "PUT /test-support/namespaces/7de1cd0a8e85c908a0cae6e9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "GET /catalog/7de1cd0a8e85c908a0cae6e9/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "DELETE /test-support/namespaces/7de1cd0a8e85c908a0cae6e9 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44378 - "PUT /test-support/namespaces/3c472174986ac565f95b0adb HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "GET /catalog/3c472174986ac565f95b0adb/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "DELETE /test-support/namespaces/3c472174986ac565f95b0adb HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44378 - "PUT /test-support/namespaces/bc119ad0dfa4840d84a6261a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "GET /catalog/bc119ad0dfa4840d84a6261a/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "DELETE /test-support/namespaces/bc119ad0dfa4840d84a6261a HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44378 - "PUT /test-support/namespaces/b69e5ed9a453b1b92a83ac7a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "GET /catalog/b69e5ed9a453b1b92a83ac7a/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "DELETE /test-support/namespaces/b69e5ed9a453b1b92a83ac7a HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44378 - "PUT /test-support/namespaces/cc2a5e169dfa3fc0b997c80f HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "GET /catalog/cc2a5e169dfa3fc0b997c80f/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "DELETE /test-support/namespaces/cc2a5e169dfa3fc0b997c80f HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44378 - "PUT /test-support/namespaces/3bad19084aa87273e087baa0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "GET /catalog/3bad19084aa87273e087baa0/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "DELETE /test-support/namespaces/3bad19084aa87273e087baa0 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44378 - "PUT /test-support/namespaces/74a21828b6628e0a9586858b HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "GET /catalog/74a21828b6628e0a9586858b/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "DELETE /test-support/namespaces/74a21828b6628e0a9586858b HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44378 - "PUT /test-support/namespaces/91e248960e43f78e3e8960d9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "GET /catalog/91e248960e43f78e3e8960d9/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "DELETE /test-support/namespaces/91e248960e43f78e3e8960d9 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44378 - "PUT /test-support/namespaces/25a24e1d859f0ba43898d5a1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "GET /catalog/25a24e1d859f0ba43898d5a1/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "DELETE /test-support/namespaces/25a24e1d859f0ba43898d5a1 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44378 - "PUT /test-support/namespaces/0ef149bb4ca7b9a3546e70ab HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "GET /catalog/0ef149bb4ca7b9a3546e70ab/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "DELETE /test-support/namespaces/0ef149bb4ca7b9a3546e70ab HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44378 - "PUT /test-support/namespaces/2e1d27d4b953166ef02fc79d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "GET /catalog/2e1d27d4b953166ef02fc79d/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "DELETE /test-support/namespaces/2e1d27d4b953166ef02fc79d HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44378 - "PUT /test-support/namespaces/ab3e548d285ee124221f4b1d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "GET /catalog/ab3e548d285ee124221f4b1d/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "DELETE /test-support/namespaces/ab3e548d285ee124221f4b1d HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44378 - "PUT /test-support/namespaces/c7f716852d823001a48ae6c4 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "GET /catalog/c7f716852d823001a48ae6c4/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "DELETE /test-support/namespaces/c7f716852d823001a48ae6c4 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44378 - "PUT /test-support/namespaces/62d57706c4bba99ed4fefe67 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "GET /catalog/62d57706c4bba99ed4fefe67/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "DELETE /test-support/namespaces/62d57706c4bba99ed4fefe67 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44378 - "PUT /test-support/namespaces/3189e31b36600c8fffc54095 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "GET /catalog/3189e31b36600c8fffc54095/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44378 - "DELETE /test-support/namespaces/3189e31b36600c8fffc54095 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44386 - "PUT /test-support/namespaces/a9de0bd3dcf2605c63a37430 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "GET /catalog/a9de0bd3dcf2605c63a37430/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "DELETE /test-support/namespaces/a9de0bd3dcf2605c63a37430 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44386 - "PUT /test-support/namespaces/14d8d32c415f15aa75e65dc1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "GET /catalog/14d8d32c415f15aa75e65dc1/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "DELETE /test-support/namespaces/14d8d32c415f15aa75e65dc1 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44386 - "PUT /test-support/namespaces/ac1815b8533182af63b0b252 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "GET /catalog/ac1815b8533182af63b0b252/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "DELETE /test-support/namespaces/ac1815b8533182af63b0b252 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44386 - "PUT /test-support/namespaces/a5f293496d17670fa1a493f8 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "GET /catalog/a5f293496d17670fa1a493f8/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "DELETE /test-support/namespaces/a5f293496d17670fa1a493f8 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44386 - "PUT /test-support/namespaces/415bf47aafe2099476806c16 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "GET /catalog/415bf47aafe2099476806c16/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "DELETE /test-support/namespaces/415bf47aafe2099476806c16 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44386 - "PUT /test-support/namespaces/88fbf9b1f28cf3bf9c23c0f6 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "GET /catalog/88fbf9b1f28cf3bf9c23c0f6/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "DELETE /test-support/namespaces/88fbf9b1f28cf3bf9c23c0f6 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44386 - "PUT /test-support/namespaces/625216c60acf921fecebf871 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "GET /catalog/625216c60acf921fecebf871/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "DELETE /test-support/namespaces/625216c60acf921fecebf871 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44386 - "PUT /test-support/namespaces/3ba639638d9ec2551fefd2e4 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "GET /catalog/3ba639638d9ec2551fefd2e4/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "DELETE /test-support/namespaces/3ba639638d9ec2551fefd2e4 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44386 - "PUT /test-support/namespaces/1eda425404cc94101b785b86 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "GET /catalog/1eda425404cc94101b785b86/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "DELETE /test-support/namespaces/1eda425404cc94101b785b86 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44386 - "PUT /test-support/namespaces/18a4ddab3d890f9341f49feb HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "GET /catalog/18a4ddab3d890f9341f49feb/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "DELETE /test-support/namespaces/18a4ddab3d890f9341f49feb HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44386 - "PUT /test-support/namespaces/9d031b9fe2708742995b0382 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "GET /catalog/9d031b9fe2708742995b0382/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "DELETE /test-support/namespaces/9d031b9fe2708742995b0382 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44386 - "PUT /test-support/namespaces/f543a17fc1d53683386f6cb6 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "GET /catalog/f543a17fc1d53683386f6cb6/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "DELETE /test-support/namespaces/f543a17fc1d53683386f6cb6 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44386 - "PUT /test-support/namespaces/77282c77a6f6cb1b99ab43d2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "GET /catalog/77282c77a6f6cb1b99ab43d2/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "DELETE /test-support/namespaces/77282c77a6f6cb1b99ab43d2 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44386 - "PUT /test-support/namespaces/3ee2d70c6076dc650ab0c2f2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "GET /catalog/3ee2d70c6076dc650ab0c2f2/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "DELETE /test-support/namespaces/3ee2d70c6076dc650ab0c2f2 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44386 - "PUT /test-support/namespaces/88982989e51d7bae908b5bc0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "GET /catalog/88982989e51d7bae908b5bc0/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "DELETE /test-support/namespaces/88982989e51d7bae908b5bc0 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44386 - "PUT /test-support/namespaces/65229160ebda7052e5465a29 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "GET /catalog/65229160ebda7052e5465a29/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "DELETE /test-support/namespaces/65229160ebda7052e5465a29 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44386 - "PUT /test-support/namespaces/0707e7c768ee58a917e0ea05 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "GET /catalog/0707e7c768ee58a917e0ea05/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "DELETE /test-support/namespaces/0707e7c768ee58a917e0ea05 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44386 - "PUT /test-support/namespaces/5c460975536cf59b4835cbeb HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "GET /catalog/5c460975536cf59b4835cbeb/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "DELETE /test-support/namespaces/5c460975536cf59b4835cbeb HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44386 - "PUT /test-support/namespaces/b81a577a4e3ec7193c3a8234 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "GET /catalog/b81a577a4e3ec7193c3a8234/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "DELETE /test-support/namespaces/b81a577a4e3ec7193c3a8234 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44386 - "PUT /test-support/namespaces/887fa7c613a44e802dac942e HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "GET /catalog/887fa7c613a44e802dac942e/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "DELETE /test-support/namespaces/887fa7c613a44e802dac942e HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44386 - "PUT /test-support/namespaces/1841c91c01893c991fb4cdb9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "GET /catalog/1841c91c01893c991fb4cdb9/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "DELETE /test-support/namespaces/1841c91c01893c991fb4cdb9 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44386 - "PUT /test-support/namespaces/c81bdc23f7fc03c080085b78 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "GET /catalog/c81bdc23f7fc03c080085b78/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "DELETE /test-support/namespaces/c81bdc23f7fc03c080085b78 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44386 - "PUT /test-support/namespaces/9a01f5441d5596fa4a7287d8 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "GET /catalog/9a01f5441d5596fa4a7287d8/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "DELETE /test-support/namespaces/9a01f5441d5596fa4a7287d8 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44386 - "PUT /test-support/namespaces/01e14b0753bb248098f6a97e HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "GET /catalog/01e14b0753bb248098f6a97e/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "DELETE /test-support/namespaces/01e14b0753bb248098f6a97e HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44386 - "PUT /test-support/namespaces/c659cee1c013e8f4907fe491 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "GET /catalog/c659cee1c013e8f4907fe491/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "DELETE /test-support/namespaces/c659cee1c013e8f4907fe491 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44386 - "PUT /test-support/namespaces/fe7b69207fe8eb3ea630374b HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "GET /catalog/fe7b69207fe8eb3ea630374b/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "DELETE /test-support/namespaces/fe7b69207fe8eb3ea630374b HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44386 - "PUT /test-support/namespaces/fb88b98b06102036b631a319 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "GET /catalog/fb88b98b06102036b631a319/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "DELETE /test-support/namespaces/fb88b98b06102036b631a319 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44386 - "PUT /test-support/namespaces/3cac68f16fe5f9ef05e3157a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "GET /catalog/3cac68f16fe5f9ef05e3157a/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "DELETE /test-support/namespaces/3cac68f16fe5f9ef05e3157a HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44386 - "PUT /test-support/namespaces/ed664070c25d671bd872fd6f HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "GET /catalog/ed664070c25d671bd872fd6f/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "DELETE /test-support/namespaces/ed664070c25d671bd872fd6f HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44386 - "PUT /test-support/namespaces/342df88ca7ada5f9d6f4d783 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "GET /catalog/342df88ca7ada5f9d6f4d783/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "DELETE /test-support/namespaces/342df88ca7ada5f9d6f4d783 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44386 - "PUT /test-support/namespaces/2f95aebd467bd82da47dabc6 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "GET /catalog/2f95aebd467bd82da47dabc6/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "DELETE /test-support/namespaces/2f95aebd467bd82da47dabc6 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44386 - "PUT /test-support/namespaces/b0f9118669027e81538b1593 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "GET /catalog/b0f9118669027e81538b1593/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "DELETE /test-support/namespaces/b0f9118669027e81538b1593 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44386 - "PUT /test-support/namespaces/2e7407cbaee78c97e6e9e020 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "GET /catalog/2e7407cbaee78c97e6e9e020/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "DELETE /test-support/namespaces/2e7407cbaee78c97e6e9e020 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44386 - "PUT /test-support/namespaces/db5bb9f8f81894792486600d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "GET /catalog/db5bb9f8f81894792486600d/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "DELETE /test-support/namespaces/db5bb9f8f81894792486600d HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44386 - "PUT /test-support/namespaces/75b72cf69784bd3062f43c3d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "GET /catalog/75b72cf69784bd3062f43c3d/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "DELETE /test-support/namespaces/75b72cf69784bd3062f43c3d HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44386 - "PUT /test-support/namespaces/5d229b4ab9bab090324ac6ec HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "GET /catalog/5d229b4ab9bab090324ac6ec/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "DELETE /test-support/namespaces/5d229b4ab9bab090324ac6ec HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44386 - "PUT /test-support/namespaces/66622c723031f53f7d25ab9d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "GET /catalog/66622c723031f53f7d25ab9d/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "DELETE /test-support/namespaces/66622c723031f53f7d25ab9d HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44386 - "PUT /test-support/namespaces/346d664b2c6995c52c79c3a5 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "GET /catalog/346d664b2c6995c52c79c3a5/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "DELETE /test-support/namespaces/346d664b2c6995c52c79c3a5 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44386 - "PUT /test-support/namespaces/bb918be34d8ed240e37e697a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "GET /catalog/bb918be34d8ed240e37e697a/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "DELETE /test-support/namespaces/bb918be34d8ed240e37e697a HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44386 - "PUT /test-support/namespaces/dcc99dd44e609b7a0c4a35fe HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "GET /catalog/dcc99dd44e609b7a0c4a35fe/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "DELETE /test-support/namespaces/dcc99dd44e609b7a0c4a35fe HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44386 - "PUT /test-support/namespaces/a4ebc56158861857c6ee5daf HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "GET /catalog/a4ebc56158861857c6ee5daf/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "DELETE /test-support/namespaces/a4ebc56158861857c6ee5daf HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44386 - "PUT /test-support/namespaces/aaf3327f4a54d6f9853a5f44 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "GET /catalog/aaf3327f4a54d6f9853a5f44/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "DELETE /test-support/namespaces/aaf3327f4a54d6f9853a5f44 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44386 - "PUT /test-support/namespaces/9d21ab2f3395837374212dd8 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "GET /catalog/9d21ab2f3395837374212dd8/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "DELETE /test-support/namespaces/9d21ab2f3395837374212dd8 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44386 - "PUT /test-support/namespaces/0c7f9fa94afab63de8f5da91 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "GET /catalog/0c7f9fa94afab63de8f5da91/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "DELETE /test-support/namespaces/0c7f9fa94afab63de8f5da91 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44386 - "PUT /test-support/namespaces/f844bdd5d5cc438fed1adf9a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "GET /catalog/f844bdd5d5cc438fed1adf9a/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "DELETE /test-support/namespaces/f844bdd5d5cc438fed1adf9a HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44386 - "PUT /test-support/namespaces/32e659f9a91e6955bb3caefc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "GET /catalog/32e659f9a91e6955bb3caefc/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "DELETE /test-support/namespaces/32e659f9a91e6955bb3caefc HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44386 - "PUT /test-support/namespaces/c0892b35c6c6da758e65712f HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "GET /catalog/c0892b35c6c6da758e65712f/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "DELETE /test-support/namespaces/c0892b35c6c6da758e65712f HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44386 - "PUT /test-support/namespaces/b9d1188835d7314358c84c24 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "GET /catalog/b9d1188835d7314358c84c24/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "DELETE /test-support/namespaces/b9d1188835d7314358c84c24 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44386 - "PUT /test-support/namespaces/f14bb04f15249638694e89fd HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "GET /catalog/f14bb04f15249638694e89fd/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "DELETE /test-support/namespaces/f14bb04f15249638694e89fd HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44386 - "PUT /test-support/namespaces/37a260c698cd274e2babdfb2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "GET /catalog/37a260c698cd274e2babdfb2/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "DELETE /test-support/namespaces/37a260c698cd274e2babdfb2 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44386 - "PUT /test-support/namespaces/86a8cad989964485e184d205 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "GET /catalog/86a8cad989964485e184d205/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "DELETE /test-support/namespaces/86a8cad989964485e184d205 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44386 - "PUT /test-support/namespaces/802893f0812d9c50d60afc17 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "GET /catalog/802893f0812d9c50d60afc17/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "DELETE /test-support/namespaces/802893f0812d9c50d60afc17 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44386 - "PUT /test-support/namespaces/93ff3f9684d4b05e3ee650d5 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "GET /catalog/93ff3f9684d4b05e3ee650d5/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "DELETE /test-support/namespaces/93ff3f9684d4b05e3ee650d5 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44386 - "PUT /test-support/namespaces/b3d1cbffc3ed6f6664c384e8 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "GET /catalog/b3d1cbffc3ed6f6664c384e8/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "DELETE /test-support/namespaces/b3d1cbffc3ed6f6664c384e8 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44386 - "PUT /test-support/namespaces/f0f8cdda97184829fd6917d1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "GET /catalog/f0f8cdda97184829fd6917d1/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "DELETE /test-support/namespaces/f0f8cdda97184829fd6917d1 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44386 - "PUT /test-support/namespaces/cf402fe7ca5dc76f248c9660 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "GET /catalog/cf402fe7ca5dc76f248c9660/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "DELETE /test-support/namespaces/cf402fe7ca5dc76f248c9660 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44386 - "PUT /test-support/namespaces/ba956e525d21733c024f9ffa HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "GET /catalog/ba956e525d21733c024f9ffa/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "DELETE /test-support/namespaces/ba956e525d21733c024f9ffa HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44386 - "PUT /test-support/namespaces/e0556894c6df8d073f1503ef HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "GET /catalog/e0556894c6df8d073f1503ef/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "DELETE /test-support/namespaces/e0556894c6df8d073f1503ef HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44386 - "PUT /test-support/namespaces/936fb45a68bb0d6e53431d19 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "GET /catalog/936fb45a68bb0d6e53431d19/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "DELETE /test-support/namespaces/936fb45a68bb0d6e53431d19 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:44386 - "PUT /test-support/namespaces/047974982391c2deab280f9a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "GET /catalog/047974982391c2deab280f9a/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44386 - "DELETE /test-support/namespaces/047974982391c2deab280f9a HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45790 - "PUT /test-support/namespaces/a47cd0ccb67ede99352e0e77 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45790 - "GET /catalog/a47cd0ccb67ede99352e0e77/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45810 - "PUT /test-support/namespaces/1500b92b5db209b08edb8788 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45806 - "PUT /test-support/namespaces/896ebcea5faac3467aef2f4c HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45816 - "PUT /test-support/namespaces/ce60aeb3fd340b2a43d2236b HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45790 - "DELETE /test-support/namespaces/a47cd0ccb67ede99352e0e77 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45816 - "PUT /test-support/namespaces/1c05d8b363243b87d2054be4 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45810 - "GET /catalog/1500b92b5db209b08edb8788/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45806 - "GET /catalog/ce60aeb3fd340b2a43d2236b/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45790 - "GET /catalog/896ebcea5faac3467aef2f4c/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45790 - "DELETE /test-support/namespaces/896ebcea5faac3467aef2f4c HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45816 - "GET /catalog/1c05d8b363243b87d2054be4/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45790 - "DELETE /test-support/namespaces/1c05d8b363243b87d2054be4 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45806 - "DELETE /test-support/namespaces/ce60aeb3fd340b2a43d2236b HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45810 - "DELETE /test-support/namespaces/1500b92b5db209b08edb8788 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45806 - "PUT /test-support/namespaces/0ea0b589d1e90c556f570222 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45790 - "PUT /test-support/namespaces/024ef25b71e8e550b332273c HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45810 - "PUT /test-support/namespaces/d6cd154b3b09ff7911e1f1cd HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45806 - "GET /catalog/0ea0b589d1e90c556f570222/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45816 - "PUT /test-support/namespaces/cdfb8ce2761c09f518a322dd HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45790 - "GET /catalog/024ef25b71e8e550b332273c/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45810 - "GET /catalog/d6cd154b3b09ff7911e1f1cd/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45806 - "DELETE /test-support/namespaces/0ea0b589d1e90c556f570222 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45816 - "GET /catalog/cdfb8ce2761c09f518a322dd/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45810 - "DELETE /test-support/namespaces/024ef25b71e8e550b332273c HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45790 - "DELETE /test-support/namespaces/d6cd154b3b09ff7911e1f1cd HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45806 - "DELETE /test-support/namespaces/cdfb8ce2761c09f518a322dd HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45790 - "PUT /test-support/namespaces/780c39ba166ade49677359a6 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45806 - "PUT /test-support/namespaces/98e4faefdb253e7f6619081b HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45790 - "GET /catalog/780c39ba166ade49677359a6/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45816 - "PUT /test-support/namespaces/6e95408218202c16801bc32f HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45806 - "GET /catalog/98e4faefdb253e7f6619081b/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45806 - "DELETE /test-support/namespaces/98e4faefdb253e7f6619081b HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45790 - "DELETE /test-support/namespaces/780c39ba166ade49677359a6 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45810 - "GET /catalog/6e95408218202c16801bc32f/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45806 - "DELETE /test-support/namespaces/6e95408218202c16801bc32f HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45790 - "PUT /test-support/namespaces/501241872e6937bcd5b3b0b8 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45810 - "PUT /test-support/namespaces/8c1c149af770867516de4586 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45806 - "PUT /test-support/namespaces/1da95ab591459927807eeea0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45816 - "PUT /test-support/namespaces/4b7dbc4454371dcc13c2dbc2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45806 - "GET /catalog/1da95ab591459927807eeea0/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45790 - "GET /catalog/501241872e6937bcd5b3b0b8/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45806 - "DELETE /test-support/namespaces/1da95ab591459927807eeea0 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45810 - "GET /catalog/8c1c149af770867516de4586/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45816 - "GET /catalog/4b7dbc4454371dcc13c2dbc2/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45806 - "DELETE /test-support/namespaces/501241872e6937bcd5b3b0b8 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45816 - "DELETE /test-support/namespaces/4b7dbc4454371dcc13c2dbc2 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45790 - "PUT /test-support/namespaces/bccfc94ede47e0bcd86dc88e HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45816 - "PUT /test-support/namespaces/8e7317254f2ffb83e4758f78 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45810 - "DELETE /test-support/namespaces/8c1c149af770867516de4586 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45810 - "PUT /test-support/namespaces/f33ba4f849801c5301873072 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45806 - "GET /catalog/8e7317254f2ffb83e4758f78/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45790 - "GET /catalog/bccfc94ede47e0bcd86dc88e/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45810 - "GET /catalog/f33ba4f849801c5301873072/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45806 - "DELETE /test-support/namespaces/8e7317254f2ffb83e4758f78 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45810 - "DELETE /test-support/namespaces/f33ba4f849801c5301873072 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45790 - "DELETE /test-support/namespaces/bccfc94ede47e0bcd86dc88e HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45816 - "PUT /test-support/namespaces/c7f391668fea2466758e5d26 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45806 - "PUT /test-support/namespaces/1a3b4eb417c94bae6dc02fb9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45810 - "PUT /test-support/namespaces/28305439935bc73f27d8f787 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45790 - "GET /catalog/1a3b4eb417c94bae6dc02fb9/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45816 - "PUT /test-support/namespaces/8ca8922dbb5b810e3006e531 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45790 - "DELETE /test-support/namespaces/1a3b4eb417c94bae6dc02fb9 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45806 - "GET /catalog/c7f391668fea2466758e5d26/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45810 - "GET /catalog/28305439935bc73f27d8f787/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45790 - "DELETE /test-support/namespaces/28305439935bc73f27d8f787 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45816 - "GET /catalog/8ca8922dbb5b810e3006e531/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45806 - "PUT /test-support/namespaces/2b23a555fe65052bdb341e6a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45810 - "DELETE /test-support/namespaces/c7f391668fea2466758e5d26 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45790 - "PUT /test-support/namespaces/2c30e8d69f07361488ec17b8 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45816 - "DELETE /test-support/namespaces/8ca8922dbb5b810e3006e531 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45810 - "PUT /test-support/namespaces/df64542776bdd618c56ddde0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45816 - "PUT /test-support/namespaces/fd18edb41ce07ab2c283b4dc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45806 - "GET /catalog/2b23a555fe65052bdb341e6a/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45790 - "GET /catalog/2c30e8d69f07361488ec17b8/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45806 - "DELETE /test-support/namespaces/2b23a555fe65052bdb341e6a HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45810 - "GET /catalog/df64542776bdd618c56ddde0/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45790 - "DELETE /test-support/namespaces/2c30e8d69f07361488ec17b8 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45806 - "PUT /test-support/namespaces/2fd529da802982d49e2283ad HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45790 - "PUT /test-support/namespaces/3932dcaccb9adab6c50e0b1d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45810 - "DELETE /test-support/namespaces/df64542776bdd618c56ddde0 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45810 - "PUT /test-support/namespaces/bd37d751736a0e2f1f93b762 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45806 - "GET /catalog/2fd529da802982d49e2283ad/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45790 - "GET /catalog/3932dcaccb9adab6c50e0b1d/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45816 - "GET /catalog/fd18edb41ce07ab2c283b4dc/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45806 - "DELETE /test-support/namespaces/2fd529da802982d49e2283ad HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45816 - "DELETE /test-support/namespaces/fd18edb41ce07ab2c283b4dc HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45790 - "DELETE /test-support/namespaces/3932dcaccb9adab6c50e0b1d HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45806 - "PUT /test-support/namespaces/8acdc21c405d3ad06fa7cf20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45810 - "GET /catalog/bd37d751736a0e2f1f93b762/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45806 - "DELETE /test-support/namespaces/bd37d751736a0e2f1f93b762 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45806 - "PUT /test-support/namespaces/fa0c46f7bcf594e8b0a0e44c HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45810 - "PUT /test-support/namespaces/9fd3d0740b05aeaa8cac0f48 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45816 - "PUT /test-support/namespaces/69ed43778d1cc624739bc0a6 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45790 - "GET /catalog/8acdc21c405d3ad06fa7cf20/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45790 - "DELETE /test-support/namespaces/8acdc21c405d3ad06fa7cf20 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45790 - "PUT /test-support/namespaces/17bdc30b88c5b14df3e4a7eb HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45810 - "GET /catalog/9fd3d0740b05aeaa8cac0f48/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45806 - "GET /catalog/fa0c46f7bcf594e8b0a0e44c/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45790 - "GET /catalog/17bdc30b88c5b14df3e4a7eb/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45816 - "GET /catalog/69ed43778d1cc624739bc0a6/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45810 - "DELETE /test-support/namespaces/9fd3d0740b05aeaa8cac0f48 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45806 - "DELETE /test-support/namespaces/fa0c46f7bcf594e8b0a0e44c HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45790 - "DELETE /test-support/namespaces/17bdc30b88c5b14df3e4a7eb HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45810 - "DELETE /test-support/namespaces/69ed43778d1cc624739bc0a6 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45790 - "PUT /test-support/namespaces/bc55e6bcaf393202fe207e98 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45806 - "PUT /test-support/namespaces/cc4d177456046490dad89169 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45810 - "PUT /test-support/namespaces/18718a707aaa6d3c37d35a1c HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45790 - "GET /catalog/bc55e6bcaf393202fe207e98/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45790 - "DELETE /test-support/namespaces/bc55e6bcaf393202fe207e98 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45806 - "GET /catalog/cc4d177456046490dad89169/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45816 - "PUT /test-support/namespaces/1ca3195eb0dc85f257056748 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45790 - "DELETE /test-support/namespaces/cc4d177456046490dad89169 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45806 - "PUT /test-support/namespaces/2b898b9a8cd6ebbf5aa9bda3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45810 - "GET /catalog/18718a707aaa6d3c37d35a1c/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45816 - "GET /catalog/1ca3195eb0dc85f257056748/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45810 - "PUT /test-support/namespaces/ffe9e12cb205a5a85ef1f5b1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45806 - "DELETE /test-support/namespaces/18718a707aaa6d3c37d35a1c HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45790 - "GET /catalog/2b898b9a8cd6ebbf5aa9bda3/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45806 - "DELETE /test-support/namespaces/1ca3195eb0dc85f257056748 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45810 - "DELETE /test-support/namespaces/2b898b9a8cd6ebbf5aa9bda3 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45806 - "PUT /test-support/namespaces/ade2073ccca59aa8260d740f HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45810 - "PUT /test-support/namespaces/ff3f0ecd9307ce69df93c238 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45790 - "GET /catalog/ffe9e12cb205a5a85ef1f5b1/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45790 - "DELETE /test-support/namespaces/ffe9e12cb205a5a85ef1f5b1 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45790 - "PUT /test-support/namespaces/f88d5fab98b3791310f7f465 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45816 - "PUT /test-support/namespaces/c7a66d2d1085f005ebca999e HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45806 - "GET /catalog/ade2073ccca59aa8260d740f/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45810 - "GET /catalog/ff3f0ecd9307ce69df93c238/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45790 - "DELETE /test-support/namespaces/ade2073ccca59aa8260d740f HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45810 - "DELETE /test-support/namespaces/ff3f0ecd9307ce69df93c238 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45806 - "GET /catalog/c7a66d2d1085f005ebca999e/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45790 - "GET /catalog/f88d5fab98b3791310f7f465/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45816 - "PUT /test-support/namespaces/1bfdceb0f0bd1031a66fe344 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45810 - "PUT /test-support/namespaces/ac86e2ff3abef421f7d86f00 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45806 - "DELETE /test-support/namespaces/c7a66d2d1085f005ebca999e HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45816 - "GET /catalog/1bfdceb0f0bd1031a66fe344/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45790 - "PUT /test-support/namespaces/87643f5c2cd5bb6df6cbe4dd HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45806 - "GET /catalog/ac86e2ff3abef421f7d86f00/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45790 - "DELETE /test-support/namespaces/1bfdceb0f0bd1031a66fe344 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45816 - "DELETE /test-support/namespaces/f88d5fab98b3791310f7f465 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45806 - "DELETE /test-support/namespaces/ac86e2ff3abef421f7d86f00 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45790 - "PUT /test-support/namespaces/b2bac917f0b4421927c2148e HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45806 - "PUT /test-support/namespaces/a7358c5afa908561a2d4ecea HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45810 - "GET /catalog/87643f5c2cd5bb6df6cbe4dd/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45810 - "DELETE /test-support/namespaces/87643f5c2cd5bb6df6cbe4dd HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45806 - "GET /catalog/a7358c5afa908561a2d4ecea/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45790 - "GET /catalog/b2bac917f0b4421927c2148e/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45810 - "PUT /test-support/namespaces/d7e1095dce65eb2562030eb2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45816 - "PUT /test-support/namespaces/dbed2e0cff069460cd34152a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45806 - "DELETE /test-support/namespaces/a7358c5afa908561a2d4ecea HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45790 - "DELETE /test-support/namespaces/b2bac917f0b4421927c2148e HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45790 - "GET /catalog/d7e1095dce65eb2562030eb2/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45810 - "PUT /test-support/namespaces/0d94b6e4a591b305333c934c HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45806 - "GET /catalog/dbed2e0cff069460cd34152a/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45816 - "PUT /test-support/namespaces/e322bc855379fe6d92442793 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45790 - "DELETE /test-support/namespaces/d7e1095dce65eb2562030eb2 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45806 - "DELETE /test-support/namespaces/dbed2e0cff069460cd34152a HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45816 - "PUT /test-support/namespaces/a522792504bbf685b7a7c6c9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45790 - "GET /catalog/e322bc855379fe6d92442793/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45810 - "GET /catalog/0d94b6e4a591b305333c934c/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45806 - "GET /catalog/a522792504bbf685b7a7c6c9/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45810 - "DELETE /test-support/namespaces/0d94b6e4a591b305333c934c HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45806 - "DELETE /test-support/namespaces/a522792504bbf685b7a7c6c9 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45790 - "DELETE /test-support/namespaces/e322bc855379fe6d92442793 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45816 - "PUT /test-support/namespaces/0e201dfe2eb96dee8aa526ac HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45806 - "PUT /test-support/namespaces/7a19449288201b1b3f491dc9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45790 - "PUT /test-support/namespaces/bdd2b5ae372b52dbbf9f9494 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45810 - "PUT /test-support/namespaces/6324bd80d2157ea321a4f1ab HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45790 - "GET /catalog/bdd2b5ae372b52dbbf9f9494/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45816 - "GET /catalog/0e201dfe2eb96dee8aa526ac/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45806 - "GET /catalog/7a19449288201b1b3f491dc9/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45790 - "DELETE /test-support/namespaces/bdd2b5ae372b52dbbf9f9494 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45816 - "DELETE /test-support/namespaces/0e201dfe2eb96dee8aa526ac HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45806 - "DELETE /test-support/namespaces/7a19449288201b1b3f491dc9 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45810 - "GET /catalog/6324bd80d2157ea321a4f1ab/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45790 - "DELETE /test-support/namespaces/6324bd80d2157ea321a4f1ab HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45806 - "PUT /test-support/namespaces/db65caf798e2b2414e4e029d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45790 - "GET /catalog/db65caf798e2b2414e4e029d/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45790 - "DELETE /test-support/namespaces/db65caf798e2b2414e4e029d HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45826 - "PUT /test-support/namespaces/95688c22ff2266621f04d6a8 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45842 - "PUT /test-support/namespaces/22d0e4618fd7555b206015e2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45826 - "GET /catalog/95688c22ff2266621f04d6a8/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45852 - "PUT /test-support/namespaces/e6da3ad621d0dcde04dcd239 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45842 - "GET /catalog/22d0e4618fd7555b206015e2/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45842 - "DELETE /test-support/namespaces/22d0e4618fd7555b206015e2 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45826 - "DELETE /test-support/namespaces/95688c22ff2266621f04d6a8 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45866 - "PUT /test-support/namespaces/05ffe52ad69cca82a2393c2b HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45842 - "PUT /test-support/namespaces/2678011f44d514f109598f13 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45826 - "PUT /test-support/namespaces/0f82ccabb0e5b5701ea518b9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45852 - "GET /catalog/e6da3ad621d0dcde04dcd239/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45852 - "DELETE /test-support/namespaces/e6da3ad621d0dcde04dcd239 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45852 - "PUT /test-support/namespaces/a66646722e0a34fcf98943b7 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45842 - "GET /catalog/2678011f44d514f109598f13/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45866 - "GET /catalog/05ffe52ad69cca82a2393c2b/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45826 - "GET /catalog/0f82ccabb0e5b5701ea518b9/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45866 - "DELETE /test-support/namespaces/05ffe52ad69cca82a2393c2b HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45826 - "DELETE /test-support/namespaces/0f82ccabb0e5b5701ea518b9 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45842 - "DELETE /test-support/namespaces/2678011f44d514f109598f13 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45852 - "GET /catalog/a66646722e0a34fcf98943b7/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45826 - "PUT /test-support/namespaces/0f324748219d7d0b61f7160f HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45866 - "PUT /test-support/namespaces/fa8df305498e2d3b27c9cbbe HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45842 - "PUT /test-support/namespaces/c2637cfa05ec4abdc40fb977 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45852 - "DELETE /test-support/namespaces/a66646722e0a34fcf98943b7 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45852 - "PUT /test-support/namespaces/ae724df50899ef5da75b28a4 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45866 - "GET /catalog/fa8df305498e2d3b27c9cbbe/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45826 - "GET /catalog/0f324748219d7d0b61f7160f/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45842 - "GET /catalog/c2637cfa05ec4abdc40fb977/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45866 - "DELETE /test-support/namespaces/fa8df305498e2d3b27c9cbbe HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45826 - "DELETE /test-support/namespaces/0f324748219d7d0b61f7160f HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45842 - "DELETE /test-support/namespaces/c2637cfa05ec4abdc40fb977 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45852 - "GET /catalog/ae724df50899ef5da75b28a4/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45826 - "PUT /test-support/namespaces/4e29130743eece3530f247b0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45842 - "PUT /test-support/namespaces/60ad5ca66b96ad31cf5ed2ff HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45866 - "PUT /test-support/namespaces/2040fb53e4ca085893d534b2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45852 - "DELETE /test-support/namespaces/ae724df50899ef5da75b28a4 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45842 - "GET /catalog/60ad5ca66b96ad31cf5ed2ff/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45852 - "PUT /test-support/namespaces/9e877c9f768a26e7cc810154 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45866 - "GET /catalog/2040fb53e4ca085893d534b2/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45826 - "GET /catalog/4e29130743eece3530f247b0/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45842 - "DELETE /test-support/namespaces/60ad5ca66b96ad31cf5ed2ff HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45866 - "DELETE /test-support/namespaces/2040fb53e4ca085893d534b2 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45852 - "GET /catalog/9e877c9f768a26e7cc810154/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45842 - "DELETE /test-support/namespaces/4e29130743eece3530f247b0 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45826 - "PUT /test-support/namespaces/10104ec70046139e178572b6 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45866 - "PUT /test-support/namespaces/d59ce631de3c0a40544dbceb HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45842 - "DELETE /test-support/namespaces/9e877c9f768a26e7cc810154 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45882 - "PUT /test-support/namespaces/594886e3a17feb8baa79f0ea HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45826 - "PUT /test-support/namespaces/9343146ad7a3cbd0091fa7ec HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45842 - "PUT /test-support/namespaces/6ee85846f03041397305a30d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45884 - "PUT /test-support/namespaces/40abcafec7349285d9e2821e HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45852 - "GET /catalog/d59ce631de3c0a40544dbceb/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45866 - "GET /catalog/10104ec70046139e178572b6/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45826 - "GET /catalog/9343146ad7a3cbd0091fa7ec/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45852 - "DELETE /test-support/namespaces/d59ce631de3c0a40544dbceb HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45882 - "PUT /test-support/namespaces/525d3e7eced6b71a96f8165d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45842 - "GET /catalog/6ee85846f03041397305a30d/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45894 - "PUT /test-support/namespaces/e741ebfa4b88783acd862f32 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45826 - "DELETE /test-support/namespaces/9343146ad7a3cbd0091fa7ec HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45884 - "GET /catalog/40abcafec7349285d9e2821e/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45906 - "GET /catalog/594886e3a17feb8baa79f0ea/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45852 - "PUT /test-support/namespaces/c5b49d3e5e83585fe6354ed0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45842 - "DELETE /test-support/namespaces/6ee85846f03041397305a30d HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45866 - "DELETE /test-support/namespaces/10104ec70046139e178572b6 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45884 - "DELETE /test-support/namespaces/40abcafec7349285d9e2821e HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45882 - "GET /catalog/525d3e7eced6b71a96f8165d/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45894 - "GET /catalog/e741ebfa4b88783acd862f32/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45842 - "PUT /test-support/namespaces/a623d9d11caef00e30064124 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45826 - "GET /catalog/c5b49d3e5e83585fe6354ed0/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45852 - "PUT /test-support/namespaces/e018fb94be97cd1e6ed073ed HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45866 - "PUT /test-support/namespaces/304d0ed17123da34a2dd471b HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45826 - "DELETE /test-support/namespaces/c5b49d3e5e83585fe6354ed0 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45894 - "DELETE /test-support/namespaces/e741ebfa4b88783acd862f32 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45826 - "PUT /test-support/namespaces/597f97a87de91a4fc9c48304 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45842 - "GET /catalog/a623d9d11caef00e30064124/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45842 - "DELETE /test-support/namespaces/a623d9d11caef00e30064124 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45882 - "DELETE /test-support/namespaces/525d3e7eced6b71a96f8165d HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45906 - "DELETE /test-support/namespaces/594886e3a17feb8baa79f0ea HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45894 - "PUT /test-support/namespaces/eff3b44b82db32e82f9fe24b HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45852 - "GET /catalog/e018fb94be97cd1e6ed073ed/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45866 - "GET /catalog/304d0ed17123da34a2dd471b/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45866 - "DELETE /test-support/namespaces/304d0ed17123da34a2dd471b HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45884 - "PUT /test-support/namespaces/d6a2113579dc324b883a0263 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45852 - "DELETE /test-support/namespaces/e018fb94be97cd1e6ed073ed HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45894 - "PUT /test-support/namespaces/bcda483417e4442ffd8117fa HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45842 - "PUT /test-support/namespaces/90fdb12d52b0dffa0867e6f7 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45826 - "GET /catalog/597f97a87de91a4fc9c48304/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45882 - "GET /catalog/eff3b44b82db32e82f9fe24b/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45906 - "PUT /test-support/namespaces/6a8cd7b8ddcb4e198f065d7d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45826 - "DELETE /test-support/namespaces/597f97a87de91a4fc9c48304 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45882 - "DELETE /test-support/namespaces/eff3b44b82db32e82f9fe24b HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45826 - "PUT /test-support/namespaces/a0b19f817ba25efc3e0a6b14 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45882 - "PUT /test-support/namespaces/c8ab044e51a26b77e9c90044 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45852 - "PUT /test-support/namespaces/51db05f701d80ef21ba8bacd HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45842 - "GET /catalog/90fdb12d52b0dffa0867e6f7/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45884 - "GET /catalog/d6a2113579dc324b883a0263/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45894 - "GET /catalog/bcda483417e4442ffd8117fa/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45884 - "DELETE /test-support/namespaces/d6a2113579dc324b883a0263 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45906 - "GET /catalog/6a8cd7b8ddcb4e198f065d7d/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45866 - "PUT /test-support/namespaces/79480b41744e767c4aa4fc0c HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45894 - "DELETE /test-support/namespaces/bcda483417e4442ffd8117fa HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45906 - "PUT /test-support/namespaces/561f1d2087de46b901bd18ca HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45842 - "DELETE /test-support/namespaces/90fdb12d52b0dffa0867e6f7 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45884 - "DELETE /test-support/namespaces/6a8cd7b8ddcb4e198f065d7d HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45882 - "GET /catalog/c8ab044e51a26b77e9c90044/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45906 - "PUT /test-support/namespaces/956791a7e5383486c1acfa45 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45866 - "GET /catalog/79480b41744e767c4aa4fc0c/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45894 - "GET /catalog/561f1d2087de46b901bd18ca/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45852 - "GET /catalog/51db05f701d80ef21ba8bacd/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45826 - "GET /catalog/a0b19f817ba25efc3e0a6b14/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45884 - "PUT /test-support/namespaces/fcfd631f76055153f66b2c8d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45842 - "PUT /test-support/namespaces/371bb7c2f5fd5c93845a0b11 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45882 - "DELETE /test-support/namespaces/c8ab044e51a26b77e9c90044 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45866 - "DELETE /test-support/namespaces/79480b41744e767c4aa4fc0c HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45826 - "DELETE /test-support/namespaces/a0b19f817ba25efc3e0a6b14 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45894 - "DELETE /test-support/namespaces/561f1d2087de46b901bd18ca HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45906 - "GET /catalog/956791a7e5383486c1acfa45/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45852 - "DELETE /test-support/namespaces/51db05f701d80ef21ba8bacd HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45842 - "GET /catalog/371bb7c2f5fd5c93845a0b11/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45882 - "GET /catalog/fcfd631f76055153f66b2c8d/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45884 - "PUT /test-support/namespaces/d794359038f0fd37eb2f9664 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45866 - "PUT /test-support/namespaces/9a6aed377b8b43c3a7c1b2e2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45842 - "DELETE /test-support/namespaces/371bb7c2f5fd5c93845a0b11 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45852 - "PUT /test-support/namespaces/c609039baa05d82cf156c566 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45894 - "DELETE /test-support/namespaces/956791a7e5383486c1acfa45 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45826 - "PUT /test-support/namespaces/ce40313012ab17d59d705344 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45882 - "DELETE /test-support/namespaces/fcfd631f76055153f66b2c8d HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45866 - "GET /catalog/9a6aed377b8b43c3a7c1b2e2/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45894 - "PUT /test-support/namespaces/984f4c4ca670eb439d50fbed HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45906 - "PUT /test-support/namespaces/b001192d0b60b4428701b18b HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45842 - "PUT /test-support/namespaces/570ca737c7134d4745f2a732 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45884 - "GET /catalog/d794359038f0fd37eb2f9664/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45852 - "GET /catalog/c609039baa05d82cf156c566/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45894 - "PUT /test-support/namespaces/e84127d0a870c79f6fa61133 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45882 - "GET /catalog/984f4c4ca670eb439d50fbed/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45906 - "GET /catalog/b001192d0b60b4428701b18b/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45826 - "DELETE /test-support/namespaces/9a6aed377b8b43c3a7c1b2e2 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45884 - "DELETE /test-support/namespaces/d794359038f0fd37eb2f9664 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45852 - "DELETE /test-support/namespaces/c609039baa05d82cf156c566 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45866 - "GET /catalog/570ca737c7134d4745f2a732/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45842 - "GET /catalog/ce40313012ab17d59d705344/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45826 - "PUT /test-support/namespaces/290cf253d1c220df30e8416a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45882 - "DELETE /test-support/namespaces/984f4c4ca670eb439d50fbed HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45842 - "DELETE /test-support/namespaces/ce40313012ab17d59d705344 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45884 - "DELETE /test-support/namespaces/b001192d0b60b4428701b18b HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45894 - "GET /catalog/e84127d0a870c79f6fa61133/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45852 - "DELETE /test-support/namespaces/570ca737c7134d4745f2a732 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45906 - "PUT /test-support/namespaces/4d6c7fac481041b8767716e6 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45882 - "PUT /test-support/namespaces/a404e78ba98d1e1c3e1d20a8 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45894 - "DELETE /test-support/namespaces/e84127d0a870c79f6fa61133 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45842 - "PUT /test-support/namespaces/5689d9b007fd17d68628db9e HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45894 - "PUT /test-support/namespaces/2fe2495c70b9053cdbd3cfa5 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45826 - "GET /catalog/290cf253d1c220df30e8416a/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45906 - "PUT /test-support/namespaces/c8e0fa97256625a078886187 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45884 - "GET /catalog/4d6c7fac481041b8767716e6/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45882 - "GET /catalog/a404e78ba98d1e1c3e1d20a8/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45826 - "PUT /test-support/namespaces/4c67c1db8efbe1db0379439e HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45866 - "PUT /test-support/namespaces/ef7c8b4b7f8a2565a9f555ba HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45852 - "DELETE /test-support/namespaces/290cf253d1c220df30e8416a HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45842 - "GET /catalog/5689d9b007fd17d68628db9e/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45884 - "DELETE /test-support/namespaces/4d6c7fac481041b8767716e6 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45894 - "GET /catalog/2fe2495c70b9053cdbd3cfa5/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45882 - "DELETE /test-support/namespaces/a404e78ba98d1e1c3e1d20a8 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45906 - "GET /catalog/c8e0fa97256625a078886187/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45852 - "DELETE /test-support/namespaces/5689d9b007fd17d68628db9e HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45866 - "PUT /test-support/namespaces/f739aeedd69b00c26cace708 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45882 - "PUT /test-support/namespaces/497cf7900fe336adea0b5273 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45906 - "DELETE /test-support/namespaces/c8e0fa97256625a078886187 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45884 - "PUT /test-support/namespaces/b3b4043e35056df22097cae9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45894 - "DELETE /test-support/namespaces/2fe2495c70b9053cdbd3cfa5 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45826 - "GET /catalog/4c67c1db8efbe1db0379439e/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45842 - "GET /catalog/ef7c8b4b7f8a2565a9f555ba/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45882 - "GET /catalog/497cf7900fe336adea0b5273/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45852 - "GET /catalog/f739aeedd69b00c26cace708/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45884 - "GET /catalog/b3b4043e35056df22097cae9/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45882 - "DELETE /test-support/namespaces/497cf7900fe336adea0b5273 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45842 - "DELETE /test-support/namespaces/4c67c1db8efbe1db0379439e HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45852 - "DELETE /test-support/namespaces/f739aeedd69b00c26cace708 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45894 - "DELETE /test-support/namespaces/b3b4043e35056df22097cae9 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45826 - "DELETE /test-support/namespaces/ef7c8b4b7f8a2565a9f555ba HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45922 - "PUT /test-support/namespaces/dfdc760efdffdb2a1ab03f94 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "GET /catalog/dfdc760efdffdb2a1ab03f94/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "DELETE /test-support/namespaces/dfdc760efdffdb2a1ab03f94 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45922 - "PUT /test-support/namespaces/aa1a29a341d8472d4d7139de HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "GET /catalog/aa1a29a341d8472d4d7139de/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "DELETE /test-support/namespaces/aa1a29a341d8472d4d7139de HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45922 - "PUT /test-support/namespaces/591164b06445ec89f2d3d2b2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "GET /catalog/591164b06445ec89f2d3d2b2/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "DELETE /test-support/namespaces/591164b06445ec89f2d3d2b2 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45922 - "PUT /test-support/namespaces/762c3db7bf9ffce46bbcec04 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "GET /catalog/762c3db7bf9ffce46bbcec04/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "DELETE /test-support/namespaces/762c3db7bf9ffce46bbcec04 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45922 - "PUT /test-support/namespaces/82600296b763e2e7f5c7a1d5 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "GET /catalog/82600296b763e2e7f5c7a1d5/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "DELETE /test-support/namespaces/82600296b763e2e7f5c7a1d5 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45922 - "PUT /test-support/namespaces/af7f273fa089a5fbd7f2230b HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "GET /catalog/af7f273fa089a5fbd7f2230b/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "DELETE /test-support/namespaces/af7f273fa089a5fbd7f2230b HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45922 - "PUT /test-support/namespaces/88b63ac00da0b61473b0981e HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "GET /catalog/88b63ac00da0b61473b0981e/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "DELETE /test-support/namespaces/88b63ac00da0b61473b0981e HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45922 - "PUT /test-support/namespaces/195f885c0e373b7ee08fbba2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "GET /catalog/195f885c0e373b7ee08fbba2/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "DELETE /test-support/namespaces/195f885c0e373b7ee08fbba2 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45922 - "PUT /test-support/namespaces/53dcf04678408a1c8ad05249 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "GET /catalog/53dcf04678408a1c8ad05249/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "DELETE /test-support/namespaces/53dcf04678408a1c8ad05249 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45922 - "PUT /test-support/namespaces/77c5999d81f3934e61804398 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "GET /catalog/77c5999d81f3934e61804398/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "DELETE /test-support/namespaces/77c5999d81f3934e61804398 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45922 - "PUT /test-support/namespaces/d6a0e05ea2f3f7e83fedf251 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "GET /catalog/d6a0e05ea2f3f7e83fedf251/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "DELETE /test-support/namespaces/d6a0e05ea2f3f7e83fedf251 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45922 - "PUT /test-support/namespaces/d9b0474b2d0730a29d1c5d1e HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "GET /catalog/d9b0474b2d0730a29d1c5d1e/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "DELETE /test-support/namespaces/d9b0474b2d0730a29d1c5d1e HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45922 - "PUT /test-support/namespaces/c80012c607c9f6020da04486 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "GET /catalog/c80012c607c9f6020da04486/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "DELETE /test-support/namespaces/c80012c607c9f6020da04486 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45922 - "PUT /test-support/namespaces/71aa8dd1aa87a8a559b575a2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "GET /catalog/71aa8dd1aa87a8a559b575a2/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "DELETE /test-support/namespaces/71aa8dd1aa87a8a559b575a2 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45922 - "PUT /test-support/namespaces/a9976f9539fb182e5cbdfab4 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "GET /catalog/a9976f9539fb182e5cbdfab4/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "DELETE /test-support/namespaces/a9976f9539fb182e5cbdfab4 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45922 - "PUT /test-support/namespaces/d30b7921a4a0b93723e15736 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "GET /catalog/d30b7921a4a0b93723e15736/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "DELETE /test-support/namespaces/d30b7921a4a0b93723e15736 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45922 - "PUT /test-support/namespaces/8102651e8ddc8470b90fc868 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "GET /catalog/8102651e8ddc8470b90fc868/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "DELETE /test-support/namespaces/8102651e8ddc8470b90fc868 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45922 - "PUT /test-support/namespaces/14dcb0f9c965cde57d7422e3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "GET /catalog/14dcb0f9c965cde57d7422e3/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "DELETE /test-support/namespaces/14dcb0f9c965cde57d7422e3 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45922 - "PUT /test-support/namespaces/30a9a2805d2bd3a2d9a9a51a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "GET /catalog/30a9a2805d2bd3a2d9a9a51a/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "DELETE /test-support/namespaces/30a9a2805d2bd3a2d9a9a51a HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45922 - "PUT /test-support/namespaces/dc759e00506eb06ba5a9f828 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "GET /catalog/dc759e00506eb06ba5a9f828/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "DELETE /test-support/namespaces/dc759e00506eb06ba5a9f828 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45922 - "PUT /test-support/namespaces/c8e460c1f9f4e0a96fcc6af2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "GET /catalog/c8e460c1f9f4e0a96fcc6af2/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "DELETE /test-support/namespaces/c8e460c1f9f4e0a96fcc6af2 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45922 - "PUT /test-support/namespaces/2801e8c497b775b50d284062 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "GET /catalog/2801e8c497b775b50d284062/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "DELETE /test-support/namespaces/2801e8c497b775b50d284062 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45922 - "PUT /test-support/namespaces/d528cc8001abb0a3eb0990bd HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "GET /catalog/d528cc8001abb0a3eb0990bd/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "DELETE /test-support/namespaces/d528cc8001abb0a3eb0990bd HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45922 - "PUT /test-support/namespaces/489dc5d43481e51744f50178 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "GET /catalog/489dc5d43481e51744f50178/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "DELETE /test-support/namespaces/489dc5d43481e51744f50178 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45922 - "PUT /test-support/namespaces/0d10aad086348dd8cc339a8d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "GET /catalog/0d10aad086348dd8cc339a8d/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "DELETE /test-support/namespaces/0d10aad086348dd8cc339a8d HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45922 - "PUT /test-support/namespaces/257dc2d3d57e44dc90395214 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "GET /catalog/257dc2d3d57e44dc90395214/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "DELETE /test-support/namespaces/257dc2d3d57e44dc90395214 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45922 - "PUT /test-support/namespaces/448382cefd8cd917fc10b6ee HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "GET /catalog/448382cefd8cd917fc10b6ee/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "DELETE /test-support/namespaces/448382cefd8cd917fc10b6ee HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45922 - "PUT /test-support/namespaces/847ac60986e99f6e023c3acc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "GET /catalog/847ac60986e99f6e023c3acc/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "DELETE /test-support/namespaces/847ac60986e99f6e023c3acc HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45922 - "PUT /test-support/namespaces/e6acb95338bb27113b9be3a0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "GET /catalog/e6acb95338bb27113b9be3a0/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "DELETE /test-support/namespaces/e6acb95338bb27113b9be3a0 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45922 - "PUT /test-support/namespaces/2faa5e8f9f042340cf57aee5 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "GET /catalog/2faa5e8f9f042340cf57aee5/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "DELETE /test-support/namespaces/2faa5e8f9f042340cf57aee5 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45922 - "PUT /test-support/namespaces/961621128ca9e78facf9dda2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "GET /catalog/961621128ca9e78facf9dda2/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "DELETE /test-support/namespaces/961621128ca9e78facf9dda2 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45922 - "PUT /test-support/namespaces/5deccb8aa6f7beac0da912e2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "GET /catalog/5deccb8aa6f7beac0da912e2/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "DELETE /test-support/namespaces/5deccb8aa6f7beac0da912e2 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45922 - "PUT /test-support/namespaces/fe641434ca33446d12a89422 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "GET /catalog/fe641434ca33446d12a89422/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "DELETE /test-support/namespaces/fe641434ca33446d12a89422 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45922 - "PUT /test-support/namespaces/8d14228188731b92394cebc7 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "GET /catalog/8d14228188731b92394cebc7/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "DELETE /test-support/namespaces/8d14228188731b92394cebc7 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45922 - "PUT /test-support/namespaces/33272a6505e0a679c11c7b12 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "GET /catalog/33272a6505e0a679c11c7b12/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "DELETE /test-support/namespaces/33272a6505e0a679c11c7b12 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45922 - "PUT /test-support/namespaces/eb5ecba7d11b4070a8609369 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "GET /catalog/eb5ecba7d11b4070a8609369/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "DELETE /test-support/namespaces/eb5ecba7d11b4070a8609369 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45922 - "PUT /test-support/namespaces/3d046dd87acb4ab9f612d20f HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "GET /catalog/3d046dd87acb4ab9f612d20f/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "DELETE /test-support/namespaces/3d046dd87acb4ab9f612d20f HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45922 - "PUT /test-support/namespaces/661ce01b24918e99c220cada HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "GET /catalog/661ce01b24918e99c220cada/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "DELETE /test-support/namespaces/661ce01b24918e99c220cada HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45922 - "PUT /test-support/namespaces/7fee538ac231eb249f0db3c7 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "GET /catalog/7fee538ac231eb249f0db3c7/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "DELETE /test-support/namespaces/7fee538ac231eb249f0db3c7 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45922 - "PUT /test-support/namespaces/1f4e4542f3e7b1d7089cb554 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "GET /catalog/1f4e4542f3e7b1d7089cb554/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "DELETE /test-support/namespaces/1f4e4542f3e7b1d7089cb554 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45922 - "PUT /test-support/namespaces/38855262da109d321be0668b HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "GET /catalog/38855262da109d321be0668b/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "DELETE /test-support/namespaces/38855262da109d321be0668b HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45922 - "PUT /test-support/namespaces/3cfc87ef507c996554dbe13b HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "GET /catalog/3cfc87ef507c996554dbe13b/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "DELETE /test-support/namespaces/3cfc87ef507c996554dbe13b HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45922 - "PUT /test-support/namespaces/0762f545f4f88db1563335f5 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "GET /catalog/0762f545f4f88db1563335f5/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "DELETE /test-support/namespaces/0762f545f4f88db1563335f5 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45922 - "PUT /test-support/namespaces/c7799a9bd37e4d843d44d22c HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "GET /catalog/c7799a9bd37e4d843d44d22c/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "DELETE /test-support/namespaces/c7799a9bd37e4d843d44d22c HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45922 - "PUT /test-support/namespaces/2682734873a88a51370eccea HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "GET /catalog/2682734873a88a51370eccea/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "DELETE /test-support/namespaces/2682734873a88a51370eccea HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45922 - "PUT /test-support/namespaces/3aab598f1011491f48fddbe7 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "GET /catalog/3aab598f1011491f48fddbe7/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "DELETE /test-support/namespaces/3aab598f1011491f48fddbe7 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45922 - "PUT /test-support/namespaces/c5c8b7d38d097c9a4fae6b32 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "GET /catalog/c5c8b7d38d097c9a4fae6b32/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "DELETE /test-support/namespaces/c5c8b7d38d097c9a4fae6b32 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45922 - "PUT /test-support/namespaces/2096d96c9f7df3749e23b9b2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "GET /catalog/2096d96c9f7df3749e23b9b2/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "DELETE /test-support/namespaces/2096d96c9f7df3749e23b9b2 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45922 - "PUT /test-support/namespaces/72d34931a555649596acf90f HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "GET /catalog/72d34931a555649596acf90f/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "DELETE /test-support/namespaces/72d34931a555649596acf90f HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45922 - "PUT /test-support/namespaces/ffef0af330d81241d4f47900 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "GET /catalog/ffef0af330d81241d4f47900/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "DELETE /test-support/namespaces/ffef0af330d81241d4f47900 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45922 - "PUT /test-support/namespaces/340b2d06c48c2141bc19f227 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "GET /catalog/340b2d06c48c2141bc19f227/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "DELETE /test-support/namespaces/340b2d06c48c2141bc19f227 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45922 - "PUT /test-support/namespaces/f633dedfd68e6190998e24ee HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "GET /catalog/f633dedfd68e6190998e24ee/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "DELETE /test-support/namespaces/f633dedfd68e6190998e24ee HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45922 - "PUT /test-support/namespaces/de5fb7ebb2097df290f3973a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "GET /catalog/de5fb7ebb2097df290f3973a/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "DELETE /test-support/namespaces/de5fb7ebb2097df290f3973a HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45922 - "PUT /test-support/namespaces/028b4baa0275babb84d866f8 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "GET /catalog/028b4baa0275babb84d866f8/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "DELETE /test-support/namespaces/028b4baa0275babb84d866f8 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45922 - "PUT /test-support/namespaces/2c995866a4fbd7007f92890e HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "GET /catalog/2c995866a4fbd7007f92890e/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "DELETE /test-support/namespaces/2c995866a4fbd7007f92890e HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45922 - "PUT /test-support/namespaces/9d0b61d948ed2ce845693b0a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "GET /catalog/9d0b61d948ed2ce845693b0a/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "DELETE /test-support/namespaces/9d0b61d948ed2ce845693b0a HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45922 - "PUT /test-support/namespaces/a533ca04a5c4497b54dad7df HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "GET /catalog/a533ca04a5c4497b54dad7df/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "DELETE /test-support/namespaces/a533ca04a5c4497b54dad7df HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45922 - "PUT /test-support/namespaces/2f6a1c4dd573672a13c5ca62 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "GET /catalog/2f6a1c4dd573672a13c5ca62/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "DELETE /test-support/namespaces/2f6a1c4dd573672a13c5ca62 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45922 - "PUT /test-support/namespaces/8829e926ee7531b8941c2e94 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "GET /catalog/8829e926ee7531b8941c2e94/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "DELETE /test-support/namespaces/8829e926ee7531b8941c2e94 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45922 - "PUT /test-support/namespaces/c662fd955161bf9eb1ed510a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "GET /catalog/c662fd955161bf9eb1ed510a/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "DELETE /test-support/namespaces/c662fd955161bf9eb1ed510a HTTP/1.1" 204 No Content
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [165]

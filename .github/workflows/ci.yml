@@ -1,0 +1,65 @@
+name: API quality gate
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+concurrency:
+  group: sentinel-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    services:
+      redis:
+        image: redis:7.4-alpine
+        ports: ['6379:6379']
+        options: >-
+          --health-cmd 'redis-cli ping' --health-interval 2s
+          --health-timeout 2s --health-retries 20
+    env:
+      TEST_REDIS_URL: redis://127.0.0.1:6379/0
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5.6.0
+        with:
+          python-version: '3.12'
+      - run: python -m pip install uv==0.12.8
+      - run: uv sync --frozen --extra demo --group dev
+      - run: uv run --frozen ruff check .
+      - run: uv run --frozen ruff format --check .
+      - run: uv run --frozen sentinel validate --suite examples/suites/smoke.json --contract examples/contract.json
+      - run: uv run --frozen pytest --cov=api_sentinel --cov-report=xml:reports/coverage.xml --junitxml=reports/pytest.xml
+      - run: uv build
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        if: always()
+        with:
+          name: unit-and-integration-results
+          path: reports/
+
+  container-contract-gate:
+    needs: quality
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      - run: bash scripts/docker_demo.sh
+      - name: Verify a broken response blocks the gate
+        shell: bash
+        run: |
+          set +e
+          DEMO_BREAK_CONTRACT=true bash scripts/docker_demo.sh
+          code=$?
+          set -e
+          test "$code" -eq 1
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        if: always()
+        with:
+          name: container-contract-results
+          path: reports/
+  release-gate:
+    needs: [quality, container-contract-gate]
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo 'Unit, integration, and container contract gates passed.'

@@ -1,0 +1,2236 @@
+{
+  "run_id": "551671ab5a6c4e7da7c707739b856fb9",
+  "suite": "Inventory API benchmark",
+  "mode": "distributed",
+  "elapsed_ms": 2603.306,
+  "expected": 60,
+  "results": [
+    {
+      "case_id": "catalog-054",
+      "status": "passed",
+      "elapsed_ms": 71.944,
+      "worker_id": "process-1",
+      "delivery": 1,
+      "steps": [
+        {
+          "name": "seed isolated catalog",
+          "phase": "setup",
+          "status": "passed",
+          "elapsed_ms": 6.678,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "catalog request",
+          "phase": "test",
+          "status": "passed",
+          "elapsed_ms": 37.533,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "remove isolated data",
+          "phase": "teardown",
+          "status": "passed",
+          "elapsed_ms": 27.115,
+          "http_status": 204,
+          "attempts": 1,
+          "messages": []
+        }
+      ],
+      "message": null
+    },
+    {
+      "case_id": "catalog-019",
+      "status": "passed",
+      "elapsed_ms": 60.721,
+      "worker_id": "process-1",
+      "delivery": 1,
+      "steps": [
+        {
+          "name": "seed isolated catalog",
+          "phase": "setup",
+          "status": "passed",
+          "elapsed_ms": 12.995,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "catalog request",
+          "phase": "test",
+          "status": "passed",
+          "elapsed_ms": 30.323,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "remove isolated data",
+          "phase": "teardown",
+          "status": "passed",
+          "elapsed_ms": 15.505,
+          "http_status": 204,
+          "attempts": 1,
+          "messages": []
+        }
+      ],
+      "message": null
+    },
+    {
+      "case_id": "catalog-022",
+      "status": "passed",
+      "elapsed_ms": 102.481,
+      "worker_id": "process-0",
+      "delivery": 1,
+      "steps": [
+        {
+          "name": "seed isolated catalog",
+          "phase": "setup",
+          "status": "passed",
+          "elapsed_ms": 26.334,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "catalog request",
+          "phase": "test",
+          "status": "passed",
+          "elapsed_ms": 37.775,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "remove isolated data",
+          "phase": "teardown",
+          "status": "passed",
+          "elapsed_ms": 37.104,
+          "http_status": 204,
+          "attempts": 1,
+          "messages": []
+        }
+      ],
+      "message": null
+    },
+    {
+      "case_id": "catalog-040",
+      "status": "passed",
+      "elapsed_ms": 111.094,
+      "worker_id": "process-0",
+      "delivery": 1,
+      "steps": [
+        {
+          "name": "seed isolated catalog",
+          "phase": "setup",
+          "status": "passed",
+          "elapsed_ms": 26.245,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "catalog request",
+          "phase": "test",
+          "status": "passed",
+          "elapsed_ms": 41.87,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "remove isolated data",
+          "phase": "teardown",
+          "status": "passed",
+          "elapsed_ms": 40.911,
+          "http_status": 204,
+          "attempts": 1,
+          "messages": []
+        }
+      ],
+      "message": null
+    },
+    {
+      "case_id": "catalog-008",
+      "status": "passed",
+      "elapsed_ms": 77.467,
+      "worker_id": "process-1",
+      "delivery": 1,
+      "steps": [
+        {
+          "name": "seed isolated catalog",
+          "phase": "setup",
+          "status": "passed",
+          "elapsed_ms": 25.883,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "catalog request",
+          "phase": "test",
+          "status": "passed",
+          "elapsed_ms": 38.812,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "remove isolated data",
+          "phase": "teardown",
+          "status": "passed",
+          "elapsed_ms": 11.681,
+          "http_status": 204,
+          "attempts": 1,
+          "messages": []
+        }
+      ],
+      "message": null
+    },
+    {
+      "case_id": "catalog-032",
+      "status": "passed",
+      "elapsed_ms": 56.94,
+      "worker_id": "process-1",
+      "delivery": 1,
+      "steps": [
+        {
+          "name": "seed isolated catalog",
+          "phase": "setup",
+          "status": "passed",
+          "elapsed_ms": 9.886,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "catalog request",
+          "phase": "test",
+          "status": "passed",
+          "elapsed_ms": 33.24,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "remove isolated data",
+          "phase": "teardown",
+          "status": "passed",
+          "elapsed_ms": 7.727,
+          "http_status": 204,
+          "attempts": 1,
+          "messages": []
+        }
+      ],
+      "message": null
+    },
+    {
+      "case_id": "catalog-050",
+      "status": "passed",
+      "elapsed_ms": 70.639,
+      "worker_id": "process-0",
+      "delivery": 1,
+      "steps": [
+        {
+          "name": "seed isolated catalog",
+          "phase": "setup",
+          "status": "passed",
+          "elapsed_ms": 22.242,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "catalog request",
+          "phase": "test",
+          "status": "passed",
+          "elapsed_ms": 36.237,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "remove isolated data",
+          "phase": "teardown",
+          "status": "passed",
+          "elapsed_ms": 8.15,
+          "http_status": 204,
+          "attempts": 1,
+          "messages": []
+        }
+      ],
+      "message": null
+    },
+    {
+      "case_id": "catalog-045",
+      "status": "passed",
+      "elapsed_ms": 116.313,
+      "worker_id": "process-1",
+      "delivery": 1,
+      "steps": [
+        {
+          "name": "seed isolated catalog",
+          "phase": "setup",
+          "status": "passed",
+          "elapsed_ms": 26.056,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "catalog request",
+          "phase": "test",
+          "status": "passed",
+          "elapsed_ms": 58.873,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "remove isolated data",
+          "phase": "teardown",
+          "status": "passed",
+          "elapsed_ms": 30.646,
+          "http_status": 204,
+          "attempts": 1,
+          "messages": []
+        }
+      ],
+      "message": null
+    },
+    {
+      "case_id": "catalog-049",
+      "status": "passed",
+      "elapsed_ms": 67.713,
+      "worker_id": "process-1",
+      "delivery": 1,
+      "steps": [
+        {
+          "name": "seed isolated catalog",
+          "phase": "setup",
+          "status": "passed",
+          "elapsed_ms": 37.002,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "catalog request",
+          "phase": "test",
+          "status": "passed",
+          "elapsed_ms": 27.007,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "remove isolated data",
+          "phase": "teardown",
+          "status": "passed",
+          "elapsed_ms": 3.13,
+          "http_status": 204,
+          "attempts": 1,
+          "messages": []
+        }
+      ],
+      "message": null
+    },
+    {
+      "case_id": "catalog-030",
+      "status": "passed",
+      "elapsed_ms": 103.131,
+      "worker_id": "process-0",
+      "delivery": 1,
+      "steps": [
+        {
+          "name": "seed isolated catalog",
+          "phase": "setup",
+          "status": "passed",
+          "elapsed_ms": 41.398,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "catalog request",
+          "phase": "test",
+          "status": "passed",
+          "elapsed_ms": 37.939,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "remove isolated data",
+          "phase": "teardown",
+          "status": "passed",
+          "elapsed_ms": 23.107,
+          "http_status": 204,
+          "attempts": 1,
+          "messages": []
+        }
+      ],
+      "message": null
+    },
+    {
+      "case_id": "catalog-056",
+      "status": "passed",
+      "elapsed_ms": 51.306,
+      "worker_id": "process-0",
+      "delivery": 1,
+      "steps": [
+        {
+          "name": "seed isolated catalog",
+          "phase": "setup",
+          "status": "passed",
+          "elapsed_ms": 16.749,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "catalog request",
+          "phase": "test",
+          "status": "passed",
+          "elapsed_ms": 28.656,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "remove isolated data",
+          "phase": "teardown",
+          "status": "passed",
+          "elapsed_ms": 4.787,
+          "http_status": 204,
+          "attempts": 1,
+          "messages": []
+        }
+      ],
+      "message": null
+    },
+    {
+      "case_id": "catalog-057",
+      "status": "passed",
+      "elapsed_ms": 42.931,
+      "worker_id": "process-1",
+      "delivery": 1,
+      "steps": [
+        {
+          "name": "seed isolated catalog",
+          "phase": "setup",
+          "status": "passed",
+          "elapsed_ms": 13.119,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "catalog request",
+          "phase": "test",
+          "status": "passed",
+          "elapsed_ms": 23.468,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "remove isolated data",
+          "phase": "teardown",
+          "status": "passed",
+          "elapsed_ms": 5.245,
+          "http_status": 204,
+          "attempts": 1,
+          "messages": []
+        }
+      ],
+      "message": null
+    },
+    {
+      "case_id": "catalog-052",
+      "status": "passed",
+      "elapsed_ms": 52.341,
+      "worker_id": "process-1",
+      "delivery": 1,
+      "steps": [
+        {
+          "name": "seed isolated catalog",
+          "phase": "setup",
+          "status": "passed",
+          "elapsed_ms": 9.144,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "catalog request",
+          "phase": "test",
+          "status": "passed",
+          "elapsed_ms": 36.125,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "remove isolated data",
+          "phase": "teardown",
+          "status": "passed",
+          "elapsed_ms": 5.658,
+          "http_status": 204,
+          "attempts": 1,
+          "messages": []
+        }
+      ],
+      "message": null
+    },
+    {
+      "case_id": "catalog-013",
+      "status": "passed",
+      "elapsed_ms": 112.994,
+      "worker_id": "process-0",
+      "delivery": 1,
+      "steps": [
+        {
+          "name": "seed isolated catalog",
+          "phase": "setup",
+          "status": "passed",
+          "elapsed_ms": 14.919,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "catalog request",
+          "phase": "test",
+          "status": "passed",
+          "elapsed_ms": 49.222,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "remove isolated data",
+          "phase": "teardown",
+          "status": "passed",
+          "elapsed_ms": 47.258,
+          "http_status": 204,
+          "attempts": 1,
+          "messages": []
+        }
+      ],
+      "message": null
+    },
+    {
+      "case_id": "catalog-026",
+      "status": "passed",
+      "elapsed_ms": 98.847,
+      "worker_id": "process-1",
+      "delivery": 1,
+      "steps": [
+        {
+          "name": "seed isolated catalog",
+          "phase": "setup",
+          "status": "passed",
+          "elapsed_ms": 19.013,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "catalog request",
+          "phase": "test",
+          "status": "passed",
+          "elapsed_ms": 46.034,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "remove isolated data",
+          "phase": "teardown",
+          "status": "passed",
+          "elapsed_ms": 33.055,
+          "http_status": 204,
+          "attempts": 1,
+          "messages": []
+        }
+      ],
+      "message": null
+    },
+    {
+      "case_id": "catalog-042",
+      "status": "passed",
+      "elapsed_ms": 141.131,
+      "worker_id": "process-0",
+      "delivery": 1,
+      "steps": [
+        {
+          "name": "seed isolated catalog",
+          "phase": "setup",
+          "status": "passed",
+          "elapsed_ms": 35.974,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "catalog request",
+          "phase": "test",
+          "status": "passed",
+          "elapsed_ms": 78.312,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "remove isolated data",
+          "phase": "teardown",
+          "status": "passed",
+          "elapsed_ms": 24.699,
+          "http_status": 204,
+          "attempts": 1,
+          "messages": []
+        }
+      ],
+      "message": null
+    },
+    {
+      "case_id": "catalog-036",
+      "status": "passed",
+      "elapsed_ms": 133.999,
+      "worker_id": "process-0",
+      "delivery": 1,
+      "steps": [
+        {
+          "name": "seed isolated catalog",
+          "phase": "setup",
+          "status": "passed",
+          "elapsed_ms": 22.832,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "catalog request",
+          "phase": "test",
+          "status": "passed",
+          "elapsed_ms": 48.817,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "remove isolated data",
+          "phase": "teardown",
+          "status": "passed",
+          "elapsed_ms": 61.583,
+          "http_status": 204,
+          "attempts": 1,
+          "messages": []
+        }
+      ],
+      "message": null
+    },
+    {
+      "case_id": "catalog-020",
+      "status": "passed",
+      "elapsed_ms": 88.933,
+      "worker_id": "process-1",
+      "delivery": 1,
+      "steps": [
+        {
+          "name": "seed isolated catalog",
+          "phase": "setup",
+          "status": "passed",
+          "elapsed_ms": 16.212,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "catalog request",
+          "phase": "test",
+          "status": "passed",
+          "elapsed_ms": 42.967,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "remove isolated data",
+          "phase": "teardown",
+          "status": "passed",
+          "elapsed_ms": 28.76,
+          "http_status": 204,
+          "attempts": 1,
+          "messages": []
+        }
+      ],
+      "message": null
+    },
+    {
+      "case_id": "catalog-007",
+      "status": "passed",
+      "elapsed_ms": 103.938,
+      "worker_id": "process-0",
+      "delivery": 1,
+      "steps": [
+        {
+          "name": "seed isolated catalog",
+          "phase": "setup",
+          "status": "passed",
+          "elapsed_ms": 30.476,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "catalog request",
+          "phase": "test",
+          "status": "passed",
+          "elapsed_ms": 42.038,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "remove isolated data",
+          "phase": "teardown",
+          "status": "passed",
+          "elapsed_ms": 30.583,
+          "http_status": 204,
+          "attempts": 1,
+          "messages": []
+        }
+      ],
+      "message": null
+    },
+    {
+      "case_id": "catalog-047",
+      "status": "passed",
+      "elapsed_ms": 93.135,
+      "worker_id": "process-0",
+      "delivery": 1,
+      "steps": [
+        {
+          "name": "seed isolated catalog",
+          "phase": "setup",
+          "status": "passed",
+          "elapsed_ms": 43.293,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "catalog request",
+          "phase": "test",
+          "status": "passed",
+          "elapsed_ms": 35.018,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "remove isolated data",
+          "phase": "teardown",
+          "status": "passed",
+          "elapsed_ms": 12.804,
+          "http_status": 204,
+          "attempts": 1,
+          "messages": []
+        }
+      ],
+      "message": null
+    },
+    {
+      "case_id": "catalog-016",
+      "status": "passed",
+      "elapsed_ms": 106.771,
+      "worker_id": "process-0",
+      "delivery": 1,
+      "steps": [
+        {
+          "name": "seed isolated catalog",
+          "phase": "setup",
+          "status": "passed",
+          "elapsed_ms": 37.614,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "catalog request",
+          "phase": "test",
+          "status": "passed",
+          "elapsed_ms": 60.774,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "remove isolated data",
+          "phase": "teardown",
+          "status": "passed",
+          "elapsed_ms": 7.792,
+          "http_status": 204,
+          "attempts": 1,
+          "messages": []
+        }
+      ],
+      "message": null
+    },
+    {
+      "case_id": "catalog-055",
+      "status": "passed",
+      "elapsed_ms": 47.185,
+      "worker_id": "process-1",
+      "delivery": 1,
+      "steps": [
+        {
+          "name": "seed isolated catalog",
+          "phase": "setup",
+          "status": "passed",
+          "elapsed_ms": 16.193,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "catalog request",
+          "phase": "test",
+          "status": "passed",
+          "elapsed_ms": 26.713,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "remove isolated data",
+          "phase": "teardown",
+          "status": "passed",
+          "elapsed_ms": 3.689,
+          "http_status": 204,
+          "attempts": 1,
+          "messages": []
+        }
+      ],
+      "message": null
+    },
+    {
+      "case_id": "catalog-003",
+      "status": "passed",
+      "elapsed_ms": 127.602,
+      "worker_id": "process-0",
+      "delivery": 1,
+      "steps": [
+        {
+          "name": "seed isolated catalog",
+          "phase": "setup",
+          "status": "passed",
+          "elapsed_ms": 31.41,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "catalog request",
+          "phase": "test",
+          "status": "passed",
+          "elapsed_ms": 60.8,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "remove isolated data",
+          "phase": "teardown",
+          "status": "passed",
+          "elapsed_ms": 34.483,
+          "http_status": 204,
+          "attempts": 1,
+          "messages": []
+        }
+      ],
+      "message": null
+    },
+    {
+      "case_id": "catalog-018",
+      "status": "passed",
+      "elapsed_ms": 92.536,
+      "worker_id": "process-0",
+      "delivery": 1,
+      "steps": [
+        {
+          "name": "seed isolated catalog",
+          "phase": "setup",
+          "status": "passed",
+          "elapsed_ms": 28.092,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "catalog request",
+          "phase": "test",
+          "status": "passed",
+          "elapsed_ms": 44.676,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "remove isolated data",
+          "phase": "teardown",
+          "status": "passed",
+          "elapsed_ms": 18.635,
+          "http_status": 204,
+          "attempts": 1,
+          "messages": []
+        }
+      ],
+      "message": null
+    },
+    {
+      "case_id": "catalog-002",
+      "status": "passed",
+      "elapsed_ms": 92.294,
+      "worker_id": "process-1",
+      "delivery": 1,
+      "steps": [
+        {
+          "name": "seed isolated catalog",
+          "phase": "setup",
+          "status": "passed",
+          "elapsed_ms": 16.007,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "catalog request",
+          "phase": "test",
+          "status": "passed",
+          "elapsed_ms": 42.872,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "remove isolated data",
+          "phase": "teardown",
+          "status": "passed",
+          "elapsed_ms": 27.588,
+          "http_status": 204,
+          "attempts": 1,
+          "messages": []
+        }
+      ],
+      "message": null
+    },
+    {
+      "case_id": "catalog-000",
+      "status": "passed",
+      "elapsed_ms": 77.244,
+      "worker_id": "process-1",
+      "delivery": 1,
+      "steps": [
+        {
+          "name": "seed isolated catalog",
+          "phase": "setup",
+          "status": "passed",
+          "elapsed_ms": 16.301,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "catalog request",
+          "phase": "test",
+          "status": "passed",
+          "elapsed_ms": 44.981,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "remove isolated data",
+          "phase": "teardown",
+          "status": "passed",
+          "elapsed_ms": 11.998,
+          "http_status": 204,
+          "attempts": 1,
+          "messages": []
+        }
+      ],
+      "message": null
+    },
+    {
+      "case_id": "catalog-023",
+      "status": "passed",
+      "elapsed_ms": 77.549,
+      "worker_id": "process-0",
+      "delivery": 1,
+      "steps": [
+        {
+          "name": "seed isolated catalog",
+          "phase": "setup",
+          "status": "passed",
+          "elapsed_ms": 14.664,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "catalog request",
+          "phase": "test",
+          "status": "passed",
+          "elapsed_ms": 31.813,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "remove isolated data",
+          "phase": "teardown",
+          "status": "passed",
+          "elapsed_ms": 28.428,
+          "http_status": 204,
+          "attempts": 1,
+          "messages": []
+        }
+      ],
+      "message": null
+    },
+    {
+      "case_id": "catalog-033",
+      "status": "passed",
+      "elapsed_ms": 72.821,
+      "worker_id": "process-1",
+      "delivery": 1,
+      "steps": [
+        {
+          "name": "seed isolated catalog",
+          "phase": "setup",
+          "status": "passed",
+          "elapsed_ms": 23.959,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "catalog request",
+          "phase": "test",
+          "status": "passed",
+          "elapsed_ms": 35.703,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "remove isolated data",
+          "phase": "teardown",
+          "status": "passed",
+          "elapsed_ms": 12.566,
+          "http_status": 204,
+          "attempts": 1,
+          "messages": []
+        }
+      ],
+      "message": null
+    },
+    {
+      "case_id": "catalog-010",
+      "status": "passed",
+      "elapsed_ms": 124.159,
+      "worker_id": "process-0",
+      "delivery": 1,
+      "steps": [
+        {
+          "name": "seed isolated catalog",
+          "phase": "setup",
+          "status": "passed",
+          "elapsed_ms": 26.707,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "catalog request",
+          "phase": "test",
+          "status": "passed",
+          "elapsed_ms": 39.802,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "remove isolated data",
+          "phase": "teardown",
+          "status": "passed",
+          "elapsed_ms": 56.971,
+          "http_status": 204,
+          "attempts": 1,
+          "messages": []
+        }
+      ],
+      "message": null
+    },
+    {
+      "case_id": "catalog-004",
+      "status": "passed",
+      "elapsed_ms": 64.737,
+      "worker_id": "process-0",
+      "delivery": 1,
+      "steps": [
+        {
+          "name": "seed isolated catalog",
+          "phase": "setup",
+          "status": "passed",
+          "elapsed_ms": 11.16,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "catalog request",
+          "phase": "test",
+          "status": "passed",
+          "elapsed_ms": 34.419,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "remove isolated data",
+          "phase": "teardown",
+          "status": "passed",
+          "elapsed_ms": 18.489,
+          "http_status": 204,
+          "attempts": 1,
+          "messages": []
+        }
+      ],
+      "message": null
+    },
+    {
+      "case_id": "catalog-044",
+      "status": "passed",
+      "elapsed_ms": 83.868,
+      "worker_id": "process-0",
+      "delivery": 1,
+      "steps": [
+        {
+          "name": "seed isolated catalog",
+          "phase": "setup",
+          "status": "passed",
+          "elapsed_ms": 5.49,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "catalog request",
+          "phase": "test",
+          "status": "passed",
+          "elapsed_ms": 47.259,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "remove isolated data",
+          "phase": "teardown",
+          "status": "passed",
+          "elapsed_ms": 30.274,
+          "http_status": 204,
+          "attempts": 1,
+          "messages": []
+        }
+      ],
+      "message": null
+    },
+    {
+      "case_id": "catalog-039",
+      "status": "passed",
+      "elapsed_ms": 81.935,
+      "worker_id": "process-1",
+      "delivery": 1,
+      "steps": [
+        {
+          "name": "seed isolated catalog",
+          "phase": "setup",
+          "status": "passed",
+          "elapsed_ms": 10.886,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "catalog request",
+          "phase": "test",
+          "status": "passed",
+          "elapsed_ms": 46.366,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "remove isolated data",
+          "phase": "teardown",
+          "status": "passed",
+          "elapsed_ms": 23.823,
+          "http_status": 204,
+          "attempts": 1,
+          "messages": []
+        }
+      ],
+      "message": null
+    },
+    {
+      "case_id": "catalog-012",
+      "status": "passed",
+      "elapsed_ms": 132.016,
+      "worker_id": "process-0",
+      "delivery": 1,
+      "steps": [
+        {
+          "name": "seed isolated catalog",
+          "phase": "setup",
+          "status": "passed",
+          "elapsed_ms": 21.023,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "catalog request",
+          "phase": "test",
+          "status": "passed",
+          "elapsed_ms": 85.169,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "remove isolated data",
+          "phase": "teardown",
+          "status": "passed",
+          "elapsed_ms": 22.635,
+          "http_status": 204,
+          "attempts": 1,
+          "messages": []
+        }
+      ],
+      "message": null
+    },
+    {
+      "case_id": "catalog-025",
+      "status": "passed",
+      "elapsed_ms": 94.118,
+      "worker_id": "process-1",
+      "delivery": 1,
+      "steps": [
+        {
+          "name": "seed isolated catalog",
+          "phase": "setup",
+          "status": "passed",
+          "elapsed_ms": 15.207,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "catalog request",
+          "phase": "test",
+          "status": "passed",
+          "elapsed_ms": 48.447,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "remove isolated data",
+          "phase": "teardown",
+          "status": "passed",
+          "elapsed_ms": 29.788,
+          "http_status": 204,
+          "attempts": 1,
+          "messages": []
+        }
+      ],
+      "message": null
+    },
+    {
+      "case_id": "catalog-029",
+      "status": "passed",
+      "elapsed_ms": 97.623,
+      "worker_id": "process-0",
+      "delivery": 1,
+      "steps": [
+        {
+          "name": "seed isolated catalog",
+          "phase": "setup",
+          "status": "passed",
+          "elapsed_ms": 42.785,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "catalog request",
+          "phase": "test",
+          "status": "passed",
+          "elapsed_ms": 43.475,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "remove isolated data",
+          "phase": "teardown",
+          "status": "passed",
+          "elapsed_ms": 8.247,
+          "http_status": 204,
+          "attempts": 1,
+          "messages": []
+        }
+      ],
+      "message": null
+    },
+    {
+      "case_id": "catalog-034",
+      "status": "passed",
+      "elapsed_ms": 64.703,
+      "worker_id": "process-0",
+      "delivery": 1,
+      "steps": [
+        {
+          "name": "seed isolated catalog",
+          "phase": "setup",
+          "status": "passed",
+          "elapsed_ms": 13.432,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "catalog request",
+          "phase": "test",
+          "status": "passed",
+          "elapsed_ms": 34.453,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "remove isolated data",
+          "phase": "teardown",
+          "status": "passed",
+          "elapsed_ms": 15.417,
+          "http_status": 204,
+          "attempts": 1,
+          "messages": []
+        }
+      ],
+      "message": null
+    },
+    {
+      "case_id": "catalog-035",
+      "status": "passed",
+      "elapsed_ms": 80.362,
+      "worker_id": "process-0",
+      "delivery": 1,
+      "steps": [
+        {
+          "name": "seed isolated catalog",
+          "phase": "setup",
+          "status": "passed",
+          "elapsed_ms": 16.897,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "catalog request",
+          "phase": "test",
+          "status": "passed",
+          "elapsed_ms": 51.018,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "remove isolated data",
+          "phase": "teardown",
+          "status": "passed",
+          "elapsed_ms": 11.856,
+          "http_status": 204,
+          "attempts": 1,
+          "messages": []
+        }
+      ],
+      "message": null
+    },
+    {
+      "case_id": "catalog-059",
+      "status": "passed",
+      "elapsed_ms": 45.185,
+      "worker_id": "process-0",
+      "delivery": 1,
+      "steps": [
+        {
+          "name": "seed isolated catalog",
+          "phase": "setup",
+          "status": "passed",
+          "elapsed_ms": 11.182,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "catalog request",
+          "phase": "test",
+          "status": "passed",
+          "elapsed_ms": 26.361,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "remove isolated data",
+          "phase": "teardown",
+          "status": "passed",
+          "elapsed_ms": 6.246,
+          "http_status": 204,
+          "attempts": 1,
+          "messages": []
+        }
+      ],
+      "message": null
+    },
+    {
+      "case_id": "catalog-043",
+      "status": "passed",
+      "elapsed_ms": 126.027,
+      "worker_id": "process-1",
+      "delivery": 1,
+      "steps": [
+        {
+          "name": "seed isolated catalog",
+          "phase": "setup",
+          "status": "passed",
+          "elapsed_ms": 9.305,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "catalog request",
+          "phase": "test",
+          "status": "passed",
+          "elapsed_ms": 60.545,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "remove isolated data",
+          "phase": "teardown",
+          "status": "passed",
+          "elapsed_ms": 55.102,
+          "http_status": 204,
+          "attempts": 1,
+          "messages": []
+        }
+      ],
+      "message": null
+    },
+    {
+      "case_id": "catalog-027",
+      "status": "passed",
+      "elapsed_ms": 125.144,
+      "worker_id": "process-0",
+      "delivery": 1,
+      "steps": [
+        {
+          "name": "seed isolated catalog",
+          "phase": "setup",
+          "status": "passed",
+          "elapsed_ms": 28.138,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "catalog request",
+          "phase": "test",
+          "status": "passed",
+          "elapsed_ms": 60.732,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "remove isolated data",
+          "phase": "teardown",
+          "status": "passed",
+          "elapsed_ms": 34.449,
+          "http_status": 204,
+          "attempts": 1,
+          "messages": []
+        }
+      ],
+      "message": null
+    },
+    {
+      "case_id": "catalog-053",
+      "status": "passed",
+      "elapsed_ms": 37.089,
+      "worker_id": "process-1",
+      "delivery": 1,
+      "steps": [
+        {
+          "name": "seed isolated catalog",
+          "phase": "setup",
+          "status": "passed",
+          "elapsed_ms": 6.391,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "catalog request",
+          "phase": "test",
+          "status": "passed",
+          "elapsed_ms": 25.324,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "remove isolated data",
+          "phase": "teardown",
+          "status": "passed",
+          "elapsed_ms": 4.65,
+          "http_status": 204,
+          "attempts": 1,
+          "messages": []
+        }
+      ],
+      "message": null
+    },
+    {
+      "case_id": "catalog-005",
+      "status": "passed",
+      "elapsed_ms": 78.908,
+      "worker_id": "process-0",
+      "delivery": 1,
+      "steps": [
+        {
+          "name": "seed isolated catalog",
+          "phase": "setup",
+          "status": "passed",
+          "elapsed_ms": 15.514,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "catalog request",
+          "phase": "test",
+          "status": "passed",
+          "elapsed_ms": 44.061,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "remove isolated data",
+          "phase": "teardown",
+          "status": "passed",
+          "elapsed_ms": 17.655,
+          "http_status": 204,
+          "attempts": 1,
+          "messages": []
+        }
+      ],
+      "message": null
+    },
+    {
+      "case_id": "catalog-024",
+      "status": "passed",
+      "elapsed_ms": 136.805,
+      "worker_id": "process-0",
+      "delivery": 1,
+      "steps": [
+        {
+          "name": "seed isolated catalog",
+          "phase": "setup",
+          "status": "passed",
+          "elapsed_ms": 18.413,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "catalog request",
+          "phase": "test",
+          "status": "passed",
+          "elapsed_ms": 38.212,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "remove isolated data",
+          "phase": "teardown",
+          "status": "passed",
+          "elapsed_ms": 79.6,
+          "http_status": 204,
+          "attempts": 1,
+          "messages": []
+        }
+      ],
+      "message": null
+    },
+    {
+      "case_id": "catalog-014",
+      "status": "passed",
+      "elapsed_ms": 112.33,
+      "worker_id": "process-1",
+      "delivery": 1,
+      "steps": [
+        {
+          "name": "seed isolated catalog",
+          "phase": "setup",
+          "status": "passed",
+          "elapsed_ms": 24.336,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "catalog request",
+          "phase": "test",
+          "status": "passed",
+          "elapsed_ms": 64.596,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "remove isolated data",
+          "phase": "teardown",
+          "status": "passed",
+          "elapsed_ms": 17.798,
+          "http_status": 204,
+          "attempts": 1,
+          "messages": []
+        }
+      ],
+      "message": null
+    },
+    {
+      "case_id": "catalog-015",
+      "status": "passed",
+      "elapsed_ms": 92.865,
+      "worker_id": "process-1",
+      "delivery": 1,
+      "steps": [
+        {
+          "name": "seed isolated catalog",
+          "phase": "setup",
+          "status": "passed",
+          "elapsed_ms": 25.584,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "catalog request",
+          "phase": "test",
+          "status": "passed",
+          "elapsed_ms": 57.658,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "remove isolated data",
+          "phase": "teardown",
+          "status": "passed",
+          "elapsed_ms": 8.674,
+          "http_status": 204,
+          "attempts": 1,
+          "messages": []
+        }
+      ],
+      "message": null
+    },
+    {
+      "case_id": "catalog-038",
+      "status": "passed",
+      "elapsed_ms": 67.206,
+      "worker_id": "process-1",
+      "delivery": 1,
+      "steps": [
+        {
+          "name": "seed isolated catalog",
+          "phase": "setup",
+          "status": "passed",
+          "elapsed_ms": 8.598,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "catalog request",
+          "phase": "test",
+          "status": "passed",
+          "elapsed_ms": 40.132,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "remove isolated data",
+          "phase": "teardown",
+          "status": "passed",
+          "elapsed_ms": 15.534,
+          "http_status": 204,
+          "attempts": 1,
+          "messages": []
+        }
+      ],
+      "message": null
+    },
+    {
+      "case_id": "catalog-017",
+      "status": "passed",
+      "elapsed_ms": 122.648,
+      "worker_id": "process-1",
+      "delivery": 1,
+      "steps": [
+        {
+          "name": "seed isolated catalog",
+          "phase": "setup",
+          "status": "passed",
+          "elapsed_ms": 56.527,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "catalog request",
+          "phase": "test",
+          "status": "passed",
+          "elapsed_ms": 38.439,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "remove isolated data",
+          "phase": "teardown",
+          "status": "passed",
+          "elapsed_ms": 26.266,
+          "http_status": 204,
+          "attempts": 1,
+          "messages": []
+        }
+      ],
+      "message": null
+    },
+    {
+      "case_id": "catalog-046",
+      "status": "passed",
+      "elapsed_ms": 94.568,
+      "worker_id": "process-1",
+      "delivery": 1,
+      "steps": [
+        {
+          "name": "seed isolated catalog",
+          "phase": "setup",
+          "status": "passed",
+          "elapsed_ms": 13.711,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "catalog request",
+          "phase": "test",
+          "status": "passed",
+          "elapsed_ms": 63.715,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "remove isolated data",
+          "phase": "teardown",
+          "status": "passed",
+          "elapsed_ms": 15.493,
+          "http_status": 204,
+          "attempts": 1,
+          "messages": []
+        }
+      ],
+      "message": null
+    },
+    {
+      "case_id": "catalog-001",
+      "status": "passed",
+      "elapsed_ms": 139.667,
+      "worker_id": "process-1",
+      "delivery": 1,
+      "steps": [
+        {
+          "name": "seed isolated catalog",
+          "phase": "setup",
+          "status": "passed",
+          "elapsed_ms": 60.09,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "catalog request",
+          "phase": "test",
+          "status": "passed",
+          "elapsed_ms": 45.94,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "remove isolated data",
+          "phase": "teardown",
+          "status": "passed",
+          "elapsed_ms": 33.026,
+          "http_status": 204,
+          "attempts": 1,
+          "messages": []
+        }
+      ],
+      "message": null
+    },
+    {
+      "case_id": "catalog-006",
+      "status": "passed",
+      "elapsed_ms": 104.999,
+      "worker_id": "process-1",
+      "delivery": 1,
+      "steps": [
+        {
+          "name": "seed isolated catalog",
+          "phase": "setup",
+          "status": "passed",
+          "elapsed_ms": 35.06,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "catalog request",
+          "phase": "test",
+          "status": "passed",
+          "elapsed_ms": 42.189,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "remove isolated data",
+          "phase": "teardown",
+          "status": "passed",
+          "elapsed_ms": 27.132,
+          "http_status": 204,
+          "attempts": 1,
+          "messages": []
+        }
+      ],
+      "message": null
+    },
+    {
+      "case_id": "catalog-011",
+      "status": "passed",
+      "elapsed_ms": 124.308,
+      "worker_id": "process-1",
+      "delivery": 1,
+      "steps": [
+        {
+          "name": "seed isolated catalog",
+          "phase": "setup",
+          "status": "passed",
+          "elapsed_ms": 33.659,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "catalog request",
+          "phase": "test",
+          "status": "passed",
+          "elapsed_ms": 49.275,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "remove isolated data",
+          "phase": "teardown",
+          "status": "passed",
+          "elapsed_ms": 39.864,
+          "http_status": 204,
+          "attempts": 1,
+          "messages": []
+        }
+      ],
+      "message": null
+    },
+    {
+      "case_id": "catalog-037",
+      "status": "passed",
+      "elapsed_ms": 77.8,
+      "worker_id": "process-1",
+      "delivery": 1,
+      "steps": [
+        {
+          "name": "seed isolated catalog",
+          "phase": "setup",
+          "status": "passed",
+          "elapsed_ms": 17.692,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "catalog request",
+          "phase": "test",
+          "status": "passed",
+          "elapsed_ms": 48.687,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "remove isolated data",
+          "phase": "teardown",
+          "status": "passed",
+          "elapsed_ms": 10.759,
+          "http_status": 204,
+          "attempts": 1,
+          "messages": []
+        }
+      ],
+      "message": null
+    },
+    {
+      "case_id": "catalog-041",
+      "status": "passed",
+      "elapsed_ms": 114.487,
+      "worker_id": "process-1",
+      "delivery": 1,
+      "steps": [
+        {
+          "name": "seed isolated catalog",
+          "phase": "setup",
+          "status": "passed",
+          "elapsed_ms": 21.685,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "catalog request",
+          "phase": "test",
+          "status": "passed",
+          "elapsed_ms": 48.18,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "remove isolated data",
+          "phase": "teardown",
+          "status": "passed",
+          "elapsed_ms": 43.804,
+          "http_status": 204,
+          "attempts": 1,
+          "messages": []
+        }
+      ],
+      "message": null
+    },
+    {
+      "case_id": "catalog-009",
+      "status": "passed",
+      "elapsed_ms": 82.598,
+      "worker_id": "process-0",
+      "delivery": 1,
+      "steps": [
+        {
+          "name": "seed isolated catalog",
+          "phase": "setup",
+          "status": "passed",
+          "elapsed_ms": 29.049,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "catalog request",
+          "phase": "test",
+          "status": "passed",
+          "elapsed_ms": 33.559,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "remove isolated data",
+          "phase": "teardown",
+          "status": "passed",
+          "elapsed_ms": 19.419,
+          "http_status": 204,
+          "attempts": 1,
+          "messages": []
+        }
+      ],
+      "message": null
+    },
+    {
+      "case_id": "catalog-051",
+      "status": "passed",
+      "elapsed_ms": 39.156,
+      "worker_id": "process-0",
+      "delivery": 1,
+      "steps": [
+        {
+          "name": "seed isolated catalog",
+          "phase": "setup",
+          "status": "passed",
+          "elapsed_ms": 7.683,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "catalog request",
+          "phase": "test",
+          "status": "passed",
+          "elapsed_ms": 24.072,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "remove isolated data",
+          "phase": "teardown",
+          "status": "passed",
+          "elapsed_ms": 6.504,
+          "http_status": 204,
+          "attempts": 1,
+          "messages": []
+        }
+      ],
+      "message": null
+    },
+    {
+      "case_id": "catalog-048",
+      "status": "passed",
+      "elapsed_ms": 86.063,
+      "worker_id": "process-0",
+      "delivery": 1,
+      "steps": [
+        {
+          "name": "seed isolated catalog",
+          "phase": "setup",
+          "status": "passed",
+          "elapsed_ms": 43.84,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "catalog request",
+          "phase": "test",
+          "status": "passed",
+          "elapsed_ms": 30.812,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "remove isolated data",
+          "phase": "teardown",
+          "status": "passed",
+          "elapsed_ms": 10.742,
+          "http_status": 204,
+          "attempts": 1,
+          "messages": []
+        }
+      ],
+      "message": null
+    },
+    {
+      "case_id": "catalog-028",
+      "status": "passed",
+      "elapsed_ms": 101.162,
+      "worker_id": "process-1",
+      "delivery": 1,
+      "steps": [
+        {
+          "name": "seed isolated catalog",
+          "phase": "setup",
+          "status": "passed",
+          "elapsed_ms": 50.716,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "catalog request",
+          "phase": "test",
+          "status": "passed",
+          "elapsed_ms": 37.499,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "remove isolated data",
+          "phase": "teardown",
+          "status": "passed",
+          "elapsed_ms": 12.058,
+          "http_status": 204,
+          "attempts": 1,
+          "messages": []
+        }
+      ],
+      "message": null
+    },
+    {
+      "case_id": "catalog-021",
+      "status": "passed",
+      "elapsed_ms": 123.235,
+      "worker_id": "process-1",
+      "delivery": 1,
+      "steps": [
+        {
+          "name": "seed isolated catalog",
+          "phase": "setup",
+          "status": "passed",
+          "elapsed_ms": 22.045,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "catalog request",
+          "phase": "test",
+          "status": "passed",
+          "elapsed_ms": 37.01,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "remove isolated data",
+          "phase": "teardown",
+          "status": "passed",
+          "elapsed_ms": 63.474,
+          "http_status": 204,
+          "attempts": 1,
+          "messages": []
+        }
+      ],
+      "message": null
+    },
+    {
+      "case_id": "catalog-031",
+      "status": "passed",
+      "elapsed_ms": 73.774,
+      "worker_id": "process-1",
+      "delivery": 1,
+      "steps": [
+        {
+          "name": "seed isolated catalog",
+          "phase": "setup",
+          "status": "passed",
+          "elapsed_ms": 13.735,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "catalog request",
+          "phase": "test",
+          "status": "passed",
+          "elapsed_ms": 40.471,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "remove isolated data",
+          "phase": "teardown",
+          "status": "passed",
+          "elapsed_ms": 17.348,
+          "http_status": 204,
+          "attempts": 1,
+          "messages": []
+        }
+      ],
+      "message": null
+    },
+    {
+      "case_id": "catalog-058",
+      "status": "passed",
+      "elapsed_ms": 50.143,
+      "worker_id": "process-0",
+      "delivery": 1,
+      "steps": [
+        {
+          "name": "seed isolated catalog",
+          "phase": "setup",
+          "status": "passed",
+          "elapsed_ms": 18.171,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "catalog request",
+          "phase": "test",
+          "status": "passed",
+          "elapsed_ms": 28.02,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "remove isolated data",
+          "phase": "teardown",
+          "status": "passed",
+          "elapsed_ms": 3.422,
+          "http_status": 204,
+          "attempts": 1,
+          "messages": []
+        }
+      ],
+      "message": null
+    }
+  ],
+  "infrastructure_error": null,
+  "summary": {
+    "passed": 60,
+    "failed": 0,
+    "errors": 0,
+    "exit_code": 0
+  }
+}

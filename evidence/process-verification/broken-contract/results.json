@@ -1,0 +1,314 @@
+{
+  "run_id": "bb3d539d914f48939960581478ef45b5",
+  "suite": "Inventory API acceptance",
+  "mode": "local",
+  "elapsed_ms": 184.6,
+  "expected": 8,
+  "results": [
+    {
+      "case_id": "health",
+      "status": "passed",
+      "elapsed_ms": 14.315,
+      "worker_id": "local",
+      "delivery": 1,
+      "steps": [
+        {
+          "name": "health is ready",
+          "phase": "test",
+          "status": "passed",
+          "elapsed_ms": 14.01,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        }
+      ],
+      "message": null
+    },
+    {
+      "case_id": "catalog-list",
+      "status": "passed",
+      "elapsed_ms": 46.756,
+      "worker_id": "local",
+      "delivery": 1,
+      "steps": [
+        {
+          "name": "seed isolated catalog",
+          "phase": "setup",
+          "status": "passed",
+          "elapsed_ms": 14.816,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "list deterministic products",
+          "phase": "test",
+          "status": "passed",
+          "elapsed_ms": 24.368,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "remove isolated data",
+          "phase": "teardown",
+          "status": "passed",
+          "elapsed_ms": 6.85,
+          "http_status": 204,
+          "attempts": 1,
+          "messages": []
+        }
+      ],
+      "message": null
+    },
+    {
+      "case_id": "product-details",
+      "status": "failed",
+      "elapsed_ms": 42.339,
+      "worker_id": "local",
+      "delivery": 1,
+      "steps": [
+        {
+          "name": "seed isolated catalog",
+          "phase": "setup",
+          "status": "passed",
+          "elapsed_ms": 10.838,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "get a product",
+          "phase": "test",
+          "status": "failed",
+          "elapsed_ms": 23.873,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": [
+            "response body: schema violation (type)"
+          ]
+        },
+        {
+          "name": "remove isolated data",
+          "phase": "teardown",
+          "status": "passed",
+          "elapsed_ms": 6.616,
+          "http_status": 204,
+          "attempts": 1,
+          "messages": []
+        }
+      ],
+      "message": null
+    },
+    {
+      "case_id": "product-not-found",
+      "status": "passed",
+      "elapsed_ms": 50.973,
+      "worker_id": "local",
+      "delivery": 1,
+      "steps": [
+        {
+          "name": "seed isolated catalog",
+          "phase": "setup",
+          "status": "passed",
+          "elapsed_ms": 16.981,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "missing product returns 404",
+          "phase": "test",
+          "status": "passed",
+          "elapsed_ms": 26.546,
+          "http_status": 404,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "remove isolated data",
+          "phase": "teardown",
+          "status": "passed",
+          "elapsed_ms": 6.893,
+          "http_status": 204,
+          "attempts": 1,
+          "messages": []
+        }
+      ],
+      "message": null
+    },
+    {
+      "case_id": "order-idempotency",
+      "status": "passed",
+      "elapsed_ms": 84.82,
+      "worker_id": "local",
+      "delivery": 1,
+      "steps": [
+        {
+          "name": "seed isolated catalog",
+          "phase": "setup",
+          "status": "passed",
+          "elapsed_ms": 4.097,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "create order",
+          "phase": "test",
+          "status": "passed",
+          "elapsed_ms": 26.084,
+          "http_status": 201,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "replay identical order",
+          "phase": "test",
+          "status": "passed",
+          "elapsed_ms": 26.185,
+          "http_status": 201,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "reject conflicting duplicate",
+          "phase": "test",
+          "status": "passed",
+          "elapsed_ms": 24.965,
+          "http_status": 409,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "remove isolated data",
+          "phase": "teardown",
+          "status": "passed",
+          "elapsed_ms": 2.69,
+          "http_status": 204,
+          "attempts": 1,
+          "messages": []
+        }
+      ],
+      "message": null
+    },
+    {
+      "case_id": "invalid-order",
+      "status": "passed",
+      "elapsed_ms": 19.597,
+      "worker_id": "local",
+      "delivery": 1,
+      "steps": [
+        {
+          "name": "seed isolated catalog",
+          "phase": "setup",
+          "status": "passed",
+          "elapsed_ms": 7.356,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "reject zero quantity",
+          "phase": "test",
+          "status": "passed",
+          "elapsed_ms": 6.881,
+          "http_status": 422,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "remove isolated data",
+          "phase": "teardown",
+          "status": "passed",
+          "elapsed_ms": 4.845,
+          "http_status": 204,
+          "attempts": 1,
+          "messages": []
+        }
+      ],
+      "message": null
+    },
+    {
+      "case_id": "invalid-query",
+      "status": "passed",
+      "elapsed_ms": 20.699,
+      "worker_id": "local",
+      "delivery": 1,
+      "steps": [
+        {
+          "name": "seed isolated catalog",
+          "phase": "setup",
+          "status": "passed",
+          "elapsed_ms": 11.406,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "reject invalid page size",
+          "phase": "test",
+          "status": "passed",
+          "elapsed_ms": 2.666,
+          "http_status": 422,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "remove isolated data",
+          "phase": "teardown",
+          "status": "passed",
+          "elapsed_ms": 6.153,
+          "http_status": 204,
+          "attempts": 1,
+          "messages": []
+        }
+      ],
+      "message": null
+    },
+    {
+      "case_id": "missing-order-product",
+      "status": "passed",
+      "elapsed_ms": 36.141,
+      "worker_id": "local",
+      "delivery": 1,
+      "steps": [
+        {
+          "name": "seed isolated catalog",
+          "phase": "setup",
+          "status": "passed",
+          "elapsed_ms": 6.752,
+          "http_status": 200,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "reject unknown product",
+          "phase": "test",
+          "status": "passed",
+          "elapsed_ms": 26.169,
+          "http_status": 404,
+          "attempts": 1,
+          "messages": []
+        },
+        {
+          "name": "remove isolated data",
+          "phase": "teardown",
+          "status": "passed",
+          "elapsed_ms": 2.626,
+          "http_status": 204,
+          "attempts": 1,
+          "messages": []
+        }
+      ],
+      "message": null
+    }
+  ],
+  "infrastructure_error": null,
+  "summary": {
+    "passed": 7,
+    "failed": 1,
+    "errors": 0,
+    "exit_code": 1
+  }
+}

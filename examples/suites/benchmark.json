@@ -1,0 +1,3187 @@
+{
+  "version": 1,
+  "name": "Inventory API benchmark",
+  "seed": 42,
+  "cases": [
+    {
+      "id": "catalog-000",
+      "replay_safe": true,
+      "setup": [
+        {
+          "name": "seed isolated catalog",
+          "operation": "seedNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "json_body": {
+            "seed": "${seed}"
+          },
+          "expect": {
+            "status": 200,
+            "json_equals": {
+              "/seed": "${seed}",
+              "/products": 3
+            }
+          }
+        }
+      ],
+      "steps": [
+        {
+          "name": "catalog request",
+          "operation": "listProducts",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "expect": {
+            "status": 200
+          }
+        }
+      ],
+      "teardown": [
+        {
+          "name": "remove isolated data",
+          "operation": "deleteNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "expect": {
+            "status": 204
+          }
+        }
+      ]
+    },
+    {
+      "id": "catalog-001",
+      "replay_safe": true,
+      "setup": [
+        {
+          "name": "seed isolated catalog",
+          "operation": "seedNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "json_body": {
+            "seed": "${seed}"
+          },
+          "expect": {
+            "status": 200,
+            "json_equals": {
+              "/seed": "${seed}",
+              "/products": 3
+            }
+          }
+        }
+      ],
+      "steps": [
+        {
+          "name": "catalog request",
+          "operation": "listProducts",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "expect": {
+            "status": 200
+          }
+        }
+      ],
+      "teardown": [
+        {
+          "name": "remove isolated data",
+          "operation": "deleteNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "expect": {
+            "status": 204
+          }
+        }
+      ]
+    },
+    {
+      "id": "catalog-002",
+      "replay_safe": true,
+      "setup": [
+        {
+          "name": "seed isolated catalog",
+          "operation": "seedNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "json_body": {
+            "seed": "${seed}"
+          },
+          "expect": {
+            "status": 200,
+            "json_equals": {
+              "/seed": "${seed}",
+              "/products": 3
+            }
+          }
+        }
+      ],
+      "steps": [
+        {
+          "name": "catalog request",
+          "operation": "listProducts",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "expect": {
+            "status": 200
+          }
+        }
+      ],
+      "teardown": [
+        {
+          "name": "remove isolated data",
+          "operation": "deleteNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "expect": {
+            "status": 204
+          }
+        }
+      ]
+    },
+    {
+      "id": "catalog-003",
+      "replay_safe": true,
+      "setup": [
+        {
+          "name": "seed isolated catalog",
+          "operation": "seedNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "json_body": {
+            "seed": "${seed}"
+          },
+          "expect": {
+            "status": 200,
+            "json_equals": {
+              "/seed": "${seed}",
+              "/products": 3
+            }
+          }
+        }
+      ],
+      "steps": [
+        {
+          "name": "catalog request",
+          "operation": "listProducts",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "expect": {
+            "status": 200
+          }
+        }
+      ],
+      "teardown": [
+        {
+          "name": "remove isolated data",
+          "operation": "deleteNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "expect": {
+            "status": 204
+          }
+        }
+      ]
+    },
+    {
+      "id": "catalog-004",
+      "replay_safe": true,
+      "setup": [
+        {
+          "name": "seed isolated catalog",
+          "operation": "seedNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "json_body": {
+            "seed": "${seed}"
+          },
+          "expect": {
+            "status": 200,
+            "json_equals": {
+              "/seed": "${seed}",
+              "/products": 3
+            }
+          }
+        }
+      ],
+      "steps": [
+        {
+          "name": "catalog request",
+          "operation": "listProducts",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "expect": {
+            "status": 200
+          }
+        }
+      ],
+      "teardown": [
+        {
+          "name": "remove isolated data",
+          "operation": "deleteNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "expect": {
+            "status": 204
+          }
+        }
+      ]
+    },
+    {
+      "id": "catalog-005",
+      "replay_safe": true,
+      "setup": [
+        {
+          "name": "seed isolated catalog",
+          "operation": "seedNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "json_body": {
+            "seed": "${seed}"
+          },
+          "expect": {
+            "status": 200,
+            "json_equals": {
+              "/seed": "${seed}",
+              "/products": 3
+            }
+          }
+        }
+      ],
+      "steps": [
+        {
+          "name": "catalog request",
+          "operation": "listProducts",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "expect": {
+            "status": 200
+          }
+        }
+      ],
+      "teardown": [
+        {
+          "name": "remove isolated data",
+          "operation": "deleteNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "expect": {
+            "status": 204
+          }
+        }
+      ]
+    },
+    {
+      "id": "catalog-006",
+      "replay_safe": true,
+      "setup": [
+        {
+          "name": "seed isolated catalog",
+          "operation": "seedNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "json_body": {
+            "seed": "${seed}"
+          },
+          "expect": {
+            "status": 200,
+            "json_equals": {
+              "/seed": "${seed}",
+              "/products": 3
+            }
+          }
+        }
+      ],
+      "steps": [
+        {
+          "name": "catalog request",
+          "operation": "listProducts",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "expect": {
+            "status": 200
+          }
+        }
+      ],
+      "teardown": [
+        {
+          "name": "remove isolated data",
+          "operation": "deleteNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "expect": {
+            "status": 204
+          }
+        }
+      ]
+    },
+    {
+      "id": "catalog-007",
+      "replay_safe": true,
+      "setup": [
+        {
+          "name": "seed isolated catalog",
+          "operation": "seedNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "json_body": {
+            "seed": "${seed}"
+          },
+          "expect": {
+            "status": 200,
+            "json_equals": {
+              "/seed": "${seed}",
+              "/products": 3
+            }
+          }
+        }
+      ],
+      "steps": [
+        {
+          "name": "catalog request",
+          "operation": "listProducts",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "expect": {
+            "status": 200
+          }
+        }
+      ],
+      "teardown": [
+        {
+          "name": "remove isolated data",
+          "operation": "deleteNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "expect": {
+            "status": 204
+          }
+        }
+      ]
+    },
+    {
+      "id": "catalog-008",
+      "replay_safe": true,
+      "setup": [
+        {
+          "name": "seed isolated catalog",
+          "operation": "seedNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "json_body": {
+            "seed": "${seed}"
+          },
+          "expect": {
+            "status": 200,
+            "json_equals": {
+              "/seed": "${seed}",
+              "/products": 3
+            }
+          }
+        }
+      ],
+      "steps": [
+        {
+          "name": "catalog request",
+          "operation": "listProducts",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "expect": {
+            "status": 200
+          }
+        }
+      ],
+      "teardown": [
+        {
+          "name": "remove isolated data",
+          "operation": "deleteNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "expect": {
+            "status": 204
+          }
+        }
+      ]
+    },
+    {
+      "id": "catalog-009",
+      "replay_safe": true,
+      "setup": [
+        {
+          "name": "seed isolated catalog",
+          "operation": "seedNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "json_body": {
+            "seed": "${seed}"
+          },
+          "expect": {
+            "status": 200,
+            "json_equals": {
+              "/seed": "${seed}",
+              "/products": 3
+            }
+          }
+        }
+      ],
+      "steps": [
+        {
+          "name": "catalog request",
+          "operation": "listProducts",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "expect": {
+            "status": 200
+          }
+        }
+      ],
+      "teardown": [
+        {
+          "name": "remove isolated data",
+          "operation": "deleteNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "expect": {
+            "status": 204
+          }
+        }
+      ]
+    },
+    {
+      "id": "catalog-010",
+      "replay_safe": true,
+      "setup": [
+        {
+          "name": "seed isolated catalog",
+          "operation": "seedNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "json_body": {
+            "seed": "${seed}"
+          },
+          "expect": {
+            "status": 200,
+            "json_equals": {
+              "/seed": "${seed}",
+              "/products": 3
+            }
+          }
+        }
+      ],
+      "steps": [
+        {
+          "name": "catalog request",
+          "operation": "listProducts",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "expect": {
+            "status": 200
+          }
+        }
+      ],
+      "teardown": [
+        {
+          "name": "remove isolated data",
+          "operation": "deleteNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "expect": {
+            "status": 204
+          }
+        }
+      ]
+    },
+    {
+      "id": "catalog-011",
+      "replay_safe": true,
+      "setup": [
+        {
+          "name": "seed isolated catalog",
+          "operation": "seedNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "json_body": {
+            "seed": "${seed}"
+          },
+          "expect": {
+            "status": 200,
+            "json_equals": {
+              "/seed": "${seed}",
+              "/products": 3
+            }
+          }
+        }
+      ],
+      "steps": [
+        {
+          "name": "catalog request",
+          "operation": "listProducts",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "expect": {
+            "status": 200
+          }
+        }
+      ],
+      "teardown": [
+        {
+          "name": "remove isolated data",
+          "operation": "deleteNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "expect": {
+            "status": 204
+          }
+        }
+      ]
+    },
+    {
+      "id": "catalog-012",
+      "replay_safe": true,
+      "setup": [
+        {
+          "name": "seed isolated catalog",
+          "operation": "seedNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "json_body": {
+            "seed": "${seed}"
+          },
+          "expect": {
+            "status": 200,
+            "json_equals": {
+              "/seed": "${seed}",
+              "/products": 3
+            }
+          }
+        }
+      ],
+      "steps": [
+        {
+          "name": "catalog request",
+          "operation": "listProducts",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "expect": {
+            "status": 200
+          }
+        }
+      ],
+      "teardown": [
+        {
+          "name": "remove isolated data",
+          "operation": "deleteNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "expect": {
+            "status": 204
+          }
+        }
+      ]
+    },
+    {
+      "id": "catalog-013",
+      "replay_safe": true,
+      "setup": [
+        {
+          "name": "seed isolated catalog",
+          "operation": "seedNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "json_body": {
+            "seed": "${seed}"
+          },
+          "expect": {
+            "status": 200,
+            "json_equals": {
+              "/seed": "${seed}",
+              "/products": 3
+            }
+          }
+        }
+      ],
+      "steps": [
+        {
+          "name": "catalog request",
+          "operation": "listProducts",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "expect": {
+            "status": 200
+          }
+        }
+      ],
+      "teardown": [
+        {
+          "name": "remove isolated data",
+          "operation": "deleteNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "expect": {
+            "status": 204
+          }
+        }
+      ]
+    },
+    {
+      "id": "catalog-014",
+      "replay_safe": true,
+      "setup": [
+        {
+          "name": "seed isolated catalog",
+          "operation": "seedNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "json_body": {
+            "seed": "${seed}"
+          },
+          "expect": {
+            "status": 200,
+            "json_equals": {
+              "/seed": "${seed}",
+              "/products": 3
+            }
+          }
+        }
+      ],
+      "steps": [
+        {
+          "name": "catalog request",
+          "operation": "listProducts",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "expect": {
+            "status": 200
+          }
+        }
+      ],
+      "teardown": [
+        {
+          "name": "remove isolated data",
+          "operation": "deleteNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "expect": {
+            "status": 204
+          }
+        }
+      ]
+    },
+    {
+      "id": "catalog-015",
+      "replay_safe": true,
+      "setup": [
+        {
+          "name": "seed isolated catalog",
+          "operation": "seedNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "json_body": {
+            "seed": "${seed}"
+          },
+          "expect": {
+            "status": 200,
+            "json_equals": {
+              "/seed": "${seed}",
+              "/products": 3
+            }
+          }
+        }
+      ],
+      "steps": [
+        {
+          "name": "catalog request",
+          "operation": "listProducts",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "expect": {
+            "status": 200
+          }
+        }
+      ],
+      "teardown": [
+        {
+          "name": "remove isolated data",
+          "operation": "deleteNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "expect": {
+            "status": 204
+          }
+        }
+      ]
+    },
+    {
+      "id": "catalog-016",
+      "replay_safe": true,
+      "setup": [
+        {
+          "name": "seed isolated catalog",
+          "operation": "seedNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "json_body": {
+            "seed": "${seed}"
+          },
+          "expect": {
+            "status": 200,
+            "json_equals": {
+              "/seed": "${seed}",
+              "/products": 3
+            }
+          }
+        }
+      ],
+      "steps": [
+        {
+          "name": "catalog request",
+          "operation": "listProducts",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "expect": {
+            "status": 200
+          }
+        }
+      ],
+      "teardown": [
+        {
+          "name": "remove isolated data",
+          "operation": "deleteNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "expect": {
+            "status": 204
+          }
+        }
+      ]
+    },
+    {
+      "id": "catalog-017",
+      "replay_safe": true,
+      "setup": [
+        {
+          "name": "seed isolated catalog",
+          "operation": "seedNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "json_body": {
+            "seed": "${seed}"
+          },
+          "expect": {
+            "status": 200,
+            "json_equals": {
+              "/seed": "${seed}",
+              "/products": 3
+            }
+          }
+        }
+      ],
+      "steps": [
+        {
+          "name": "catalog request",
+          "operation": "listProducts",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "expect": {
+            "status": 200
+          }
+        }
+      ],
+      "teardown": [
+        {
+          "name": "remove isolated data",
+          "operation": "deleteNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "expect": {
+            "status": 204
+          }
+        }
+      ]
+    },
+    {
+      "id": "catalog-018",
+      "replay_safe": true,
+      "setup": [
+        {
+          "name": "seed isolated catalog",
+          "operation": "seedNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "json_body": {
+            "seed": "${seed}"
+          },
+          "expect": {
+            "status": 200,
+            "json_equals": {
+              "/seed": "${seed}",
+              "/products": 3
+            }
+          }
+        }
+      ],
+      "steps": [
+        {
+          "name": "catalog request",
+          "operation": "listProducts",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "expect": {
+            "status": 200
+          }
+        }
+      ],
+      "teardown": [
+        {
+          "name": "remove isolated data",
+          "operation": "deleteNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "expect": {
+            "status": 204
+          }
+        }
+      ]
+    },
+    {
+      "id": "catalog-019",
+      "replay_safe": true,
+      "setup": [
+        {
+          "name": "seed isolated catalog",
+          "operation": "seedNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "json_body": {
+            "seed": "${seed}"
+          },
+          "expect": {
+            "status": 200,
+            "json_equals": {
+              "/seed": "${seed}",
+              "/products": 3
+            }
+          }
+        }
+      ],
+      "steps": [
+        {
+          "name": "catalog request",
+          "operation": "listProducts",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "expect": {
+            "status": 200
+          }
+        }
+      ],
+      "teardown": [
+        {
+          "name": "remove isolated data",
+          "operation": "deleteNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "expect": {
+            "status": 204
+          }
+        }
+      ]
+    },
+    {
+      "id": "catalog-020",
+      "replay_safe": true,
+      "setup": [
+        {
+          "name": "seed isolated catalog",
+          "operation": "seedNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "json_body": {
+            "seed": "${seed}"
+          },
+          "expect": {
+            "status": 200,
+            "json_equals": {
+              "/seed": "${seed}",
+              "/products": 3
+            }
+          }
+        }
+      ],
+      "steps": [
+        {
+          "name": "catalog request",
+          "operation": "listProducts",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "expect": {
+            "status": 200
+          }
+        }
+      ],
+      "teardown": [
+        {
+          "name": "remove isolated data",
+          "operation": "deleteNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "expect": {
+            "status": 204
+          }
+        }
+      ]
+    },
+    {
+      "id": "catalog-021",
+      "replay_safe": true,
+      "setup": [
+        {
+          "name": "seed isolated catalog",
+          "operation": "seedNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "json_body": {
+            "seed": "${seed}"
+          },
+          "expect": {
+            "status": 200,
+            "json_equals": {
+              "/seed": "${seed}",
+              "/products": 3
+            }
+          }
+        }
+      ],
+      "steps": [
+        {
+          "name": "catalog request",
+          "operation": "listProducts",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "expect": {
+            "status": 200
+          }
+        }
+      ],
+      "teardown": [
+        {
+          "name": "remove isolated data",
+          "operation": "deleteNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "expect": {
+            "status": 204
+          }
+        }
+      ]
+    },
+    {
+      "id": "catalog-022",
+      "replay_safe": true,
+      "setup": [
+        {
+          "name": "seed isolated catalog",
+          "operation": "seedNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "json_body": {
+            "seed": "${seed}"
+          },
+          "expect": {
+            "status": 200,
+            "json_equals": {
+              "/seed": "${seed}",
+              "/products": 3
+            }
+          }
+        }
+      ],
+      "steps": [
+        {
+          "name": "catalog request",
+          "operation": "listProducts",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "expect": {
+            "status": 200
+          }
+        }
+      ],
+      "teardown": [
+        {
+          "name": "remove isolated data",
+          "operation": "deleteNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "expect": {
+            "status": 204
+          }
+        }
+      ]
+    },
+    {
+      "id": "catalog-023",
+      "replay_safe": true,
+      "setup": [
+        {
+          "name": "seed isolated catalog",
+          "operation": "seedNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "json_body": {
+            "seed": "${seed}"
+          },
+          "expect": {
+            "status": 200,
+            "json_equals": {
+              "/seed": "${seed}",
+              "/products": 3
+            }
+          }
+        }
+      ],
+      "steps": [
+        {
+          "name": "catalog request",
+          "operation": "listProducts",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "expect": {
+            "status": 200
+          }
+        }
+      ],
+      "teardown": [
+        {
+          "name": "remove isolated data",
+          "operation": "deleteNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "expect": {
+            "status": 204
+          }
+        }
+      ]
+    },
+    {
+      "id": "catalog-024",
+      "replay_safe": true,
+      "setup": [
+        {
+          "name": "seed isolated catalog",
+          "operation": "seedNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "json_body": {
+            "seed": "${seed}"
+          },
+          "expect": {
+            "status": 200,
+            "json_equals": {
+              "/seed": "${seed}",
+              "/products": 3
+            }
+          }
+        }
+      ],
+      "steps": [
+        {
+          "name": "catalog request",
+          "operation": "listProducts",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "expect": {
+            "status": 200
+          }
+        }
+      ],
+      "teardown": [
+        {
+          "name": "remove isolated data",
+          "operation": "deleteNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "expect": {
+            "status": 204
+          }
+        }
+      ]
+    },
+    {
+      "id": "catalog-025",
+      "replay_safe": true,
+      "setup": [
+        {
+          "name": "seed isolated catalog",
+          "operation": "seedNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "json_body": {
+            "seed": "${seed}"
+          },
+          "expect": {
+            "status": 200,
+            "json_equals": {
+              "/seed": "${seed}",
+              "/products": 3
+            }
+          }
+        }
+      ],
+      "steps": [
+        {
+          "name": "catalog request",
+          "operation": "listProducts",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "expect": {
+            "status": 200
+          }
+        }
+      ],
+      "teardown": [
+        {
+          "name": "remove isolated data",
+          "operation": "deleteNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "expect": {
+            "status": 204
+          }
+        }
+      ]
+    },
+    {
+      "id": "catalog-026",
+      "replay_safe": true,
+      "setup": [
+        {
+          "name": "seed isolated catalog",
+          "operation": "seedNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "json_body": {
+            "seed": "${seed}"
+          },
+          "expect": {
+            "status": 200,
+            "json_equals": {
+              "/seed": "${seed}",
+              "/products": 3
+            }
+          }
+        }
+      ],
+      "steps": [
+        {
+          "name": "catalog request",
+          "operation": "listProducts",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "expect": {
+            "status": 200
+          }
+        }
+      ],
+      "teardown": [
+        {
+          "name": "remove isolated data",
+          "operation": "deleteNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "expect": {
+            "status": 204
+          }
+        }
+      ]
+    },
+    {
+      "id": "catalog-027",
+      "replay_safe": true,
+      "setup": [
+        {
+          "name": "seed isolated catalog",
+          "operation": "seedNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "json_body": {
+            "seed": "${seed}"
+          },
+          "expect": {
+            "status": 200,
+            "json_equals": {
+              "/seed": "${seed}",
+              "/products": 3
+            }
+          }
+        }
+      ],
+      "steps": [
+        {
+          "name": "catalog request",
+          "operation": "listProducts",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "expect": {
+            "status": 200
+          }
+        }
+      ],
+      "teardown": [
+        {
+          "name": "remove isolated data",
+          "operation": "deleteNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "expect": {
+            "status": 204
+          }
+        }
+      ]
+    },
+    {
+      "id": "catalog-028",
+      "replay_safe": true,
+      "setup": [
+        {
+          "name": "seed isolated catalog",
+          "operation": "seedNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "json_body": {
+            "seed": "${seed}"
+          },
+          "expect": {
+            "status": 200,
+            "json_equals": {
+              "/seed": "${seed}",
+              "/products": 3
+            }
+          }
+        }
+      ],
+      "steps": [
+        {
+          "name": "catalog request",
+          "operation": "listProducts",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "expect": {
+            "status": 200
+          }
+        }
+      ],
+      "teardown": [
+        {
+          "name": "remove isolated data",
+          "operation": "deleteNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "expect": {
+            "status": 204
+          }
+        }
+      ]
+    },
+    {
+      "id": "catalog-029",
+      "replay_safe": true,
+      "setup": [
+        {
+          "name": "seed isolated catalog",
+          "operation": "seedNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "json_body": {
+            "seed": "${seed}"
+          },
+          "expect": {
+            "status": 200,
+            "json_equals": {
+              "/seed": "${seed}",
+              "/products": 3
+            }
+          }
+        }
+      ],
+      "steps": [
+        {
+          "name": "catalog request",
+          "operation": "listProducts",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "expect": {
+            "status": 200
+          }
+        }
+      ],
+      "teardown": [
+        {
+          "name": "remove isolated data",
+          "operation": "deleteNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "expect": {
+            "status": 204
+          }
+        }
+      ]
+    },
+    {
+      "id": "catalog-030",
+      "replay_safe": true,
+      "setup": [
+        {
+          "name": "seed isolated catalog",
+          "operation": "seedNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "json_body": {
+            "seed": "${seed}"
+          },
+          "expect": {
+            "status": 200,
+            "json_equals": {
+              "/seed": "${seed}",
+              "/products": 3
+            }
+          }
+        }
+      ],
+      "steps": [
+        {
+          "name": "catalog request",
+          "operation": "listProducts",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "expect": {
+            "status": 200
+          }
+        }
+      ],
+      "teardown": [
+        {
+          "name": "remove isolated data",
+          "operation": "deleteNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "expect": {
+            "status": 204
+          }
+        }
+      ]
+    },
+    {
+      "id": "catalog-031",
+      "replay_safe": true,
+      "setup": [
+        {
+          "name": "seed isolated catalog",
+          "operation": "seedNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "json_body": {
+            "seed": "${seed}"
+          },
+          "expect": {
+            "status": 200,
+            "json_equals": {
+              "/seed": "${seed}",
+              "/products": 3
+            }
+          }
+        }
+      ],
+      "steps": [
+        {
+          "name": "catalog request",
+          "operation": "listProducts",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "expect": {
+            "status": 200
+          }
+        }
+      ],
+      "teardown": [
+        {
+          "name": "remove isolated data",
+          "operation": "deleteNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "expect": {
+            "status": 204
+          }
+        }
+      ]
+    },
+    {
+      "id": "catalog-032",
+      "replay_safe": true,
+      "setup": [
+        {
+          "name": "seed isolated catalog",
+          "operation": "seedNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "json_body": {
+            "seed": "${seed}"
+          },
+          "expect": {
+            "status": 200,
+            "json_equals": {
+              "/seed": "${seed}",
+              "/products": 3
+            }
+          }
+        }
+      ],
+      "steps": [
+        {
+          "name": "catalog request",
+          "operation": "listProducts",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "expect": {
+            "status": 200
+          }
+        }
+      ],
+      "teardown": [
+        {
+          "name": "remove isolated data",
+          "operation": "deleteNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "expect": {
+            "status": 204
+          }
+        }
+      ]
+    },
+    {
+      "id": "catalog-033",
+      "replay_safe": true,
+      "setup": [
+        {
+          "name": "seed isolated catalog",
+          "operation": "seedNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "json_body": {
+            "seed": "${seed}"
+          },
+          "expect": {
+            "status": 200,
+            "json_equals": {
+              "/seed": "${seed}",
+              "/products": 3
+            }
+          }
+        }
+      ],
+      "steps": [
+        {
+          "name": "catalog request",
+          "operation": "listProducts",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "expect": {
+            "status": 200
+          }
+        }
+      ],
+      "teardown": [
+        {
+          "name": "remove isolated data",
+          "operation": "deleteNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "expect": {
+            "status": 204
+          }
+        }
+      ]
+    },
+    {
+      "id": "catalog-034",
+      "replay_safe": true,
+      "setup": [
+        {
+          "name": "seed isolated catalog",
+          "operation": "seedNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "json_body": {
+            "seed": "${seed}"
+          },
+          "expect": {
+            "status": 200,
+            "json_equals": {
+              "/seed": "${seed}",
+              "/products": 3
+            }
+          }
+        }
+      ],
+      "steps": [
+        {
+          "name": "catalog request",
+          "operation": "listProducts",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "expect": {
+            "status": 200
+          }
+        }
+      ],
+      "teardown": [
+        {
+          "name": "remove isolated data",
+          "operation": "deleteNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "expect": {
+            "status": 204
+          }
+        }
+      ]
+    },
+    {
+      "id": "catalog-035",
+      "replay_safe": true,
+      "setup": [
+        {
+          "name": "seed isolated catalog",
+          "operation": "seedNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "json_body": {
+            "seed": "${seed}"
+          },
+          "expect": {
+            "status": 200,
+            "json_equals": {
+              "/seed": "${seed}",
+              "/products": 3
+            }
+          }
+        }
+      ],
+      "steps": [
+        {
+          "name": "catalog request",
+          "operation": "listProducts",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "expect": {
+            "status": 200
+          }
+        }
+      ],
+      "teardown": [
+        {
+          "name": "remove isolated data",
+          "operation": "deleteNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "expect": {
+            "status": 204
+          }
+        }
+      ]
+    },
+    {
+      "id": "catalog-036",
+      "replay_safe": true,
+      "setup": [
+        {
+          "name": "seed isolated catalog",
+          "operation": "seedNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "json_body": {
+            "seed": "${seed}"
+          },
+          "expect": {
+            "status": 200,
+            "json_equals": {
+              "/seed": "${seed}",
+              "/products": 3
+            }
+          }
+        }
+      ],
+      "steps": [
+        {
+          "name": "catalog request",
+          "operation": "listProducts",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "expect": {
+            "status": 200
+          }
+        }
+      ],
+      "teardown": [
+        {
+          "name": "remove isolated data",
+          "operation": "deleteNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "expect": {
+            "status": 204
+          }
+        }
+      ]
+    },
+    {
+      "id": "catalog-037",
+      "replay_safe": true,
+      "setup": [
+        {
+          "name": "seed isolated catalog",
+          "operation": "seedNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "json_body": {
+            "seed": "${seed}"
+          },
+          "expect": {
+            "status": 200,
+            "json_equals": {
+              "/seed": "${seed}",
+              "/products": 3
+            }
+          }
+        }
+      ],
+      "steps": [
+        {
+          "name": "catalog request",
+          "operation": "listProducts",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "expect": {
+            "status": 200
+          }
+        }
+      ],
+      "teardown": [
+        {
+          "name": "remove isolated data",
+          "operation": "deleteNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "expect": {
+            "status": 204
+          }
+        }
+      ]
+    },
+    {
+      "id": "catalog-038",
+      "replay_safe": true,
+      "setup": [
+        {
+          "name": "seed isolated catalog",
+          "operation": "seedNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "json_body": {
+            "seed": "${seed}"
+          },
+          "expect": {
+            "status": 200,
+            "json_equals": {
+              "/seed": "${seed}",
+              "/products": 3
+            }
+          }
+        }
+      ],
+      "steps": [
+        {
+          "name": "catalog request",
+          "operation": "listProducts",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "expect": {
+            "status": 200
+          }
+        }
+      ],
+      "teardown": [
+        {
+          "name": "remove isolated data",
+          "operation": "deleteNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "expect": {
+            "status": 204
+          }
+        }
+      ]
+    },
+    {
+      "id": "catalog-039",
+      "replay_safe": true,
+      "setup": [
+        {
+          "name": "seed isolated catalog",
+          "operation": "seedNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "json_body": {
+            "seed": "${seed}"
+          },
+          "expect": {
+            "status": 200,
+            "json_equals": {
+              "/seed": "${seed}",
+              "/products": 3
+            }
+          }
+        }
+      ],
+      "steps": [
+        {
+          "name": "catalog request",
+          "operation": "listProducts",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "expect": {
+            "status": 200
+          }
+        }
+      ],
+      "teardown": [
+        {
+          "name": "remove isolated data",
+          "operation": "deleteNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "expect": {
+            "status": 204
+          }
+        }
+      ]
+    },
+    {
+      "id": "catalog-040",
+      "replay_safe": true,
+      "setup": [
+        {
+          "name": "seed isolated catalog",
+          "operation": "seedNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "json_body": {
+            "seed": "${seed}"
+          },
+          "expect": {
+            "status": 200,
+            "json_equals": {
+              "/seed": "${seed}",
+              "/products": 3
+            }
+          }
+        }
+      ],
+      "steps": [
+        {
+          "name": "catalog request",
+          "operation": "listProducts",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "expect": {
+            "status": 200
+          }
+        }
+      ],
+      "teardown": [
+        {
+          "name": "remove isolated data",
+          "operation": "deleteNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "expect": {
+            "status": 204
+          }
+        }
+      ]
+    },
+    {
+      "id": "catalog-041",
+      "replay_safe": true,
+      "setup": [
+        {
+          "name": "seed isolated catalog",
+          "operation": "seedNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "json_body": {
+            "seed": "${seed}"
+          },
+          "expect": {
+            "status": 200,
+            "json_equals": {
+              "/seed": "${seed}",
+              "/products": 3
+            }
+          }
+        }
+      ],
+      "steps": [
+        {
+          "name": "catalog request",
+          "operation": "listProducts",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "expect": {
+            "status": 200
+          }
+        }
+      ],
+      "teardown": [
+        {
+          "name": "remove isolated data",
+          "operation": "deleteNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "expect": {
+            "status": 204
+          }
+        }
+      ]
+    },
+    {
+      "id": "catalog-042",
+      "replay_safe": true,
+      "setup": [
+        {
+          "name": "seed isolated catalog",
+          "operation": "seedNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "json_body": {
+            "seed": "${seed}"
+          },
+          "expect": {
+            "status": 200,
+            "json_equals": {
+              "/seed": "${seed}",
+              "/products": 3
+            }
+          }
+        }
+      ],
+      "steps": [
+        {
+          "name": "catalog request",
+          "operation": "listProducts",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "expect": {
+            "status": 200
+          }
+        }
+      ],
+      "teardown": [
+        {
+          "name": "remove isolated data",
+          "operation": "deleteNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "expect": {
+            "status": 204
+          }
+        }
+      ]
+    },
+    {
+      "id": "catalog-043",
+      "replay_safe": true,
+      "setup": [
+        {
+          "name": "seed isolated catalog",
+          "operation": "seedNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "json_body": {
+            "seed": "${seed}"
+          },
+          "expect": {
+            "status": 200,
+            "json_equals": {
+              "/seed": "${seed}",
+              "/products": 3
+            }
+          }
+        }
+      ],
+      "steps": [
+        {
+          "name": "catalog request",
+          "operation": "listProducts",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "expect": {
+            "status": 200
+          }
+        }
+      ],
+      "teardown": [
+        {
+          "name": "remove isolated data",
+          "operation": "deleteNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "expect": {
+            "status": 204
+          }
+        }
+      ]
+    },
+    {
+      "id": "catalog-044",
+      "replay_safe": true,
+      "setup": [
+        {
+          "name": "seed isolated catalog",
+          "operation": "seedNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "json_body": {
+            "seed": "${seed}"
+          },
+          "expect": {
+            "status": 200,
+            "json_equals": {
+              "/seed": "${seed}",
+              "/products": 3
+            }
+          }
+        }
+      ],
+      "steps": [
+        {
+          "name": "catalog request",
+          "operation": "listProducts",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "expect": {
+            "status": 200
+          }
+        }
+      ],
+      "teardown": [
+        {
+          "name": "remove isolated data",
+          "operation": "deleteNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "expect": {
+            "status": 204
+          }
+        }
+      ]
+    },
+    {
+      "id": "catalog-045",
+      "replay_safe": true,
+      "setup": [
+        {
+          "name": "seed isolated catalog",
+          "operation": "seedNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "json_body": {
+            "seed": "${seed}"
+          },
+          "expect": {
+            "status": 200,
+            "json_equals": {
+              "/seed": "${seed}",
+              "/products": 3
+            }
+          }
+        }
+      ],
+      "steps": [
+        {
+          "name": "catalog request",
+          "operation": "listProducts",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "expect": {
+            "status": 200
+          }
+        }
+      ],
+      "teardown": [
+        {
+          "name": "remove isolated data",
+          "operation": "deleteNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "expect": {
+            "status": 204
+          }
+        }
+      ]
+    },
+    {
+      "id": "catalog-046",
+      "replay_safe": true,
+      "setup": [
+        {
+          "name": "seed isolated catalog",
+          "operation": "seedNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "json_body": {
+            "seed": "${seed}"
+          },
+          "expect": {
+            "status": 200,
+            "json_equals": {
+              "/seed": "${seed}",
+              "/products": 3
+            }
+          }
+        }
+      ],
+      "steps": [
+        {
+          "name": "catalog request",
+          "operation": "listProducts",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "expect": {
+            "status": 200
+          }
+        }
+      ],
+      "teardown": [
+        {
+          "name": "remove isolated data",
+          "operation": "deleteNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "expect": {
+            "status": 204
+          }
+        }
+      ]
+    },
+    {
+      "id": "catalog-047",
+      "replay_safe": true,
+      "setup": [
+        {
+          "name": "seed isolated catalog",
+          "operation": "seedNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "json_body": {
+            "seed": "${seed}"
+          },
+          "expect": {
+            "status": 200,
+            "json_equals": {
+              "/seed": "${seed}",
+              "/products": 3
+            }
+          }
+        }
+      ],
+      "steps": [
+        {
+          "name": "catalog request",
+          "operation": "listProducts",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "expect": {
+            "status": 200
+          }
+        }
+      ],
+      "teardown": [
+        {
+          "name": "remove isolated data",
+          "operation": "deleteNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "expect": {
+            "status": 204
+          }
+        }
+      ]
+    },
+    {
+      "id": "catalog-048",
+      "replay_safe": true,
+      "setup": [
+        {
+          "name": "seed isolated catalog",
+          "operation": "seedNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "json_body": {
+            "seed": "${seed}"
+          },
+          "expect": {
+            "status": 200,
+            "json_equals": {
+              "/seed": "${seed}",
+              "/products": 3
+            }
+          }
+        }
+      ],
+      "steps": [
+        {
+          "name": "catalog request",
+          "operation": "listProducts",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "expect": {
+            "status": 200
+          }
+        }
+      ],
+      "teardown": [
+        {
+          "name": "remove isolated data",
+          "operation": "deleteNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "expect": {
+            "status": 204
+          }
+        }
+      ]
+    },
+    {
+      "id": "catalog-049",
+      "replay_safe": true,
+      "setup": [
+        {
+          "name": "seed isolated catalog",
+          "operation": "seedNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "json_body": {
+            "seed": "${seed}"
+          },
+          "expect": {
+            "status": 200,
+            "json_equals": {
+              "/seed": "${seed}",
+              "/products": 3
+            }
+          }
+        }
+      ],
+      "steps": [
+        {
+          "name": "catalog request",
+          "operation": "listProducts",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "expect": {
+            "status": 200
+          }
+        }
+      ],
+      "teardown": [
+        {
+          "name": "remove isolated data",
+          "operation": "deleteNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "expect": {
+            "status": 204
+          }
+        }
+      ]
+    },
+    {
+      "id": "catalog-050",
+      "replay_safe": true,
+      "setup": [
+        {
+          "name": "seed isolated catalog",
+          "operation": "seedNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "json_body": {
+            "seed": "${seed}"
+          },
+          "expect": {
+            "status": 200,
+            "json_equals": {
+              "/seed": "${seed}",
+              "/products": 3
+            }
+          }
+        }
+      ],
+      "steps": [
+        {
+          "name": "catalog request",
+          "operation": "listProducts",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "expect": {
+            "status": 200
+          }
+        }
+      ],
+      "teardown": [
+        {
+          "name": "remove isolated data",
+          "operation": "deleteNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "expect": {
+            "status": 204
+          }
+        }
+      ]
+    },
+    {
+      "id": "catalog-051",
+      "replay_safe": true,
+      "setup": [
+        {
+          "name": "seed isolated catalog",
+          "operation": "seedNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "json_body": {
+            "seed": "${seed}"
+          },
+          "expect": {
+            "status": 200,
+            "json_equals": {
+              "/seed": "${seed}",
+              "/products": 3
+            }
+          }
+        }
+      ],
+      "steps": [
+        {
+          "name": "catalog request",
+          "operation": "listProducts",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "expect": {
+            "status": 200
+          }
+        }
+      ],
+      "teardown": [
+        {
+          "name": "remove isolated data",
+          "operation": "deleteNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "expect": {
+            "status": 204
+          }
+        }
+      ]
+    },
+    {
+      "id": "catalog-052",
+      "replay_safe": true,
+      "setup": [
+        {
+          "name": "seed isolated catalog",
+          "operation": "seedNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "json_body": {
+            "seed": "${seed}"
+          },
+          "expect": {
+            "status": 200,
+            "json_equals": {
+              "/seed": "${seed}",
+              "/products": 3
+            }
+          }
+        }
+      ],
+      "steps": [
+        {
+          "name": "catalog request",
+          "operation": "listProducts",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "expect": {
+            "status": 200
+          }
+        }
+      ],
+      "teardown": [
+        {
+          "name": "remove isolated data",
+          "operation": "deleteNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "expect": {
+            "status": 204
+          }
+        }
+      ]
+    },
+    {
+      "id": "catalog-053",
+      "replay_safe": true,
+      "setup": [
+        {
+          "name": "seed isolated catalog",
+          "operation": "seedNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "json_body": {
+            "seed": "${seed}"
+          },
+          "expect": {
+            "status": 200,
+            "json_equals": {
+              "/seed": "${seed}",
+              "/products": 3
+            }
+          }
+        }
+      ],
+      "steps": [
+        {
+          "name": "catalog request",
+          "operation": "listProducts",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "expect": {
+            "status": 200
+          }
+        }
+      ],
+      "teardown": [
+        {
+          "name": "remove isolated data",
+          "operation": "deleteNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "expect": {
+            "status": 204
+          }
+        }
+      ]
+    },
+    {
+      "id": "catalog-054",
+      "replay_safe": true,
+      "setup": [
+        {
+          "name": "seed isolated catalog",
+          "operation": "seedNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "json_body": {
+            "seed": "${seed}"
+          },
+          "expect": {
+            "status": 200,
+            "json_equals": {
+              "/seed": "${seed}",
+              "/products": 3
+            }
+          }
+        }
+      ],
+      "steps": [
+        {
+          "name": "catalog request",
+          "operation": "listProducts",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "expect": {
+            "status": 200
+          }
+        }
+      ],
+      "teardown": [
+        {
+          "name": "remove isolated data",
+          "operation": "deleteNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "expect": {
+            "status": 204
+          }
+        }
+      ]
+    },
+    {
+      "id": "catalog-055",
+      "replay_safe": true,
+      "setup": [
+        {
+          "name": "seed isolated catalog",
+          "operation": "seedNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "json_body": {
+            "seed": "${seed}"
+          },
+          "expect": {
+            "status": 200,
+            "json_equals": {
+              "/seed": "${seed}",
+              "/products": 3
+            }
+          }
+        }
+      ],
+      "steps": [
+        {
+          "name": "catalog request",
+          "operation": "listProducts",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "expect": {
+            "status": 200
+          }
+        }
+      ],
+      "teardown": [
+        {
+          "name": "remove isolated data",
+          "operation": "deleteNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "expect": {
+            "status": 204
+          }
+        }
+      ]
+    },
+    {
+      "id": "catalog-056",
+      "replay_safe": true,
+      "setup": [
+        {
+          "name": "seed isolated catalog",
+          "operation": "seedNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "json_body": {
+            "seed": "${seed}"
+          },
+          "expect": {
+            "status": 200,
+            "json_equals": {
+              "/seed": "${seed}",
+              "/products": 3
+            }
+          }
+        }
+      ],
+      "steps": [
+        {
+          "name": "catalog request",
+          "operation": "listProducts",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "expect": {
+            "status": 200
+          }
+        }
+      ],
+      "teardown": [
+        {
+          "name": "remove isolated data",
+          "operation": "deleteNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "expect": {
+            "status": 204
+          }
+        }
+      ]
+    },
+    {
+      "id": "catalog-057",
+      "replay_safe": true,
+      "setup": [
+        {
+          "name": "seed isolated catalog",
+          "operation": "seedNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "json_body": {
+            "seed": "${seed}"
+          },
+          "expect": {
+            "status": 200,
+            "json_equals": {
+              "/seed": "${seed}",
+              "/products": 3
+            }
+          }
+        }
+      ],
+      "steps": [
+        {
+          "name": "catalog request",
+          "operation": "listProducts",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "expect": {
+            "status": 200
+          }
+        }
+      ],
+      "teardown": [
+        {
+          "name": "remove isolated data",
+          "operation": "deleteNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "expect": {
+            "status": 204
+          }
+        }
+      ]
+    },
+    {
+      "id": "catalog-058",
+      "replay_safe": true,
+      "setup": [
+        {
+          "name": "seed isolated catalog",
+          "operation": "seedNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "json_body": {
+            "seed": "${seed}"
+          },
+          "expect": {
+            "status": 200,
+            "json_equals": {
+              "/seed": "${seed}",
+              "/products": 3
+            }
+          }
+        }
+      ],
+      "steps": [
+        {
+          "name": "catalog request",
+          "operation": "listProducts",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "expect": {
+            "status": 200
+          }
+        }
+      ],
+      "teardown": [
+        {
+          "name": "remove isolated data",
+          "operation": "deleteNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "expect": {
+            "status": 204
+          }
+        }
+      ]
+    },
+    {
+      "id": "catalog-059",
+      "replay_safe": true,
+      "setup": [
+        {
+          "name": "seed isolated catalog",
+          "operation": "seedNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "json_body": {
+            "seed": "${seed}"
+          },
+          "expect": {
+            "status": 200,
+            "json_equals": {
+              "/seed": "${seed}",
+              "/products": 3
+            }
+          }
+        }
+      ],
+      "steps": [
+        {
+          "name": "catalog request",
+          "operation": "listProducts",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "expect": {
+            "status": 200
+          }
+        }
+      ],
+      "teardown": [
+        {
+          "name": "remove isolated data",
+          "operation": "deleteNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "expect": {
+            "status": 204
+          }
+        }
+      ]
+    }
+  ]
+}

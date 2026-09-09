@@ -1,0 +1,79 @@
+{
+  "verified_on": "2026-09-09",
+  "tests_passed": 86,
+  "tests_failed": 0,
+  "tests_skipped": 0,
+  "coverage_combined_percent": 89.45191313340227,
+  "statement_coverage_percent": 90.89655172413794,
+  "branch_coverage_percent": 85.12396694214875,
+  "python": "3.12.14",
+  "redis": "6.2.14",
+  "real_worker_processes": 2,
+  "threads_per_worker": 4,
+  "acceptance_cases_passed": 8,
+  "sigkill_recovery_passed": true,
+  "recovered_case_delivery": 2,
+  "intentional_contract_regression_exit_code": 1,
+  "small_benchmark": {
+    "python": "3.12.14",
+    "platform": "Linux-6.18.35-x86_64-with-glibc2.39",
+    "cases": 60,
+    "workers": 2,
+    "threads_per_worker": 4,
+    "warmup_rounds_excluded": 1,
+    "measured_rounds": 3,
+    "measurements_ms": {
+      "serial": [
+        2515.692,
+        2573.095,
+        2401.721
+      ],
+      "distributed": [
+        2603.306,
+        2490.666,
+        2184.213
+      ]
+    },
+    "serial_median_ms": 2515.692,
+    "distributed_median_ms": 2490.666,
+    "time_reduction_percent": 0.99,
+    "speedup": 1.01,
+    "scope": "This environment only; includes process startup and fixture overhead."
+  },
+  "large_benchmark": {
+    "python": "3.12.14",
+    "platform": "Linux-6.18.35-x86_64-with-glibc2.39",
+    "cases": 240,
+    "workers": 2,
+    "threads_per_worker": 4,
+    "warmup_rounds_excluded": 1,
+    "measured_rounds": 3,
+    "measurements_ms": {
+      "serial": [
+        9046.35,
+        9127.503,
+        8823.721
+      ],
+      "distributed": [
+        3724.867,
+        3179.663,
+        4484.376
+      ]
+    },
+    "serial_median_ms": 9046.35,
+    "distributed_median_ms": 3724.867,
+    "time_reduction_percent": 58.82,
+    "speedup": 2.429,
+    "scope": "This environment only; includes process startup and fixture overhead."
+  },
+  "ruff_check": "passed",
+  "ruff_format": "passed",
+  "wheel_build": "passed",
+  "clean_wheel_install_and_cli": "passed",
+  "compose_and_ci_yaml_parse": "passed",
+  "docker_execution": "not performed: Docker unavailable",
+  "github_actions_execution": "not performed: project not pushed to GitHub",
+  "dependency_notes": [
+    "Two deprecation warnings from Starlette TestClient compatibility appeared during tests."
+  ]
+}

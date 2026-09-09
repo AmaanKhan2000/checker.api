@@ -1,0 +1,76 @@
+{
+  "redis_version": "6.2.14",
+  "docker_executed": false,
+  "distributed": {
+    "cases_passed": 8,
+    "exit_code": 0,
+    "workers": [
+      "process-0",
+      "process-1"
+    ]
+  },
+  "crash_recovery": {
+    "case_id": "catalog-000",
+    "status": "passed",
+    "elapsed_ms": 33.147,
+    "worker_id": "recovery-worker",
+    "delivery": 2,
+    "steps": [
+      {
+        "name": "seed isolated catalog",
+        "phase": "setup",
+        "status": "passed",
+        "elapsed_ms": 5.357,
+        "http_status": 200,
+        "attempts": 1,
+        "messages": []
+      },
+      {
+        "name": "catalog request",
+        "phase": "test",
+        "status": "passed",
+        "elapsed_ms": 23.875,
+        "http_status": 200,
+        "attempts": 1,
+        "messages": []
+      },
+      {
+        "name": "remove isolated data",
+        "phase": "teardown",
+        "status": "passed",
+        "elapsed_ms": 3.079,
+        "http_status": 204,
+        "attempts": 1,
+        "messages": []
+      }
+    ],
+    "message": null
+  },
+  "benchmark": {
+    "python": "3.12.14",
+    "platform": "Linux-6.18.35-x86_64-with-glibc2.39",
+    "cases": 60,
+    "workers": 2,
+    "threads_per_worker": 4,
+    "warmup_rounds_excluded": 1,
+    "measured_rounds": 3,
+    "measurements_ms": {
+      "serial": [
+        2515.692,
+        2573.095,
+        2401.721
+      ],
+      "distributed": [
+        2603.306,
+        2490.666,
+        2184.213
+      ]
+    },
+    "serial_median_ms": 2515.692,
+    "distributed_median_ms": 2490.666,
+    "time_reduction_percent": 0.99,
+    "speedup": 1.01,
+    "scope": "This environment only; includes process startup and fixture overhead."
+  },
+  "intentional_regression_exit_code": 1
+}

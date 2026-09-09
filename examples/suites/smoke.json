@@ -1,0 +1,457 @@
+{
+  "version": 1,
+  "name": "Inventory API acceptance",
+  "seed": 42,
+  "cases": [
+    {
+      "id": "health",
+      "replay_safe": true,
+      "steps": [
+        {
+          "name": "health is ready",
+          "operation": "health",
+          "expect": {
+            "status": 200
+          }
+        }
+      ]
+    },
+    {
+      "id": "catalog-list",
+      "replay_safe": true,
+      "setup": [
+        {
+          "name": "seed isolated catalog",
+          "operation": "seedNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "json_body": {
+            "seed": "${seed}"
+          },
+          "expect": {
+            "status": 200,
+            "json_equals": {
+              "/seed": "${seed}",
+              "/products": 3
+            }
+          }
+        }
+      ],
+      "steps": [
+        {
+          "name": "list deterministic products",
+          "operation": "listProducts",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "expect": {
+            "status": 200,
+            "json_equals": {
+              "/items/0/id": "product-1",
+              "/items/1/name": "Tablet"
+            }
+          },
+          "query": {
+            "limit": 2
+          }
+        }
+      ],
+      "teardown": [
+        {
+          "name": "remove isolated data",
+          "operation": "deleteNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "expect": {
+            "status": 204
+          }
+        }
+      ]
+    },
+    {
+      "id": "product-details",
+      "replay_safe": true,
+      "setup": [
+        {
+          "name": "seed isolated catalog",
+          "operation": "seedNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "json_body": {
+            "seed": "${seed}"
+          },
+          "expect": {
+            "status": 200,
+            "json_equals": {
+              "/seed": "${seed}",
+              "/products": 3
+            }
+          }
+        }
+      ],
+      "steps": [
+        {
+          "name": "get a product",
+          "operation": "getProduct",
+          "path_params": {
+            "namespace": "${namespace}",
+            "product_id": "product-1"
+          },
+          "expect": {
+            "status": 200,
+            "json_equals": {
+              "/name": "Phone"
+            }
+          }
+        }
+      ],
+      "teardown": [
+        {
+          "name": "remove isolated data",
+          "operation": "deleteNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "expect": {
+            "status": 204
+          }
+        }
+      ]
+    },
+    {
+      "id": "product-not-found",
+      "replay_safe": true,
+      "setup": [
+        {
+          "name": "seed isolated catalog",
+          "operation": "seedNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "json_body": {
+            "seed": "${seed}"
+          },
+          "expect": {
+            "status": 200,
+            "json_equals": {
+              "/seed": "${seed}",
+              "/products": 3
+            }
+          }
+        }
+      ],
+      "steps": [
+        {
+          "name": "missing product returns 404",
+          "operation": "getProduct",
+          "path_params": {
+            "namespace": "${namespace}",
+            "product_id": "missing"
+          },
+          "expect": {
+            "status": 404
+          }
+        }
+      ],
+      "teardown": [
+        {
+          "name": "remove isolated data",
+          "operation": "deleteNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "expect": {
+            "status": 204
+          }
+        }
+      ]
+    },
+    {
+      "id": "order-idempotency",
+      "replay_safe": true,
+      "setup": [
+        {
+          "name": "seed isolated catalog",
+          "operation": "seedNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "json_body": {
+            "seed": "${seed}"
+          },
+          "expect": {
+            "status": 200,
+            "json_equals": {
+              "/seed": "${seed}",
+              "/products": 3
+            }
+          }
+        }
+      ],
+      "steps": [
+        {
+          "name": "create order",
+          "operation": "createOrder",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "expect": {
+            "status": 201,
+            "json_equals": {
+              "/quantity": 2,
+              "/status": "confirmed"
+            }
+          },
+          "json_body": {
+            "id": "order-1",
+            "product_id": "product-1",
+            "quantity": 2
+          }
+        },
+        {
+          "name": "replay identical order",
+          "operation": "createOrder",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "expect": {
+            "status": 201
+          },
+          "json_body": {
+            "id": "order-1",
+            "product_id": "product-1",
+            "quantity": 2
+          }
+        },
+        {
+          "name": "reject conflicting duplicate",
+          "operation": "createOrder",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "expect": {
+            "status": 409
+          },
+          "json_body": {
+            "id": "order-1",
+            "product_id": "product-1",
+            "quantity": 3
+          }
+        }
+      ],
+      "teardown": [
+        {
+          "name": "remove isolated data",
+          "operation": "deleteNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "expect": {
+            "status": 204
+          }
+        }
+      ]
+    },
+    {
+      "id": "invalid-order",
+      "replay_safe": true,
+      "setup": [
+        {
+          "name": "seed isolated catalog",
+          "operation": "seedNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "json_body": {
+            "seed": "${seed}"
+          },
+          "expect": {
+            "status": 200,
+            "json_equals": {
+              "/seed": "${seed}",
+              "/products": 3
+            }
+          }
+        }
+      ],
+      "steps": [
+        {
+          "name": "reject zero quantity",
+          "operation": "createOrder",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "expect": {
+            "status": 422
+          },
+          "json_body": {
+            "id": "order-1",
+            "product_id": "product-1",
+            "quantity": 0
+          },
+          "allow_invalid_request": true
+        }
+      ],
+      "teardown": [
+        {
+          "name": "remove isolated data",
+          "operation": "deleteNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "expect": {
+            "status": 204
+          }
+        }
+      ]
+    },
+    {
+      "id": "invalid-query",
+      "replay_safe": true,
+      "setup": [
+        {
+          "name": "seed isolated catalog",
+          "operation": "seedNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "json_body": {
+            "seed": "${seed}"
+          },
+          "expect": {
+            "status": 200,
+            "json_equals": {
+              "/seed": "${seed}",
+              "/products": 3
+            }
+          }
+        }
+      ],
+      "steps": [
+        {
+          "name": "reject invalid page size",
+          "operation": "listProducts",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "expect": {
+            "status": 422
+          },
+          "query": {
+            "limit": 0
+          },
+          "allow_invalid_request": true
+        }
+      ],
+      "teardown": [
+        {
+          "name": "remove isolated data",
+          "operation": "deleteNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "expect": {
+            "status": 204
+          }
+        }
+      ]
+    },
+    {
+      "id": "missing-order-product",
+      "replay_safe": true,
+      "setup": [
+        {
+          "name": "seed isolated catalog",
+          "operation": "seedNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "json_body": {
+            "seed": "${seed}"
+          },
+          "expect": {
+            "status": 200,
+            "json_equals": {
+              "/seed": "${seed}",
+              "/products": 3
+            }
+          }
+        }
+      ],
+      "steps": [
+        {
+          "name": "reject unknown product",
+          "operation": "createOrder",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "expect": {
+            "status": 404
+          },
+          "json_body": {
+            "id": "order-1",
+            "product_id": "missing",
+            "quantity": 2
+          }
+        }
+      ],
+      "teardown": [
+        {
+          "name": "remove isolated data",
+          "operation": "deleteNamespace",
+          "path_params": {
+            "namespace": "${namespace}"
+          },
+          "headers": {
+            "X-Test-Token": "${env:TEST_SUPPORT_TOKEN}"
+          },
+          "expect": {
+            "status": 204
+          }
+        }
+      ]
+    }
+  ]
+}

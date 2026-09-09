@@ -1,0 +1,216 @@
+{"timestamp": "2026-09-09T08:04:32.913081+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-025", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:32.927193+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-026", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:32.929127+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-029", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:32.931803+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-031", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:32.965728+00:00", "event": "case_finished", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-025", "worker_id": "process-1", "status": "passed", "accepted": true}
+{"timestamp": "2026-09-09T08:04:32.966077+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-034", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:32.967474+00:00", "event": "case_finished", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-026", "worker_id": "process-1", "status": "passed", "accepted": true}
+{"timestamp": "2026-09-09T08:04:32.967818+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-035", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:32.975740+00:00", "event": "case_finished", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-031", "worker_id": "process-1", "status": "passed", "accepted": true}
+{"timestamp": "2026-09-09T08:04:32.976370+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-036", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:32.977811+00:00", "event": "case_finished", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-029", "worker_id": "process-1", "status": "passed", "accepted": true}
+{"timestamp": "2026-09-09T08:04:32.978332+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-037", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:33.001615+00:00", "event": "case_finished", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-034", "worker_id": "process-1", "status": "passed", "accepted": true}
+{"timestamp": "2026-09-09T08:04:33.002032+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-039", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:33.003761+00:00", "event": "case_finished", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-035", "worker_id": "process-1", "status": "passed", "accepted": true}
+{"timestamp": "2026-09-09T08:04:33.004175+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-040", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:33.014353+00:00", "event": "case_finished", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-036", "worker_id": "process-1", "status": "passed", "accepted": true}
+{"timestamp": "2026-09-09T08:04:33.014900+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-042", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:33.016980+00:00", "event": "case_finished", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-037", "worker_id": "process-1", "status": "passed", "accepted": true}
+{"timestamp": "2026-09-09T08:04:33.017382+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-043", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:33.034339+00:00", "event": "case_finished", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-040", "worker_id": "process-1", "status": "passed", "accepted": true}
+{"timestamp": "2026-09-09T08:04:33.034942+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-046", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:33.045426+00:00", "event": "case_finished", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-039", "worker_id": "process-1", "status": "passed", "accepted": true}
+{"timestamp": "2026-09-09T08:04:33.047907+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-047", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:33.052070+00:00", "event": "case_finished", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-042", "worker_id": "process-1", "status": "passed", "accepted": true}
+{"timestamp": "2026-09-09T08:04:33.052560+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-048", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:33.057665+00:00", "event": "case_finished", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-043", "worker_id": "process-1", "status": "passed", "accepted": true}
+{"timestamp": "2026-09-09T08:04:33.057976+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-050", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:33.066740+00:00", "event": "case_finished", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-046", "worker_id": "process-1", "status": "passed", "accepted": true}
+{"timestamp": "2026-09-09T08:04:33.067254+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-052", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:33.084473+00:00", "event": "case_finished", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-047", "worker_id": "process-1", "status": "passed", "accepted": true}
+{"timestamp": "2026-09-09T08:04:33.084939+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-055", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:33.093820+00:00", "event": "case_finished", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-048", "worker_id": "process-1", "status": "passed", "accepted": true}
+{"timestamp": "2026-09-09T08:04:33.095440+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-056", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:33.107020+00:00", "event": "case_finished", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-050", "worker_id": "process-1", "status": "passed", "accepted": true}
+{"timestamp": "2026-09-09T08:04:33.108383+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-057", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:33.112882+00:00", "event": "case_finished", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-052", "worker_id": "process-1", "status": "passed", "accepted": true}
+{"timestamp": "2026-09-09T08:04:33.113349+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-059", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:33.180941+00:00", "event": "case_finished", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-056", "worker_id": "process-1", "status": "passed", "accepted": true}
+{"timestamp": "2026-09-09T08:04:33.185532+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-060", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:33.196624+00:00", "event": "case_finished", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-057", "worker_id": "process-1", "status": "passed", "accepted": true}
+{"timestamp": "2026-09-09T08:04:33.197041+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-063", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:33.199865+00:00", "event": "case_finished", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-055", "worker_id": "process-1", "status": "passed", "accepted": true}
+{"timestamp": "2026-09-09T08:04:33.216057+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-064", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:33.232703+00:00", "event": "case_finished", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-059", "worker_id": "process-1", "status": "passed", "accepted": true}
+{"timestamp": "2026-09-09T08:04:33.232817+00:00", "event": "case_finished", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-060", "worker_id": "process-1", "status": "passed", "accepted": true}
+{"timestamp": "2026-09-09T08:04:33.237587+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-068", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:33.243040+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-069", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:33.306194+00:00", "event": "case_finished", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-063", "worker_id": "process-1", "status": "passed", "accepted": true}
+{"timestamp": "2026-09-09T08:04:33.308677+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-073", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:33.344240+00:00", "event": "case_finished", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-064", "worker_id": "process-1", "status": "passed", "accepted": true}
+{"timestamp": "2026-09-09T08:04:33.348403+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-075", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:33.361820+00:00", "event": "case_finished", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-069", "worker_id": "process-1", "status": "passed", "accepted": true}
+{"timestamp": "2026-09-09T08:04:33.362184+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-077", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:33.381045+00:00", "event": "case_finished", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-068", "worker_id": "process-1", "status": "passed", "accepted": true}
+{"timestamp": "2026-09-09T08:04:33.381555+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-078", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:33.400895+00:00", "event": "case_finished", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-073", "worker_id": "process-1", "status": "passed", "accepted": true}
+{"timestamp": "2026-09-09T08:04:33.401467+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-082", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:33.413256+00:00", "event": "case_finished", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-075", "worker_id": "process-1", "status": "passed", "accepted": true}
+{"timestamp": "2026-09-09T08:04:33.413613+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-083", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:33.420591+00:00", "event": "case_finished", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-077", "worker_id": "process-1", "status": "passed", "accepted": true}
+{"timestamp": "2026-09-09T08:04:33.421172+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-084", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:33.430984+00:00", "event": "case_finished", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-078", "worker_id": "process-1", "status": "passed", "accepted": true}
+{"timestamp": "2026-09-09T08:04:33.431392+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-086", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:33.452161+00:00", "event": "case_finished", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-082", "worker_id": "process-1", "status": "passed", "accepted": true}
+{"timestamp": "2026-09-09T08:04:33.452518+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-089", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:33.460313+00:00", "event": "case_finished", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-083", "worker_id": "process-1", "status": "passed", "accepted": true}
+{"timestamp": "2026-09-09T08:04:33.461608+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-091", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:33.467324+00:00", "event": "case_finished", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-084", "worker_id": "process-1", "status": "passed", "accepted": true}
+{"timestamp": "2026-09-09T08:04:33.467730+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-092", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:33.496994+00:00", "event": "case_finished", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-089", "worker_id": "process-1", "status": "passed", "accepted": true}
+{"timestamp": "2026-09-09T08:04:33.497452+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-094", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:33.499933+00:00", "event": "case_finished", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-086", "worker_id": "process-1", "status": "passed", "accepted": true}
+{"timestamp": "2026-09-09T08:04:33.500745+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-095", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:33.516118+00:00", "event": "case_finished", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-092", "worker_id": "process-1", "status": "passed", "accepted": true}
+{"timestamp": "2026-09-09T08:04:33.516593+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-098", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:33.520054+00:00", "event": "case_finished", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-091", "worker_id": "process-1", "status": "passed", "accepted": true}
+{"timestamp": "2026-09-09T08:04:33.520568+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-100", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:33.540418+00:00", "event": "case_finished", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-094", "worker_id": "process-1", "status": "passed", "accepted": true}
+{"timestamp": "2026-09-09T08:04:33.540793+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-102", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:33.547869+00:00", "event": "case_finished", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-095", "worker_id": "process-1", "status": "passed", "accepted": true}
+{"timestamp": "2026-09-09T08:04:33.548338+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-103", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:33.564975+00:00", "event": "case_finished", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-098", "worker_id": "process-1", "status": "passed", "accepted": true}
+{"timestamp": "2026-09-09T08:04:33.565364+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-105", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:33.571742+00:00", "event": "case_finished", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-100", "worker_id": "process-1", "status": "passed", "accepted": true}
+{"timestamp": "2026-09-09T08:04:33.572164+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-108", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:33.581286+00:00", "event": "case_finished", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-102", "worker_id": "process-1", "status": "passed", "accepted": true}
+{"timestamp": "2026-09-09T08:04:33.581732+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-109", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:33.591589+00:00", "event": "case_finished", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-103", "worker_id": "process-1", "status": "passed", "accepted": true}
+{"timestamp": "2026-09-09T08:04:33.592066+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-110", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:33.614507+00:00", "event": "case_finished", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-108", "worker_id": "process-1", "status": "passed", "accepted": true}
+{"timestamp": "2026-09-09T08:04:33.617246+00:00", "event": "case_finished", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-105", "worker_id": "process-1", "status": "passed", "accepted": true}
+{"timestamp": "2026-09-09T08:04:33.617541+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-113", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:33.620654+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-116", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:33.628838+00:00", "event": "case_finished", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-109", "worker_id": "process-1", "status": "passed", "accepted": true}
+{"timestamp": "2026-09-09T08:04:33.630965+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-117", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:33.638614+00:00", "event": "case_finished", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-110", "worker_id": "process-1", "status": "passed", "accepted": true}
+{"timestamp": "2026-09-09T08:04:33.639438+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-118", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:33.659518+00:00", "event": "case_finished", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-116", "worker_id": "process-1", "status": "passed", "accepted": true}
+{"timestamp": "2026-09-09T08:04:33.660053+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-122", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:33.661699+00:00", "event": "case_finished", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-113", "worker_id": "process-1", "status": "passed", "accepted": true}
+{"timestamp": "2026-09-09T08:04:33.662080+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-123", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:33.671671+00:00", "event": "case_finished", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-117", "worker_id": "process-1", "status": "passed", "accepted": true}
+{"timestamp": "2026-09-09T08:04:33.672204+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-125", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:33.676464+00:00", "event": "case_finished", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-118", "worker_id": "process-1", "status": "passed", "accepted": true}
+{"timestamp": "2026-09-09T08:04:33.676934+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-127", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:33.702028+00:00", "event": "case_finished", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-123", "worker_id": "process-1", "status": "passed", "accepted": true}
+{"timestamp": "2026-09-09T08:04:33.703329+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-130", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:33.719567+00:00", "event": "case_finished", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-122", "worker_id": "process-1", "status": "passed", "accepted": true}
+{"timestamp": "2026-09-09T08:04:33.720040+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-131", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:33.737754+00:00", "event": "case_finished", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-125", "worker_id": "process-1", "status": "passed", "accepted": true}
+{"timestamp": "2026-09-09T08:04:33.738150+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-133", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:33.755085+00:00", "event": "case_finished", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-127", "worker_id": "process-1", "status": "passed", "accepted": true}
+{"timestamp": "2026-09-09T08:04:33.756184+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-135", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:33.782612+00:00", "event": "case_finished", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-130", "worker_id": "process-1", "status": "passed", "accepted": true}
+{"timestamp": "2026-09-09T08:04:33.783081+00:00", "event": "case_finished", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-133", "worker_id": "process-1", "status": "passed", "accepted": true}
+{"timestamp": "2026-09-09T08:04:33.783500+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-138", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:33.784534+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-139", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:33.791609+00:00", "event": "case_finished", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-131", "worker_id": "process-1", "status": "passed", "accepted": true}
+{"timestamp": "2026-09-09T08:04:33.793245+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-140", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:33.809462+00:00", "event": "case_finished", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-135", "worker_id": "process-1", "status": "passed", "accepted": true}
+{"timestamp": "2026-09-09T08:04:33.810077+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-141", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:33.831477+00:00", "event": "case_finished", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-140", "worker_id": "process-1", "status": "passed", "accepted": true}
+{"timestamp": "2026-09-09T08:04:33.831720+00:00", "event": "case_finished", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-138", "worker_id": "process-1", "status": "passed", "accepted": true}
+{"timestamp": "2026-09-09T08:04:33.833828+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-142", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:33.834945+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-143", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:33.835945+00:00", "event": "case_finished", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-139", "worker_id": "process-1", "status": "passed", "accepted": true}
+{"timestamp": "2026-09-09T08:04:33.839822+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-144", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:33.874324+00:00", "event": "case_finished", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-141", "worker_id": "process-1", "status": "passed", "accepted": true}
+{"timestamp": "2026-09-09T08:04:33.874839+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-148", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:33.900900+00:00", "event": "case_finished", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-143", "worker_id": "process-1", "status": "passed", "accepted": true}
+{"timestamp": "2026-09-09T08:04:33.901399+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-150", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:33.913333+00:00", "event": "case_finished", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-142", "worker_id": "process-1", "status": "passed", "accepted": true}
+{"timestamp": "2026-09-09T08:04:33.928493+00:00", "event": "case_finished", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-148", "worker_id": "process-1", "status": "passed", "accepted": true}
+{"timestamp": "2026-09-09T08:04:33.933075+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-155", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:33.940130+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-154", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:33.952394+00:00", "event": "case_finished", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-144", "worker_id": "process-1", "status": "passed", "accepted": true}
+{"timestamp": "2026-09-09T08:04:33.952945+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-156", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:33.963303+00:00", "event": "case_finished", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-150", "worker_id": "process-1", "status": "passed", "accepted": true}
+{"timestamp": "2026-09-09T08:04:33.963691+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-158", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:33.982088+00:00", "event": "case_finished", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-155", "worker_id": "process-1", "status": "passed", "accepted": true}
+{"timestamp": "2026-09-09T08:04:33.982563+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-160", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:33.984358+00:00", "event": "case_finished", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-154", "worker_id": "process-1", "status": "passed", "accepted": true}
+{"timestamp": "2026-09-09T08:04:33.985779+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-162", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:33.986650+00:00", "event": "case_finished", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-156", "worker_id": "process-1", "status": "passed", "accepted": true}
+{"timestamp": "2026-09-09T08:04:33.987190+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-163", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:33.993954+00:00", "event": "case_finished", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-158", "worker_id": "process-1", "status": "passed", "accepted": true}
+{"timestamp": "2026-09-09T08:04:33.994453+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-164", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:34.019257+00:00", "event": "case_finished", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-160", "worker_id": "process-1", "status": "passed", "accepted": true}
+{"timestamp": "2026-09-09T08:04:34.020198+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-168", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:34.024536+00:00", "event": "case_finished", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-163", "worker_id": "process-1", "status": "passed", "accepted": true}
+{"timestamp": "2026-09-09T08:04:34.025047+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-169", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:34.035226+00:00", "event": "case_finished", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-162", "worker_id": "process-1", "status": "passed", "accepted": true}
+{"timestamp": "2026-09-09T08:04:34.035562+00:00", "event": "case_finished", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-164", "worker_id": "process-1", "status": "passed", "accepted": true}
+{"timestamp": "2026-09-09T08:04:34.035976+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-171", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:34.037520+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-170", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:34.060608+00:00", "event": "case_finished", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-169", "worker_id": "process-1", "status": "passed", "accepted": true}
+{"timestamp": "2026-09-09T08:04:34.060961+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-174", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:34.062252+00:00", "event": "case_finished", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-168", "worker_id": "process-1", "status": "passed", "accepted": true}
+{"timestamp": "2026-09-09T08:04:34.062648+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-175", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:34.072050+00:00", "event": "case_finished", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-171", "worker_id": "process-1", "status": "passed", "accepted": true}
+{"timestamp": "2026-09-09T08:04:34.074011+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-176", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:34.079411+00:00", "event": "case_finished", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-170", "worker_id": "process-1", "status": "passed", "accepted": true}
+{"timestamp": "2026-09-09T08:04:34.079881+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-179", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:34.093551+00:00", "event": "case_finished", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-174", "worker_id": "process-1", "status": "passed", "accepted": true}
+{"timestamp": "2026-09-09T08:04:34.093956+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-181", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:34.095160+00:00", "event": "case_finished", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-175", "worker_id": "process-1", "status": "passed", "accepted": true}
+{"timestamp": "2026-09-09T08:04:34.095442+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-182", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:34.104819+00:00", "event": "case_finished", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-176", "worker_id": "process-1", "status": "passed", "accepted": true}
+{"timestamp": "2026-09-09T08:04:34.105952+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-183", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:34.114393+00:00", "event": "case_finished", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-179", "worker_id": "process-1", "status": "passed", "accepted": true}
+{"timestamp": "2026-09-09T08:04:34.114778+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-185", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:34.123487+00:00", "event": "case_finished", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-181", "worker_id": "process-1", "status": "passed", "accepted": true}
+{"timestamp": "2026-09-09T08:04:34.123899+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-187", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:34.127000+00:00", "event": "case_finished", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-182", "worker_id": "process-1", "status": "passed", "accepted": true}
+{"timestamp": "2026-09-09T08:04:34.127369+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-188", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:34.143048+00:00", "event": "case_finished", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-183", "worker_id": "process-1", "status": "passed", "accepted": true}
+{"timestamp": "2026-09-09T08:04:34.145211+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-191", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:34.154071+00:00", "event": "case_finished", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-185", "worker_id": "process-1", "status": "passed", "accepted": true}
+{"timestamp": "2026-09-09T08:04:34.158028+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-192", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:34.160075+00:00", "event": "case_finished", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-187", "worker_id": "process-1", "status": "passed", "accepted": true}
+{"timestamp": "2026-09-09T08:04:34.160949+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-193", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:34.161951+00:00", "event": "case_finished", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-188", "worker_id": "process-1", "status": "passed", "accepted": true}
+{"timestamp": "2026-09-09T08:04:34.162290+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-194", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:34.183634+00:00", "event": "case_finished", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-191", "worker_id": "process-1", "status": "passed", "accepted": true}
+{"timestamp": "2026-09-09T08:04:34.184090+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-196", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:34.197599+00:00", "event": "case_finished", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-192", "worker_id": "process-1", "status": "passed", "accepted": true}
+{"timestamp": "2026-09-09T08:04:34.198287+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-197", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:34.203383+00:00", "event": "case_finished", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-194", "worker_id": "process-1", "status": "passed", "accepted": true}
+{"timestamp": "2026-09-09T08:04:34.203892+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-198", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:34.211105+00:00", "event": "case_finished", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-193", "worker_id": "process-1", "status": "passed", "accepted": true}
+{"timestamp": "2026-09-09T08:04:34.213811+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-199", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:34.218332+00:00", "event": "case_finished", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-196", "worker_id": "process-1", "status": "passed", "accepted": true}
+{"timestamp": "2026-09-09T08:04:34.220530+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-201", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:34.237358+00:00", "event": "case_finished", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-197", "worker_id": "process-1", "status": "passed", "accepted": true}
+{"timestamp": "2026-09-09T08:04:34.238013+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-203", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:34.244719+00:00", "event": "case_finished", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-198", "worker_id": "process-1", "status": "passed", "accepted": true}
+{"timestamp": "2026-09-09T08:04:34.246012+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-206", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:34.265074+00:00", "event": "case_finished", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-199", "worker_id": "process-1", "status": "passed", "accepted": true}
+{"timestamp": "2026-09-09T08:04:34.266862+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-207", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:34.280023+00:00", "event": "case_finished", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-201", "worker_id": "process-1", "status": "passed", "accepted": true}
+{"timestamp": "2026-09-09T08:04:34.288446+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-208", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:34.303992+00:00", "event": "case_finished", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-203", "worker_id": "process-1", "status": "passed", "accepted": true}
+{"timestamp": "2026-09-09T08:04:34.305093+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-210", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:34.316469+00:00", "event": "case_finished", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-206", "worker_id": "process-1", "status": "passed", "accepted": true}
+{"timestamp": "2026-09-09T08:04:34.317091+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-211", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:34.403631+00:00", "event": "case_finished", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-207", "worker_id": "process-1", "status": "passed", "accepted": true}
+{"timestamp": "2026-09-09T08:04:34.404058+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-215", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:34.428944+00:00", "event": "case_finished", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-208", "worker_id": "process-1", "status": "passed", "accepted": true}
+{"timestamp": "2026-09-09T08:04:34.429446+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-216", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:34.465284+00:00", "event": "case_finished", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-211", "worker_id": "process-1", "status": "passed", "accepted": true}
+{"timestamp": "2026-09-09T08:04:34.465793+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-219", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:34.497887+00:00", "event": "case_finished", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-215", "worker_id": "process-1", "status": "passed", "accepted": true}
+{"timestamp": "2026-09-09T08:04:34.499100+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-220", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T08:04:34.514438+00:00", "event": "case_finished", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-210", "worker_id": "process-1", "status": "passed", "accepted": true}
+{"timestamp": "2026-09-09T08:04:34.514896+00:00", "event": "case_started", "run_id": "641823a3aeee44598d90713c1dfbd2fd", "case_id": "catalog-222", "worker_id": "process-1", "delivery": 1}

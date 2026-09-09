@@ -1,0 +1,33 @@
+INFO:     Started server process [247]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:35263 (Press CTRL+C to quit)
+INFO:     127.0.0.1:48812 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48514 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48494 - "PUT /test-support/namespaces/c2291a4ccb9fc9220c4aab5a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48498 - "PUT /test-support/namespaces/909b0fd166e0c7b80ce3998b HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48514 - "PUT /test-support/namespaces/05754b1ba80aaa4c9e574966 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48530 - "PUT /test-support/namespaces/c93328f76976024f2d3d6b7e HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48494 - "GET /catalog/c2291a4ccb9fc9220c4aab5a/products/product-1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48498 - "GET /catalog/909b0fd166e0c7b80ce3998b/products?limit=2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48514 - "POST /orders/05754b1ba80aaa4c9e574966 HTTP/1.1" 201 Created
+INFO:     127.0.0.1:48494 - "DELETE /test-support/namespaces/c2291a4ccb9fc9220c4aab5a HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:48498 - "DELETE /test-support/namespaces/909b0fd166e0c7b80ce3998b HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:48530 - "GET /catalog/c93328f76976024f2d3d6b7e/products/missing HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:48494 - "PUT /test-support/namespaces/ff349d7015b301b74afdd3bc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48530 - "DELETE /test-support/namespaces/c93328f76976024f2d3d6b7e HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:48498 - "PUT /test-support/namespaces/d83f66a8973d199202ae4480 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48494 - "POST /orders/ff349d7015b301b74afdd3bc HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:48498 - "GET /catalog/d83f66a8973d199202ae4480/products?limit=0 HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:48530 - "PUT /test-support/namespaces/b7a3bbbd945e2ca6a19e7495 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48494 - "DELETE /test-support/namespaces/ff349d7015b301b74afdd3bc HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:48498 - "DELETE /test-support/namespaces/d83f66a8973d199202ae4480 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:48514 - "POST /orders/05754b1ba80aaa4c9e574966 HTTP/1.1" 201 Created
+INFO:     127.0.0.1:48530 - "POST /orders/b7a3bbbd945e2ca6a19e7495 HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:48498 - "DELETE /test-support/namespaces/b7a3bbbd945e2ca6a19e7495 HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:48514 - "POST /orders/05754b1ba80aaa4c9e574966 HTTP/1.1" 409 Conflict
+INFO:     127.0.0.1:48514 - "DELETE /test-support/namespaces/05754b1ba80aaa4c9e574966 HTTP/1.1" 204 No Content
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [247]

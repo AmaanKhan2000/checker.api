@@ -1,0 +1,6 @@
+{"timestamp": "2026-09-09T07:58:42.630348+00:00", "event": "case_started", "run_id": "fcab8ea4e283432796660bd923e8f68f", "case_id": "invalid-order", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T07:58:42.640335+00:00", "event": "case_started", "run_id": "fcab8ea4e283432796660bd923e8f68f", "case_id": "invalid-query", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T07:58:42.646748+00:00", "event": "case_started", "run_id": "fcab8ea4e283432796660bd923e8f68f", "case_id": "missing-order-product", "worker_id": "process-1", "delivery": 1}
+{"timestamp": "2026-09-09T07:58:42.685952+00:00", "event": "case_finished", "run_id": "fcab8ea4e283432796660bd923e8f68f", "case_id": "invalid-query", "worker_id": "process-1", "status": "passed", "accepted": true}
+{"timestamp": "2026-09-09T07:58:42.689259+00:00", "event": "case_finished", "run_id": "fcab8ea4e283432796660bd923e8f68f", "case_id": "invalid-order", "worker_id": "process-1", "status": "passed", "accepted": true}
+{"timestamp": "2026-09-09T07:58:42.703836+00:00", "event": "case_finished", "run_id": "fcab8ea4e283432796660bd923e8f68f", "case_id": "missing-order-product", "worker_id": "process-1", "status": "passed", "accepted": true}
