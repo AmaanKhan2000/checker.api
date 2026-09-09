@@ -1,7 +1,7 @@
 # checker.api
 Aloha! This is checker.api, your new testing suite friend, go ahead and try me!
 
-**Distributed API Test Automation for Containerized Services**
+**Distributed API Test Suite for Containerized Services**
 
 A complete Python project that distributes API test cases across independently running workers, uses a thread pool inside each worker, validates requests and responses against a consumer-owned OpenAPI 3.1 contract, and returns a failing CI status when tests fail or results are missing.
 
