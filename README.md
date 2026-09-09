@@ -1,4 +1,5 @@
-# API Sentinel
+# checker.api
+Aloha! This is checker.api, your new testing suite friend, go ahead and try me!
 
 **Distributed API Test Automation for Containerized Services**
 
@@ -6,7 +7,7 @@ A complete Python project that distributes API test cases across independently r
 
 The implementation includes a runnable inventory-and-orders service, deterministic fixtures, worker-crash recovery, atomic JSON/JUnit reports, Docker Compose, a locked dependency graph, and GitHub Actions gates. This is a production-oriented foundation with explicit operating limits; deploying it into your environment still requires configuring credentials, Redis durability, target access, and required repository checks.
 
-## Start with Docker
+## To Start with Docker
 
 Requirements: Docker Engine or Docker Desktop with Compose v2, Bash, and Python 3 for generating run IDs. No Python dependencies need to be installed on the host for this route.
 
